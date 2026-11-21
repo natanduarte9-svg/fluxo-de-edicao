@@ -19,7 +19,7 @@
 ## Como foi feito (`make.sh`)
 - Escolha dos momentos: folha de contato a cada 5 s no vídeo todo, depois a cada 1 s nos candidatos.
 - 1080×1920, 30 fps, H.264 CRF 18; **som do jogo** (sem música), dois passes de `loudnorm` para −14 LUFS, fade de 0,1 s na entrada e 0,5 s na saída.
-- Título em duas linhas na faixa desfocada de cima (Inter Display Black, branco + amarelo, contorno preto), entrando com um pulo nos primeiros 0,25 s.
+- Título em duas linhas na faixa desfocada de cima, **abaixo do sticker de "se inscrever"** (linhas em y=410 e y=515 em 1080×1920; o sticker do CapCut fica em y≈180–375). **O sticker do canal nunca pode ser coberto** (pedido do usuário) (Inter Display Black, branco + amarelo, contorno preto), entrando com um pulo nos primeiros 0,25 s.
 - Revisão: −14,0/−14,1 LUFS, nenhum quadro preto.
 
 Uso: `SRC=<fonte> ./make.sh <saída.mp4> <início_s> <fim_s> "LINHA 1" "LINHA 2"` (com `parte-drive.mp4` na mesma pasta).

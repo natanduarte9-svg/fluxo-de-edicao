@@ -69,6 +69,9 @@ O que aprendi estudando 10 repositórios de motion graphics para o Claude Code (
 21. **Volume final: −14 LUFS** (o padrão do YouTube).
 22. **Fugir do "piano e cordas genérico".**
 
+### Elementos do canal
+- **Nunca cobrir o sticker de "se inscrever"** nem outros elementos que o usuário colocou no CapCut. Antes de pôr título ou efeito, olhar os quadros onde eles aparecem e deixar espaço.
+
 ### O que evitar (cara de template de IA)
 - Explosão de partículas genérica, separação RGB, reflexo de lente, neon e quique exagerado.
 - Texto demais na tela; legenda cobrindo o assunto; assunto pequeno ou colado na borda.
