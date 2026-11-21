@@ -36,6 +36,8 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 | Envio ao GitHub falhou (403) | Voltou a funcionar depois de reconectar o GitHub |
 | ClaudeAnimationBase sem placa de vídeo | `--soft-gl` e Chromium do Playwright; ≈7 s por quadro |
 | **Google Drive** bloqueado pela rede | Liberar o Drive exige aprovar pelo **computador** (no celular não aparece a opção). Sem computador: anexar o arquivo no chat, ou usar ferramentas que baixam o link pelos servidores delas (OpusClip, Descript) |
+| Aprovações de ambiente (rede, script) | **Só aparecem para aprovar no computador** (navegador em claude.ai/code). No celular a janela diz "revise no computador". Feito com notebook emprestado em 21/11 |
+| Google Drive liberado | Link compartilhado baixa direto: `https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t` |
 | Arquivo grande (gameplay de 2 h, 1,64 GB) | Não cabe como anexo. Melhor: cortar os melhores trechos no **CapCut** (20 s a 2 min, 1080p 30 fps) e anexar um por vez |
 
 ### Pesquisa: ferramentas de foto para vídeo com movimento real (nov/2026)
@@ -50,7 +52,7 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 
 ### Pendências
 - [ ] **27/11, 19h:** gerar o vídeo do Elias (reanexar a imagem e confirmar o custo).
-- [ ] **Shorts de GTA:** o usuário vai mandar trechos cortados no CapCut. Fazer Shorts de **até 30 s**, 9:16, **com o som do jogo** (sem música), sem marca d'água, editados aqui (ffmpeg + `/produzir-video`).
+- [x] **Shorts de GTA, parte 1:** 3 Shorts entregues (ver `projetos/gta-shorts-01/`). Mandar as próximas partes quando houver.
 - [ ] Testar o react-three-rapier, o react-postprocessing e o video-shotcraft num projeto real.
-- [ ] Salvar o script de instalação como ambiente da nuvem (aprovação pendente).
+- [x] Ambiente da nuvem **fluxo-de-edicao** criado com o script de instalação e o Google Drive liberado (aprovado pelo notebook em 21/11). Confirmar na próxima sessão nova que o script rodou sozinho.
 - [x] Levar tudo para o `main` (PR #1, mesclado em 21/11).
