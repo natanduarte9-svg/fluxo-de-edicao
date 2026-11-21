@@ -35,14 +35,22 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 | **YouTube Create** | Não há conexão com ele. O app do YouTube (Shorts) tem "foto para vídeo" grátis; dá para testar pelo celular |
 | Envio ao GitHub falhou (403) | Voltou a funcionar depois de reconectar o GitHub |
 | ClaudeAnimationBase sem placa de vídeo | `--soft-gl` e Chromium do Playwright; ≈7 s por quadro |
+| **Google Drive** bloqueado pela rede | Liberar o Drive exige aprovar pelo **computador** (no celular não aparece a opção). Sem computador: anexar o arquivo no chat, ou usar ferramentas que baixam o link pelos servidores delas (OpusClip, Descript) |
+| Arquivo grande (gameplay de 2 h, 1,64 GB) | Não cabe como anexo. Melhor: cortar os melhores trechos no **CapCut** (20 s a 2 min, 1080p 30 fps) e anexar um por vez |
 
 ### Pesquisa: ferramentas de foto para vídeo com movimento real (nov/2026)
 - **Melhor qualidade (pagas):** Google Veo 3.1 (o mais realista), Kling 3.0 (melhor para pessoas; custo-benefício; 4K), Runway Gen-4.5 (uso profissional, controle de câmera).
 - **Com plano grátis:** Hailuo (créditos diários), Dreamina/CapCut, PixVerse, Luma Dream Machine (rascunhos rápidos), Pika 2.5 (até 15 s).
 - **Atenção:** o Sora (OpenAI) está sendo descontinuado. Planos grátis costumam ter marca d'água, resolução menor e restrição de uso comercial.
 
+### Contas e saldos (21/11/2026)
+- **OpusClip:** plano de teste, **90 minutos** de processamento (~1 min de saldo por minuto de vídeo). Aceita link do Google Drive e pode limitar o trecho (`rangeStart`/`rangeEnd`). No teste, os cortes podem sair com marca d'água.
+- **vidIQ:** 2 créditos (150 renovam em 27/11).
+- **ElevenLabs:** plano grátis, sem geração de vídeo.
+
 ### Pendências
 - [ ] **27/11, 19h:** gerar o vídeo do Elias (reanexar a imagem e confirmar o custo).
+- [ ] **Shorts de GTA:** o usuário vai mandar trechos cortados no CapCut. Fazer Shorts de **até 30 s**, 9:16, **com o som do jogo** (sem música), sem marca d'água, editados aqui (ffmpeg + `/produzir-video`).
 - [ ] Testar o react-three-rapier, o react-postprocessing e o video-shotcraft num projeto real.
 - [ ] Salvar o script de instalação como ambiente da nuvem (aprovação pendente).
-- [ ] Opcional: levar este branch para o `main` (pull request).
+- [x] Levar tudo para o `main` (PR #1, mesclado em 21/11).
