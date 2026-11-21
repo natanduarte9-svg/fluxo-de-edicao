@@ -121,6 +121,9 @@ sh ~/.claude/plugins/cache/lemolab/lemo-opuscar/*/skills/lemo-opuscar/scripts/se
 git clone --depth 1 https://github.com/Vincentwei1021/video-shotcraft ~/video-shotcraft
 mkdir -p ~/.claude/skills && ln -sfn ~/video-shotcraft ~/.claude/skills/video-shotcraft
 
+# A palavra-mestra /produzir-video (skill deste repositório)
+ln -sfn "$(pwd)/skills/produzir-video" ~/.claude/skills/produzir-video   # rode na raiz do fluxo-de-edicao
+
 # Kit de bibliotecas (física, pós-processamento, batida)
 mkdir -p ~/motion-kit && cd ~/motion-kit
 uv venv .venv && uv pip install --python .venv/bin/python librosa
