@@ -1,7 +1,7 @@
 #!/bin/bash
 # make.sh <saida> <inicio_s> <fim_s> "<linha1>" "<linha2>"
 set -e
-SRC=parte-drive.mp4; OUT=$1; S=$2; E=$3; L1=$4; L2=$5
+SRC=${SRC:-parte-drive.mp4}; OUT=$1; S=$2; E=$3; L1=$4; L2=$5
 D=$(echo "$E - $S" | bc)
 FONT=/usr/share/fonts/opentype/inter/InterDisplay-Black.otf
 [ -f $FONT ] || FONT=/usr/share/fonts/opentype/inter/InterDisplay-Bold.otf
