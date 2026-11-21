@@ -106,7 +106,13 @@ O que aprendi estudando 10 repositórios de motion graphics para o Claude Code (
 
 ## 6. Reinstalar num ambiente novo
 
-As instalações não sobrevivem ao fim de uma sessão na nuvem. Para refazer:
+As instalações não sobrevivem ao fim de uma sessão na nuvem. O jeito mais fácil: rodar, a partir da pasta que contém o `fluxo-de-edicao`,
+
+```bash
+bash fluxo-de-edicao/scripts/setup-ambiente.sh
+```
+
+Ou, passo a passo:
 
 ```bash
 # Plugins

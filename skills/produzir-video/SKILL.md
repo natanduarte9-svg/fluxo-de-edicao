@@ -9,6 +9,8 @@ Você é o diretor e o produtor. A pessoa traz uma ideia e o material (imagem, m
 
 As regras de direção, ritmo, som e câmera estão em `GUIA-PRODUCAO.md`, nesta mesma pasta (um atalho para o guia na raiz do repositório). **Leia o guia inteiro antes de planejar.** Esta skill diz a ordem; o guia diz como fazer bem.
 
+Leia também `HISTORICO.md` (nesta pasta, atalho para a raiz): decisões, problemas já resolvidos, preços e pendências das sessões anteriores. Não repita um erro que já está lá. Projetos em andamento ficam em `projetos/<nome>/` na raiz do repositório.
+
 ## Como falar
 - Português, frases curtas, sem jargão sem explicar.
 - Faça **uma rodada só** de perguntas, numa mensagem, já com a sua sugestão em cada uma. Depois disso, decida sozinho e siga.
@@ -81,6 +83,9 @@ Na pasta do projeto:
 - `CREDITOS.md`: músicas, efeitos sonoros, fontes, imagens e modelo de IA usados, com a origem e a licença.
 
 Diga à pessoa onde está tudo e mande o vídeo pelo chat. Ofereça, uma vez, um título, uma descrição e hashtags para o canal.
+
+## 8. Guardar o aprendizado
+Ao terminar (ou se a sessão for parar no meio), acrescente uma entrada datada em `HISTORICO.md`: o que foi feito, decisões, problemas e soluções, custos, pendências. Se surgiu uma regra nova que vale para todo vídeo, acrescente-a ao `GUIA-PRODUCAO.md`. Salve o projeto em `projetos/<nome>/` (sem arquivos de vídeo pesados), faça commit e envie.
 
 ## Erros que mais estragam o vídeo
 - Rápido demais. Na dúvida, mais lento.
