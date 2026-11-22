@@ -6,7 +6,7 @@ import math, os, sys
 from PIL import Image, ImageDraw, ImageFont
 
 OUT = sys.argv[1]; os.makedirs(OUT, exist_ok=True)
-FPS, DUR = 30, 4.0
+FPS, DUR = 30, 5.6
 W, H = 760, 300                      # quadro do sticker (com folga para rotação/cursor)
 CW, CH = 560, 120                    # cartão
 FB = ImageFont.truetype("/usr/share/fonts/opentype/inter/Inter-Black.otf", 34)
@@ -72,7 +72,7 @@ n = int(FPS * DUR)
 for i in range(n):
     t = i / FPS
     if t < 0.35: sc = ease_out_back(clamp(t / 0.35))
-    elif t > 3.6: sc = 1 - clamp((t - 3.6) / 0.4) ** 2
+    elif t > DUR - 0.4: sc = 1 - clamp((t - (DUR - 0.4)) / 0.4) ** 2
     else: sc = 1.0
     subscribed = t >= 1.6
     press = max(0.0, 1 - abs(t - 1.6) / 0.12)
@@ -85,7 +85,7 @@ for i in range(n):
         cc = c.resize((cw, ch), Image.LANCZOS).rotate(-4, resample=Image.BICUBIC, expand=True)
         frame.alpha_composite(cc, ((W - cc.width) // 2, (H - cc.height) // 2))
     # cursor: entra de baixo-direita, vai ao botão, clica, sai
-    if 0.9 <= t <= 3.5:
+    if 0.9 <= t <= 3.2:
         tx, ty = W // 2 - 20, H // 2 + 5
         sx, sy = W - 90, H - 60
         p = clamp((t - 0.9) / 0.6); p = 1 - (1 - p) ** 3

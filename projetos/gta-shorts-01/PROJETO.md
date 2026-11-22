@@ -17,7 +17,7 @@
 - Com 1:06 passa de 1 minuto. O YouTube aceita Shorts de até 3 minutos, mas o ideal é até 60 s.
 
 ## Sticker "Inscreva-se" (pedido do usuário)
-`short-fuga-cais-sticker.mp4`: sticker animado (cartão branco, joinha, botão vermelho INSCREVA-SE → clique → INSCRITO, sino balança), 4 s, aos **0:04** e **0:40**. Fica no topo (overlay em x=160, y=110), acima do título. Gerado por `ferramentas/sticker-inscreva.py` (Pillow, PNGs com transparência a 30 fps).
+`short-fuga-cais-sticker.mp4`: sticker animado (cartão branco, joinha, botão vermelho INSCREVA-SE → clique → INSCRITO, sino balança), **5,6 s na tela (pedido do usuário: no mínimo 5 s)**, aos **0:04** e **0:40**. Fica no topo (overlay em x=160, y=110), acima do título. Gerado por `ferramentas/sticker-inscreva.py` (Pillow, PNGs com transparência a 30 fps).
 
 ## Como foi feito (`make.sh`)
 - Escolha dos momentos: folha de contato a cada 5 s no vídeo todo, depois a cada 1 s nos candidatos.
