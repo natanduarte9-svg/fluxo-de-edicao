@@ -31,6 +31,20 @@ Construído por engenharia reversa dos Shorts de 21–22/11/2026 (`projetos/gta-
 ## Transições
 - Ao juntar trechos: fade de 0,3 s na imagem e no som.
 
+## ★ Referência de qualidade feita pelo usuário (23/11/2026) — "é assim que eu quero"
+Vídeo `minhaproducao.mp4` (30 s, 9:16), feito por ele no **YouTube Create + CapCut**. Quadros: `assets/gta-ref-usuario-mapa-carro.jpg`.
+**Estrutura (uma tomada contínua, sem cortes secos):**
+1. **0–8 s — mapa realista estilo satélite** de Leonida (relevo, mar turquesa, nomes das regiões), câmera **aproximando devagar** com **nuvens passando**; narração-gancho: "Você... para conhecer uma das máquinas mais impressionantes do GTA 6? Hoje vamos falar do Grotti Cheetah... **preste atenção no mapa e acompanhe**".
+2. **8–13 s — mergulho** até a região (Port Gellhorn): o mapa vira **vista aérea 3D da cidade**, "é aqui que vamos investigar a localização desse supercarro".
+3. **13–14 s — transição atravessando as nuvens** (a câmera desce do céu para a rua).
+4. **14–16 s — cidade ao pôr do sol**, câmera descendo até o prédio: "agora olha só essa..."
+5. **16–30 s — o carro em cena de cinema** (branco com faixa vermelha, chão molhado, palmeiras, hotel curvo), câmera **avançando/girando devagar** até um close na frente; **faróis acendendo** no final.
+6. **Final:** pergunta para comentar ("e você teria esse carro na sua garagem? comenta") + **sticker de inscrição** (canto superior direito) nos últimos ~7 s.
+**Texto na tela:** legenda **no topo** (y ≈ 15–25%), caixa alta, fonte condensada pesada, **branca com a palavra-chave em amarelo** e contorno preto, poucas palavras por vez.
+**O que isso ensina (padrão a seguir):** cenas **realistas e cinematográficas** (não desenho), **um movimento contínuo de câmera do macro ao detalhe** (mapa → cidade → rua → carro), transições que **viajam pelo espaço** (nuvens), narração que **conduz o olhar** ("preste atenção no mapa"), revelação do carro como clímax e CTA no fim.
+**Pontos a melhorar quando fizermos o nosso:** volume estava em **−18,6 LUFS** (usar −14); legenda quebrava palavra no meio ("M / ÁQUINAS", "PRESENÇ / A") e juntava palavras ("PRESTEATENÇÃO"); nome do carro saiu "GROTCHITA" (escrever "Grotti Cheetah"); exportar em **1080×1920** (veio em 720×1280).
+**Como reproduzir esse nível aqui:** cena aérea/mapa realista e o carro com movimento → **IA de vídeo** (vidIQ Veo/MiniMax, ou YouTube Create no celular, conforme o rodízio grátis); mergulho mapa→cidade e travessia das nuvens → **three.js** (plano com textura do mapa + partículas de nuvem volumétrica + transição) ou IA de vídeo com quadro inicial/final; montagem, legenda karaokê sincronizada (edge-tts dá o tempo de cada palavra), sticker, −14 LUFS e 1080×1920 → **aqui, em código**.
+
 ## Formato "Aula de GTA" (lousa própria) — teste de 22/11/2026
 - ★ **Não copiar o vídeo de referência de outra pessoa:** aproveitar só o estilo; usar voz, roteiro, cenário e transições próprios. Ver `projetos/gta-aula/PROJETO.md`.
 
