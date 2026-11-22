@@ -57,13 +57,14 @@ Construído por engenharia reversa dos Shorts de 21–22/11/2026 (`projetos/gta-
 
 ### ★ Passo a passo do usuário no YouTube Studio (gravação de 22/11/2026, usando o Short "OS CARROS VOARAM DA PONTE" só como EXEMPLO)
 - ★ **Cada vídeo tem o seu próprio título, descrição, tags e hashtags**, criados para aquele vídeo. Nunca reaproveitar os do exemplo.
-- ★ **O "vídeo relacionado" dos Shorts é o vídeo longo do mesmo conjunto** (o longo de onde os Shorts saíram), não um vídeo qualquer.
+- ★ **O "vídeo relacionado" dos Shorts é o vídeo longo do mesmo conjunto.** ★ **Por enquanto, no Jogatina Fácil, os Shorts apontam para as LIVES de GTA do usuário** (os vídeos longos do canal são as transmissões ao vivo). Perguntar qual live usar em cada Short.
+- ★ **Miniatura:** nenhuma nos Shorts; por enquanto também não há miniatura a fazer no canal (os longos são as lives).
 Feito em **studio.youtube.com** (versão de computador, no navegador do celular):
 1. **Criar → Enviar vídeos** → escolher o arquivo (pasta Downloads).
 2. **Detalhes:**
    - **"Reutilizar detalhes"** de um vídeo anterior do canal (aproveita configurações) e depois troca o que for do vídeo novo.
    - **Título** e **descrição** colados (os do pacote preparado).
-   - **Miniatura:** quadro do próprio vídeo (o do título "OS CARROS VOARAM / DA PONTE!").
+   - ★ **Miniatura: não precisa nos Shorts** (deixar a automática).
    - **Playlist:** **GTA6**.
    - **Público:** **"Não é conteúdo para crianças"**.
    - **"Mostrar mais"** → **Promoção paga: "Não, meu vídeo não inclui promoção paga"**.
