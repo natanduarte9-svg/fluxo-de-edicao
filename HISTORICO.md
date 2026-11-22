@@ -59,7 +59,7 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 
 ### 22/11/2026: publicação automática
 - **GTA (JOGATINA FACIL):** já estava no vidIQ do Claude, com permissão de publicar.
-- **FIRE & GRACE:** o vidIQ recusou (plano grátis = 1 canal; o canal já estava em outra conta vidIQ, a natanmusicagospel). **Conectado no Metricool** (marca 8216784) pelo notebook. Melhores horários: 16h em dias úteis (quarta/quinta mais fortes).
+- **FIRE & GRACE:** o vidIQ recusou (plano grátis = 1 canal; o canal já estava em outra conta vidIQ, a natanmusicagospel). **Conectado no Metricool** (marca 8216784) pelo notebook. Os horários do Metricool (16h/10h) eram média geral, não do canal (erro corrigido). Manter o padrão do usuário (longo 19h40, Shorts após 20h) até chegarem os prints do YouTube Studio.
 - Liberado `mcp.vidiq.com` no ambiente (envio de arquivos ao vidIQ).
 - **YouTube Create não tem conexão** (app de celular). Alternativa: Veo/MiniMax pelo vidIQ, ou o usuário gera no app e manda pelo Drive.
 
@@ -73,6 +73,7 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - [x] **Shorts de GTA, parte 1:** 3 Shorts entregues (ver `projetos/gta-shorts-01/`). Mandar as próximas partes quando houver.
 - [ ] Completar o `manifestos/fire-grace.md` com o usuário (8 perguntas no fim do arquivo).
 - [ ] Montar uma **biblioteca de efeitos sonoros com dicionário** (CC0, ex.: Freesound pelo `sfx-source.py` do video-shotcraft) para GTA e FIRE & GRACE.
+- [ ] Receber os prints do YouTube Studio ("Quando seus espectadores estão no YouTube") dos dois canais e definir os horários nos manifestos.
 - [ ] Testar o react-three-rapier, o react-postprocessing e o video-shotcraft num projeto real.
 - [x] Ambiente da nuvem **fluxo-de-edicao** criado com o script de instalação e o Google Drive liberado (aprovado pelo notebook em 21/11). Confirmar na próxima sessão nova que o script rodou sozinho.
 - [x] Levar tudo para o `main` (PR #1, mesclado em 21/11).

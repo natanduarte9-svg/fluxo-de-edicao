@@ -115,8 +115,9 @@ Short 9:16, 2160×3840, 60 fps, 46,2 s, −13,8 LUFS. Folha de quadros a cada 0,
 ## Publicação (conectado em 22/11/2026)
 - **Canal no YouTube:** FIRE & GRACE (`UCu2-et8aU5qh8zUYBAxkDDg`), conta Google natanmusicagospel@gmail.com.
 - **Agendamento pelo Metricool** (marca `8216784`, dona: natanduarte9@gmail.com, fuso America/Sao_Paulo). O vidIQ do Claude não aceita um 2º canal no plano grátis.
-- **Melhores horários (Metricool, público do canal):** pico às **16h** de segunda a sexta (o mais forte: **quarta e quinta 16h**); segundo pico às **10h**. Fim de semana bem mais fraco (melhor 16h).
-- **Agenda sugerida:** vídeo longo **quarta 16h**; os 3 Shorts **quinta 16h, sexta 10h e sábado 16h** (ou segunda/terça 16h da semana seguinte).
+- **Horários atuais do usuário (usar até termos dados reais):** vídeo longo **19h40**; Shorts **depois das 20h**; às vezes **8h10/8h15**.
+- ⚠️ Os "melhores horários" do Metricool (16h/10h) **não são do canal**: o canal acabou de ser conectado e ele ainda não tem dados; é média geral. **Não usar.**
+- **Fonte certa:** YouTube Studio → Análises → Público → "Quando seus espectadores estão no YouTube" (prints pendentes; ou vidIQ `channel_analytics_extended` report=audience, 5 créditos).
 - **Para agendar:** o vídeo pronto precisa de um link público (ex.: Google Drive compartilhado); o Metricool importa. Sempre mostrar a agenda e esperar o "sim" do usuário.
 
 ## Pendente
