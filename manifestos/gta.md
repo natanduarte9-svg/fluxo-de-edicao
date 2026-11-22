@@ -29,6 +29,11 @@ Construído por engenharia reversa dos Shorts de 21–22/11/2026 (`projetos/gta-
 ## Transições
 - Ao juntar trechos: fade de 0,3 s na imagem e no som.
 
+## Formato "lousa" (didático) — testado em 22/11/2026, aprovado como direção
+- Referência do usuário: Reel "Emulador de Xbox" (Instagram). Estrutura: **quadro-negro de giz** no gancho → **quadro verde** com título de desenho + **monitor no pedestal** + selos + estrelinhas → **transição de papel** desenhando o próximo monitor → final "SEGUE!/COMENTA!". **Etiqueta amarela** ("• CARRO 1 · LOCAL") acima da **legenda** na faixa de terra, palavra falada em amarelo.
+- Didático: o monitor mostra **primeiro o que é** (foto) e **depois onde fica** (mapa com pino e círculo de giz), no ritmo da narração.
+- Base em código: `projetos/gta-mapa-exoticos/render_lousa.py`.
+
 ## Publicação
 - **Canal:** JOGATINA FACIL (`UCUVvM4v7SHp-wxtsFYrEmWA`, @natanduarte7304), **conectado ao vidIQ do Claude com permissão de publicar** (desde 22/11/2026). Upload e agendamento pelo vidIQ (`vidiq_video_upload` + `vidiq_social_post_*`), sempre com o "sim" do usuário.
 
