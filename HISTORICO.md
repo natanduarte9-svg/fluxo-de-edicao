@@ -45,6 +45,10 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - **Com plano grátis:** Hailuo (créditos diários), Dreamina/CapCut, PixVerse, Luma Dream Machine (rascunhos rápidos), Pika 2.5 (até 15 s).
 - **Atenção:** o Sora (OpenAI) está sendo descontinuado. Planos grátis costumam ter marca d'água, resolução menor e restrição de uso comercial.
 
+### Ferramentas próprias criadas
+- `ferramentas/short-gameplay.sh`: corta um trecho, põe título em 2 linhas abaixo do sticker do canal, 1080×1920, −14 LUFS.
+- `ferramentas/sticker-inscreva.py`: sticker animado "Inscreva-se" em PT-BR (4 s, transparente). Aplicar com `overlay=160:110` no momento desejado.
+
 ### Contas e saldos (21/11/2026)
 - **OpusClip:** plano de teste, **90 minutos** de processamento (~1 min de saldo por minuto de vídeo). Aceita link do Google Drive e pode limitar o trecho (`rangeStart`/`rangeEnd`). No teste, os cortes podem sair com marca d'água.
 - **vidIQ:** 2 créditos (150 renovam em 27/11).
