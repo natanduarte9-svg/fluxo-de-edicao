@@ -157,6 +157,24 @@ Pesquisa de 22/11/2026 (repositório `sandbase-lab/awesome-fable-5-2`, relatos d
 
 **Importante:** o Fable **não serve de reserva para quando faltar limite**. Ele gasta mais. A reserva barata é o **Sonnet 5.5**.
 
+### O que o Matt Penny mediu ("Claude Fable 5.2 Just Changed Motion Graphics Forever", transcrição lida em 22/11/2026)
+- **Velocidade e custo:** na assinatura, o Fable 5.2 foi **~5x mais lento** e **~3 a 4x mais caro** que o Opus 5.5 para gerar o mesmo vídeo. Na API: Opus US$ 20 e Fable US$ 40 por milhão de tokens de saída.
+- **Qualidade:** melhor (reflexos, iluminação, acabamento "premium"), mas **não é um salto enorme quando você usa os repositórios certos, referências e boas ferramentas**. Em vários testes, sem as etiquetas, ele não saberia dizer qual era qual. Diferença clara: cenas isométricas e 3D detalhadas.
+- **Lançamento:** a Anthropic dá *resets* grátis no modelo novo; no começo ele tende a estar mais rápido e mais barato do que nunca.
+- **Conclusão dele:** nem tudo precisa do Fable. Use quando a peça pede o detalhe extra.
+
+### Como gastar menos (o que mais desperdiça é refazer)
+1. **Manifesto de vídeo** (a dica nº 1): um arquivo com o seu jeito de fazer vídeo: ritmo, cores, espaçamento, tipografia, transições de entrada e saída, efeitos sonoros, música, e exemplos de vídeos anteriores. Com ele, o primeiro resultado já sai certo e não precisa refazer 3 ou 4 vezes. Dá para criar a partir de vídeos que você já editou (engenharia reversa) ou respondendo perguntas. **Os nossos ficam em `manifestos/`.**
+2. **Fable planeja, Opus executa:** o modelo mais inteligente faz o plano (roteiro, storyboard, decisões) e o Opus constrói. Mais barato e mais rápido.
+
+### As dicas dele (valem para qualquer modelo)
+1. **Seja específico:** pense no que quer e descreva com o máximo de detalhe.
+2. **Fale em vez de digitar:** pelo **microfone** do app. Falando, você dá mais contexto naturalmente, e é mais rápido.
+3. **Use o manifesto de vídeo.**
+4. **Mande referências:** print de um estilo de que gostou, ou o link de um vídeo para analisar.
+5. **Storyboard antes de vídeos longos:** ver os quadros-chave antes de gastar tempo e dinheiro.
+6. **Conecte ferramentas de IA:** vídeo/imagem por IA (Higgsfield, TopView, fal) e ElevenLabs para música e efeitos sonoros.
+
 **Como trocar de modelo no Claude Code:** digite `/model` e escolha; ou toque no nome do modelo embaixo da caixa de mensagem (ex.: "Opus 5.5 Médio"). Todas as skills, o guia e as ferramentas funcionam igual em qualquer modelo.
 
 **O que dizem do Fable 5.2:** mais detalhe, movimento e mecânica de jogo do que o Opus 5.5 ("um salto"); às vezes resolve em esforço *medium* o que o Opus precisava de *max*. Mesmo assim, ele **não assiste vídeo**: revisa quadros parados. Peça sempre a folha de quadros.

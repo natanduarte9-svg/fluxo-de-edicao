@@ -16,6 +16,7 @@ Depois diga à pessoa para recarregar a sessão, se a skill ainda não aparecer.
 |---|---|
 | `GUIA-PRODUCAO.md` | As regras de produção (ritmo, som, câmera, o que evitar) e os repositórios de motion graphics |
 | `HISTORICO.md` | Diário das sessões: decisões, problemas já resolvidos, preços, **pendências** |
+| `manifestos/` | **O jeito de fazer vídeo de cada canal** (GTA, FIRE & GRACE). Ler antes de qualquer vídeo |
 | `projetos/<nome>/` | Projetos de vídeo em andamento (ex.: `elias-altar-fogo`) |
 | `scripts/setup-ambiente.sh` | Reinstala todas as ferramentas |
 | `SKILL.md` (raiz) | A skill original `/fluxo-de-edicao` (montar o fluxo de edição) |
