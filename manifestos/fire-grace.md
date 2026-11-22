@@ -112,6 +112,38 @@ Short 9:16, 2160×3840, 60 fps, 46,2 s, −13,8 LUFS. Folha de quadros a cada 0,
 - Logo em PNG transparente: `assets/fire-grace-logo.png` (410×410).
 - **Uso nos Shorts:** escurecer a cena até o preto (~0,7 s), colar o cartão, deixar a música seguindo; a legenda karaokê pode continuar por cima, como na referência 2. Contar os 6 s do cartão dentro do limite de 35 s do Short.
 
+## Publicação (conectado em 22/11/2026)
+- **Canal no YouTube:** FIRE & GRACE (`UCu2-et8aU5qh8zUYBAxkDDg`), conta Google natanmusicagospel@gmail.com.
+- **Agendamento pelo Metricool** (marca `8216784`, dona: natanduarte9@gmail.com, fuso America/Sao_Paulo). O vidIQ do Claude não aceita um 2º canal no plano grátis.
+- ★ **Agenda fixa de cada música (definida pelo usuário em 22/11/2026):**
+  | Dia | Hora | O que |
+  |---|---|---|
+  | Dia 1 | **19h40** | **Vídeo longo** (16:9) — sempre o primeiro |
+  | Dia 1 | **20h00** | **Short 1** |
+  | Dia 2 | **20h00** | **Short 2** |
+  | Dia 3 | **20h00** | **Short 3** |
+- ★ **Todo Short leva ao vídeo longo do Dia 1:** usar o recurso **"Vídeo relacionado"** do Short no YouTube Studio (aparece como link embaixo do Short) apontando para o longo, além do cartão final "assista o vídeo completo clicando no título" e um link para o longo na descrição. O vídeo relacionado só pode ser escolhido **depois** que o longo estiver publicado (ou agendado), então agendar o longo primeiro.
+- ⚠️ Os "melhores horários" do Metricool (16h/10h) **não são do canal**: o canal acabou de ser conectado e ele ainda não tem dados; é média geral. **Não usar.**
+- **Fonte certa:** YouTube Studio → Análises → Público → "Quando seus espectadores estão no YouTube". **Em 21/11/2026 ainda dizia "Não há dados suficientes"**. Olhar de novo daqui a algumas semanas.
+- **Público (Studio, últimos 28 dias, em 21/11/2026):** 1,8 mil espectadores por mês; +77 inscritos; **97,7% novos espectadores**; **85% no celular** (8,7% TV); **86% Brasil**; idade: **35–44 (28%)**, **25–34 (25,6%)**, 45–54 (15,9%), 13–17 (15%), 55–64 (11,5%); **60% mulheres**. Vídeos mais vistos: "À MEIA-NOITE EU VOU TE..." (1,4 mil) e "ELE MORREU POR AMOR" (1,1 mil).
+- **Leitura:** adultos de 25 a 54 anos, no celular → o horário do usuário (**19h40 / depois das 20h**, à noite depois do trabalho, e **8h10** no começo do dia) faz sentido. Manter.
+- **Para agendar:** o vídeo pronto precisa de um link público (ex.: Google Drive compartilhado); o Metricool importa. Sempre mostrar a agenda e esperar o "sim" do usuário.
+
+## ★ Checklist de publicação no YouTube (pedido do usuário em 22/11/2026, vale para os dois canais)
+1. **Título chamativo** (até 100 caracteres).
+2. **Descrição:** convite para **se inscrever**; contar um pouco do que acontece no vídeo; **uma pergunta para as pessoas comentarem**; **hashtags** no fim (as 3 primeiras aparecem acima do título). Nos Shorts, também o link do vídeo longo.
+3. **Tags:** campo "Tags" do YouTube, **até 500 caracteres no total** (é esse o limite do YouTube; a descrição é que vai até 5.000).
+4. **"Contém promoção paga": NÃO** (desmarcado).
+5. ★ **"Conteúdo alterado ou sintético" (uso de IA): SIM** — no FIRE & GRACE as cenas são criadas com IA (decidido pelo usuário em 22/11/2026). Vale para o longo e para os Shorts.
+6. Público: **"Não é conteúdo para crianças"**.
+7. **Esperar o processamento chegar a 100%** antes de mexer na visibilidade.
+8. Visibilidade: **Público**, com **programação** (data e hora da agenda).
+9. Só então apertar **"Programar"**.
+- Pelo Metricool/vidIQ, isso equivale a: `privacy: public` na data agendada, `madeForKids: false`, `isAiGeneratedContent: true`, sem promoção paga; conferir no Studio depois que o vídeo processar.
+
+- ★ **Miniatura:** **só no vídeo longo**, usando a **imagem de referência que o usuário enviar** (não criar outra). **Shorts: sem miniatura.**
+- O passo a passo no YouTube Studio é o mesmo do GTA (ver `manifestos/gta.md`), trocando: **Uso de IA: "Sim"**, **categoria: Música**, playlist do canal gospel.
+
 ## Pendente
 - [x] Vídeo de referência estudado (seção acima).
 - [x] Encerramento original recebido e traduzido; logo extraído em boa qualidade.
