@@ -70,6 +70,7 @@ O que aprendi estudando 10 repositórios de motion graphics para o Claude Code (
 22. **Fugir do "piano e cordas genérico".**
 
 ### Elementos do canal
+- **Acentos nas legendas:** usar fonte com todos os acentos maiúsculos (Ã, Õ, É, Í, À...). O CapCut já saiu com "NãO" e "PRISãO" por falta deles. Sempre conferir num quadro.
 - **Nunca cobrir o sticker de "se inscrever"** nem outros elementos que o usuário colocou no CapCut. Antes de pôr título ou efeito, olhar os quadros onde eles aparecem e deixar espaço.
 
 ### O que evitar (cara de template de IA)

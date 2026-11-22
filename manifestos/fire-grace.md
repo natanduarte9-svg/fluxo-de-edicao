@@ -59,6 +59,46 @@ Short "Deus Ainda Responde com Fogo", editado no CapCut: 2160×3840 (9:16, 4K), 
 ### Som
 - Só a música (o hino), sem efeitos sonoros. Volume ≈ −14 LUFS.
 
+## Referência 2: "Paulo e Silas na prisão" (YouTube Create) — **o padrão de vídeo com movimento**
+Short 9:16, 2160×3840, 60 fps, 46,2 s, −13,8 LUFS. Folha de quadros a cada 0,5 s: `assets/fire-grace-ref2-folha.jpg`. **Este é o modelo de "como eu quero" para vídeos com movimento criados do zero.**
+
+### Estrutura: história bíblica contada em cenas (Atos 16, meia-noite na prisão)
+| Tempo | Cena | Plano e câmera |
+|---|---|---|
+| 0–5 s | Paulo ajoelhado, braços erguidos, orando na cela; tocha acesa, luz azul da janela gradeada | Plano médio-aberto, câmera parada/leve aproximação |
+| 5–10 s | Rosto de Paulo cantando, com lágrimas; companheiros atrás | **Close**, aproximação lenta |
+| 10,5–20 s | Paulo e os presos à luz azul da lua; ele canta e ergue as mãos; termina em close emocionado | Plano médio → close |
+| 20–24 s | **Terremoto:** a parede racha, pedras voam, o companheiro segura Paulo | Plano médio com tremor |
+| 24,5–28 s | **Portas de ferro e correntes caem**, a porta se abre e entra luz azul | Detalhe da porta, sem pessoas |
+| 28,5–30 s | Os dois olham para cima, espantados | Plano médio |
+| 30–39,5 s | Os dois de pé, portas abertas, **a luz do céu inunda a cela**, ficando dourada e branca; mãos erguidas em adoração | **Plano aberto simétrico**, clímax |
+| 40 s | **Clarão branco com partículas** (transição) | — |
+| 40,5–46 s | Cartão final animado | — |
+
+- **8 cenas em ~40 s** (uma a cada 4–6 s). Mesmo personagem do começo ao fim (cabelo, barba, túnica vermelha e bege).
+- **A história acompanha a letra:** "à meia-noite eu vou te adorar" (oração) → "correntes tentem me…" (presos) → "o impossível começa a acontecer" (terremoto) → "nenhuma corrente vai me prender" (portas caem) → "as cadeias vão cair, as portas vão se abrir" (luz) → "eu nasci pra te adorar" (final).
+- **Luz conta a história:** azul-frio e escuro na prisão → dourado-quente e branco no milagre.
+- **Transições:** dissolve suave (~0,5 s) entre as cenas; **clarão branco com partículas** antes do encerramento.
+
+### Legenda karaokê (`assets/fire-grace-ref2-legenda.jpg`)
+- Fonte **geométrica arredondada e pesada** (tipo Montserrat Black/Poppins ExtraBold), caixa alta, **branca** com **brilho/sombra escura**.
+- **Palavra cantada em amarelo (#FFFF00) com brilho amarelo**; poucas palavras por vez (2–4), em 1–2 linhas.
+- Posição: **centro, a ~75% da altura**. A legenda **continua no cartão final** (sobre o preto).
+- ⚠️ **Erro a não repetir:** a fonte do CapCut não tinha acentos maiúsculos e saiu "NãO", "PRISãO", "IMPOSSíVEL", "Fé". **Usar fonte com acentos completos** (Montserrat/Poppins/Anton têm) e conferir "NÃO", "PRISÃO", "FÉ", "À".
+
+### Sticker
+- Sticker do CapCut no **canto superior direito**, de **~6 s a ~10,5 s**, menor que no vídeo 1.
+
+### Encerramento animado (`assets/fire-grace-ref2-encerramento*.jpg`)
+1. 40,5 s: o **logo surge com um clarão de fogo** e o botão do YouTube aparece.
+2. 42–43,5 s: as pílulas **LIKE** e **SUBSCRIBE** deslizam para fora do botão.
+3. 44 s: **"FIRE & GRACE"** em amarelo com brilho.
+4. 44,5 s: o texto se escreve com brilho amarelo e fica **"assista o vídeo completo clicando no título ."** (branco com brilho amarelo, minúsculas).
+- Botões em inglês aqui (LIKE/SUBSCRIBE); no vídeo 1, em português (INSCREVA-SE). **Padrão a usar: português** (confirmar com o usuário).
+
+### Som
+- Só a música. A música segue tocando no cartão final.
+
 ## Pendente
 - [x] Vídeo de referência estudado (seção acima).
 - [ ] Pedir ao usuário o **arquivo original do logo** (o recorte do vídeo está em baixa qualidade).
