@@ -2,7 +2,7 @@
 import math, os, sys
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageEnhance
 
-W, H, FPS, DUR = 1080, 1920, 30, 22.0
+W, H, FPS, DUR = 1080, 1920, 30, 24.5
 T = "thumbs/"
 OUT = "frames"; os.makedirs(OUT, exist_ok=True)
 FB = "/usr/share/fonts/opentype/inter/InterDisplay-Black.otf"
@@ -42,8 +42,8 @@ def back(x):
 def lerp(a, b, k): return a + (b - a) * k
 
 # câmera: (tempo, cx, cy, zoom)
-KEYS = [(0.0, 250, 360, 1.00), (3.2, 250, 340, 1.12), (4.4, 420, 300, 2.6),
-        (10.6, 418, 300, 2.7), (11.8, 330, 300, 2.6), (18.2, 332, 300, 2.7), (19.4, 352, 330, 1.35), (22.0, 352, 330, 1.42)]
+KEYS = [(0.0, 250, 360, 1.00), (4.2, 250, 340, 1.14), (5.4, 420, 300, 2.6),
+        (12.1, 418, 300, 2.7), (13.3, 330, 300, 2.6), (20.4, 332, 300, 2.7), (21.6, 352, 330, 1.35), (24.5, 352, 330, 1.42)]
 def camera(t):
     for (t0, x0, y0, z0), (t1, x1, y1, z1) in zip(KEYS, KEYS[1:]):
         if t0 <= t <= t1:
@@ -89,6 +89,42 @@ def card(img, t, t_in, t_out, ph, name, sub, l1, l2):
     d.text((40, 608), l2, font=mont(32, "SemiBold"), fill=(200, 200, 205), anchor="ls")
     img.alpha_composite(panel, (40, y0))
 
+
+# ---------- legendas sincronizadas com a narração ----------
+import json as _json
+VOZ = {"l0": 0.25, "l1": 5.5, "l2": 13.4, "l3": 21.7}
+_W = _json.load(open("voz/words.json"))
+WORDS = []
+for k, off in VOZ.items():
+    for w, a, b in _W[k]:
+        disp = w.replace("seis.", "6.").replace("seis", "6")
+        WORDS.append((disp.upper(), off + a, off + b, k))
+GROUPS = []; cur = []
+for wd in WORDS:
+    glue = cur and cur[-1][0] == "GTA"
+    if cur and not glue and (len(cur) >= 3 or sum(len(x[0]) + 1 for x in cur) + len(wd[0]) > 20 or cur[-1][3] != wd[3]
+                or cur[-1][0][-1] in ".,:?!"):
+        GROUPS.append(cur); cur = []
+    cur.append(wd)
+GROUPS.append(cur)
+F_CAP = ImageFont.truetype(FB, 70)
+def captions(img, t):
+    for gi, g in enumerate(GROUPS):
+        start = g[0][1]; end = g[-1][2] + 0.25
+        if gi + 1 < len(GROUPS) and GROUPS[gi + 1][0][3] == g[0][3]: end = min(end + 0.2, GROUPS[gi + 1][0][1])
+        if not (start <= t < end): continue
+        d = ImageDraw.Draw(img)
+        parts = [(w, a <= t) for w, a, b, _ in g]
+        cur_i = max([i for i, (w, a, b, _) in enumerate(g) if a <= t] or [0])
+        widths = [d.textlength(w, font=F_CAP) for w, _ in parts]; sp = 22
+        tw = sum(widths) + sp * (len(parts) - 1); x = (W - tw) / 2; y = 880
+        band = Image.new("RGBA", img.size); ImageDraw.Draw(band).rounded_rectangle([x - 30, y - 6, x + tw + 30, y + 92], 24, fill=(0, 0, 0, 120))
+        img.alpha_composite(band); d = ImageDraw.Draw(img)
+        for i, (w, on) in enumerate(parts):
+            col = (255, 210, 31) if i == cur_i else (255, 255, 255) if on else (255, 255, 255, 110)
+            d.text((x, y), w, font=F_CAP, fill=col, stroke_width=9, stroke_fill=(0, 0, 0))
+            x += widths[i] + sp
+
 def frame(i):
     t = i / FPS
     cam = camera(t)
@@ -97,22 +133,23 @@ def frame(i):
     ov = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(ov)
     for y in range(0, 720, 10): d.rectangle([0, y, W, y + 10], fill=(0, 0, 0, int(215 * (1 - (y / 720) ** 1.6))))
     img.alpha_composite(ov)
-    pin(img, to_screen(PIN1, cam), 4.4, t, 1)
-    pin(img, to_screen(PIN2, cam), 11.9, t, 2)
+    pin(img, to_screen(PIN1, cam), 5.4, t, 1)
+    pin(img, to_screen(PIN2, cam), 13.4, t, 2)
     d = ImageDraw.Draw(img)
     # gancho (0–3,6 s) e chamada final (19,4 s+): sempre abaixo da faixa do sticker (y>=410)
-    if t < 3.6:
-        a = 1 if t < 3.3 else 1 - (t - 3.3) / 0.3
+    if t < 4.5:
+        a = 1 if t < 4.2 else 1 - (t - 4.2) / 0.3
         k = back(t / 0.35)
         f1 = F_TITLE.font_variant(size=int(40 + 48 * k))
         lay = Image.new("RGBA", (W, H)); dl = ImageDraw.Draw(lay)
         text_c(dl, 410, "2 SUPERCARROS", f1, (255, 255, 255)); text_c(dl, 515, "ESCONDIDOS NO GTA 6", f1, (255, 210, 31))
         lay.putalpha(Image.eval(lay.split()[3], lambda v: int(v * a))); img.alpha_composite(lay)
-    if t > 19.4:
-        k = back((t - 19.4) / 0.35); f1 = F_TITLE.font_variant(size=int(40 + 44 * k))
+    if t > 21.6:
+        k = back((t - 21.6) / 0.35); f1 = F_TITLE.font_variant(size=int(40 + 44 * k))
         text_c(d, 410, "QUAL VOCÊ PEGA", f1, (255, 255, 255)); text_c(d, 515, "PRIMEIRO? COMENTA!", f1, (255, 210, 31))
-    card(img, t, 4.9, 10.5, P1, "PROGEN EMERUS", "Royal Ruby", "Vespucci Mansion • Vespucci Island", "Na garagem da entrada da mansão")
-    card(img, t, 12.4, 18.1, P2, "PEGASSI INFERNUS", "", "Delegacia de Crosstown • Vice City", "7º andar do estacionamento • tem rastreador")
+    card(img, t, 5.9, 12.05, P1, "PROGEN EMERUS", "Royal Ruby", "Vespucci Mansion • Vespucci Island", "Na garagem da entrada da mansão")
+    card(img, t, 13.9, 20.35, P2, "PEGASSI INFERNUS", "", "Delegacia de Crosstown • Vice City", "7º andar do estacionamento • tem rastreador")
+    captions(img, t)
     img.convert("RGB").save(f"{OUT}/{i:04d}.jpg", quality=92)
 
 if __name__ == "__main__":

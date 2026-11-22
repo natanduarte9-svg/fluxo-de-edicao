@@ -4,6 +4,7 @@
 - Imagens tiradas de **miniaturas de vídeos do YouTube** (únicas imagens que a rede deixa baixar): mapa de fã de Leonida (vídeo gGvMUEJjKCs), Emerus (MBn2O8b2T2Y), Infernus na garagem (Hb6ZJf7Bpg4). **Uso só em teste privado**; para publicar, trocar pelos prints do jogo do usuário.
 - Mapa é **ilustração de fã** (com selos "Vice City", "Grassrivers"...): posições dos pinos são aproximadas.
 - Feito em código (`render.py`, PIL + ffmpeg): câmera com movimentos suaves, pinos que caem com quique, cartões com foto, título de gancho abaixo da faixa do sticker, sticker 5,6 s, pergunta para comentar no fim, trilha sintetizada (100 bpm) + whoosh, impactos e "ding". Ficou em −15,0 LUFS (alvo −14).
+- **Versão 2 (dublada), 24,5 s, −14,1 LUFS:** narração em português com a voz **Kokoro `pm_alex`** (grátis, offline; texto em `narracao.json`), legenda com a palavra falada em amarelo, música abaixada 12 dB sob a voz.
 
 ## Comparação carro por carro (22/11/2026)
 As páginas não puderam ser abertas aqui (rede bloqueia os sites); a comparação foi feita por buscas separadas para cada carro, cruzando o que cada site diz.

@@ -232,3 +232,10 @@ Antes de terminar: abra a página, corrija erros e garanta que a animação grav
   - **Área segura nos verticais 1080×1920:** tudo que importa entre **y=200 e y=1620** (fora disso, a interface do Shorts/TikTok cobre).
   - **Último quadro:** evitar quadro preto no final, porque o Shorts repete o vídeo em loop e o preto vira uma "piscada". Segurar o último quadro (no FIRE & GRACE o final já é o cartão preto do encerramento, então tudo bem).
   - Dois estilos prontos de legenda dele: (A) caixa preta arredondada com palavras surgindo uma a uma, no centro; (B) Inter Bold branca com contorno preto, sem caixa, baixa, 3–4 palavras por linha, sem animação.
+
+## 9. Narração e legenda sincronizada (aprendido no teste de 22/11/2026)
+- **Voz grátis em português do Brasil:** Kokoro (já instalado no lemo-opuscar) tem `pm_alex`, `pm_santa` (masculinas) e `pf_dora` (feminina). Rodar `core/tts/tts.py` com `"lang": "pt-br"`. Escrever números por extenso no texto da voz ("GTA seis") e em algarismo na legenda ("GTA 6").
+- **Tempo de cada palavra:** o modelo de transcrição (Whisper) não baixa aqui (Hugging Face bloqueado). Alternativa que funcionou: achar as pausas no áudio de cada frase e distribuir as palavras pelo tamanho. Para precisão total, liberar o Hugging Face no ambiente (pelo computador) e usar o faster-whisper.
+- **Mix:** voz comprimida e à frente; música **abaixada ~12 dB** enquanto há voz (ducking); efeitos nos movimentos de câmera.
+- **Legenda:** 2–3 palavras por vez, palavra falada em amarelo, faixa escura semitransparente atrás para ler sobre qualquer fundo; nunca em cima de cartão, título ou sticker.
+- **Imagens de referência:** sites de jogos são bloqueados; miniaturas do YouTube (`i.ytimg.com/vi/<id>/maxresdefault.jpg`) funcionam para testes.
