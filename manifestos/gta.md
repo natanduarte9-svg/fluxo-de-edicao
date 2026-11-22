@@ -29,7 +29,10 @@ Construído por engenharia reversa dos Shorts de 21–22/11/2026 (`projetos/gta-
 ## Transições
 - Ao juntar trechos: fade de 0,3 s na imagem e no som.
 
-## Formato "lousa" (didático) — testado em 22/11/2026, aprovado como direção
+## Formato "Aula de GTA" (lousa própria) — teste de 22/11/2026
+- ★ **Não copiar o vídeo de referência de outra pessoa:** aproveitar só o estilo; usar voz, roteiro, cenário e transições próprios. Ver `projetos/gta-aula/PROJETO.md`.
+
+## Formato "lousa" (didático) — primeiro teste de 22/11/2026 (parecido demais com a referência; usar a "Aula de GTA")
 - Referência do usuário: Reel "Emulador de Xbox" (Instagram). Estrutura: **quadro-negro de giz** no gancho → **quadro verde** com título de desenho + **monitor no pedestal** + selos + estrelinhas → **transição de papel** desenhando o próximo monitor → final "SEGUE!/COMENTA!". **Etiqueta amarela** ("• CARRO 1 · LOCAL") acima da **legenda** na faixa de terra, palavra falada em amarelo.
 - Didático: o monitor mostra **primeiro o que é** (foto) e **depois onde fica** (mapa com pino e círculo de giz), no ritmo da narração.
 - Base em código: `projetos/gta-mapa-exoticos/render_lousa.py`.
