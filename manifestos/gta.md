@@ -43,6 +43,18 @@ Construído por engenharia reversa dos Shorts de 21–22/11/2026 (`projetos/gta-
 - ★ **Todo Short leva ao vídeo longo do Dia 1:** "Vídeo relacionado" do YouTube apontando para o longo + link do longo na descrição. Agendar o longo primeiro.
 - Quando houver só Shorts soltos (sem vídeo longo), postar às **20h**, um por dia.
 
+## ★ Checklist de publicação no YouTube (pedido do usuário em 22/11/2026, vale para os dois canais)
+1. **Título chamativo** (até 100 caracteres).
+2. **Descrição:** convite para **se inscrever**; contar um pouco do que acontece no vídeo; **uma pergunta para as pessoas comentarem**; **hashtags** no fim (as 3 primeiras aparecem acima do título). Nos Shorts, também o link do vídeo longo.
+3. **Tags:** campo "Tags" do YouTube, **até 500 caracteres no total** (é esse o limite do YouTube; a descrição é que vai até 5.000).
+4. **"Contém promoção paga": NÃO** (desmarcado).
+5. **"Conteúdo alterado ou sintético" (uso de IA): NÃO**, conforme o usuário. ⚠️ Exceção a confirmar no FIRE & GRACE: cenas **realistas** geradas por IA (ex.: Elias com movimento real feito no vidIQ/Veo) entram na regra do YouTube que pede marcar "Sim"; avisar o usuário nesses casos antes de publicar.
+6. Público: **"Não é conteúdo para crianças"**.
+7. **Esperar o processamento chegar a 100%** antes de mexer na visibilidade.
+8. Visibilidade: **Público**, com **programação** (data e hora da agenda).
+9. Só então apertar **"Programar"**.
+- Pelo Metricool/vidIQ, isso equivale a: `privacy: public` na data agendada, `madeForKids: false`, `isAiGeneratedContent: false` (salvo a exceção acima), sem promoção paga; conferir no Studio depois que o vídeo processar.
+
 ## Entrega
 - MP4 H.264 + AAC, sem marca d'água, mandado pelo chat.
 - Ferramenta: `ferramentas/short-gameplay.sh`.
