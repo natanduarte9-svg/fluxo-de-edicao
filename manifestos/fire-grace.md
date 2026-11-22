@@ -17,8 +17,13 @@
 
 ### Em todos (longo e Shorts)
 - **Legendas estilo karaokê** (a palavra cantada acende no tempo da música).
+- **Som: só o MP3 da música** que o usuário envia.
 
-### Só nos Shorts
+### Só no vídeo longo (16:9)
+- **Sem encerramento** e sem o cartão final.
+
+### Só nos Shorts (sempre 9:16)
+- **Encerramento animado** (ver "Encerramento oficial"), sem o som dele.
 - **Sticker "Inscreva-se + deixe o like + ative o sininho"**, **no mesmo estilo do GTA** (`ferramentas/sticker-inscreva.py`: joinha, botão de inscrição e sino), **com até 10 s na tela** (usar `python ferramentas/sticker-inscreva.py <pasta> 10`).
 
 ### Respostas de 22/11/2026
@@ -100,10 +105,12 @@ Short 9:16, 2160×3840, 60 fps, 46,2 s, −13,8 LUFS. Folha de quadros a cada 0,
 - Só a música. A música segue tocando no cartão final.
 
 ## Encerramento oficial (pronto para usar)
-- **`assets/encerramento-pt-16x9.mp4`** (vídeo longo) e **`assets/encerramento-pt-9x16.mp4`** (Shorts, com "assista o vídeo completo clicando no título" aparecendo aos 3,9 s). 6 s, com o som original.
-- Feito a partir do encerramento enviado pelo usuário (`encerramento.mp4`, 1920×1080, 6 s): logo do leão surge com clarão, botão do YouTube, pílulas **CURTIR** e **INSCREVA-SE** (traduzidas quadro a quadro de LIKE/SUBSCRIBE com `ferramentas/traduzir-encerramento.py`, fonte Montserrat ExtraBold) e "FIRE & GRACE" em amarelo.
+- ★ **Só nos Shorts (9:16). Os vídeos longos NÃO levam encerramento** (pedido do usuário).
+- ★ **Sem o som do encerramento:** a **música (o MP3 enviado) continua tocando** por cima do cartão até o fim do vídeo.
+- Arquivo: **`assets/encerramento-pt-9x16.mp4`** (1080×1920, 6 s, **sem áudio**), com "assista o vídeo completo clicando no título" aparecendo aos 3,9 s.
+- Feito a partir do encerramento enviado pelo usuário (1920×1080, 6 s): logo do leão surge com clarão, botão do YouTube, pílulas **CURTIR** e **INSCREVA-SE** (traduzidas quadro a quadro de LIKE/SUBSCRIBE com `ferramentas/traduzir-encerramento.py`, fonte Montserrat ExtraBold) e "FIRE & GRACE" em amarelo. A versão 16:9 ficou guardada em `ferramentas/extras/` só por segurança (não usar nos longos).
 - Logo em PNG transparente: `assets/fire-grace-logo.png` (410×410).
-- **Uso:** colar no fim de todo vídeo, depois de escurecer a cena até o preto (~0,7 s). A legenda da música pode continuar por cima, como na referência 2.
+- **Uso nos Shorts:** escurecer a cena até o preto (~0,7 s), colar o cartão, deixar a música seguindo; a legenda karaokê pode continuar por cima, como na referência 2. Contar os 6 s do cartão dentro do limite de 35 s do Short.
 
 ## Pendente
 - [x] Vídeo de referência estudado (seção acima).
