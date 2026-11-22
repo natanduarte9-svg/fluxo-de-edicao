@@ -76,6 +76,10 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
   5. **Imagens reais do jogo** (prints do usuário) quando for para publicar.
 - Sem placa de vídeo aqui, o 3D renderiza mais devagar (minutos por vídeo curto), mas funciona.
 
+### 23/11/2026: voz substituta do ElevenLabs
+- Pedido do usuário: substituto melhor que o Kokoro ("voz nada natural") para quando o ElevenLabs acabar. Pesquisado: XTTS v2 e Qwen3-TTS (bons, mas precisam baixar modelos do Hugging Face, bloqueado aqui, e são lentos sem placa de vídeo); **escolhido: vozes neurais da Microsoft (edge-tts)**, grátis e naturais. Liberado `speech.platform.bing.com` (aprovado pelo notebook). Ver seção 10 do guia.
+- Orientado o usuário a sair das contas no notebook emprestado (Claude, Metricool, vidIQ, GitHub, Google) e conferir pelo celular.
+
 ### Contas e saldos (21/11/2026)
 - **OpusClip:** plano de teste, **90 minutos** de processamento (~1 min de saldo por minuto de vídeo). Aceita link do Google Drive e pode limitar o trecho (`rangeStart`/`rangeEnd`). No teste, os cortes podem sair com marca d'água.
 - **vidIQ:** 2 créditos (150 renovam em 27/11).
