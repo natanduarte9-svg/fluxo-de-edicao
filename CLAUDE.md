@@ -24,6 +24,14 @@ Depois diga à pessoa para recarregar a sessão, se a skill ainda não aparecer.
 **No início da sessão, leia as pendências em `HISTORICO.md`** e lembre a pessoa do que estiver em aberto.
 
 ## Regras que não mudam
+- ★ **Padrão profissional, sempre.** O objetivo é **monetizar os dois canais** (FIRE & GRACE e Jogatina Fácil). Todo vídeo usa **as melhores ferramentas que temos**, nunca o atalho mais simples:
+  - **3D e câmera de cinema com three.js** + pós-processamento (brilho, profundidade de campo), em vez de animação 2D simples;
+  - **estilos e método de diretor do lemo-opuscar** (roteiro antes, gancho em 3 s, plano marcante, 4+ movimentos de câmera, som em 3 camadas);
+  - **movimento real por IA** (vidIQ: Veo/MiniMax/Seedance) quando a cena pede pessoa/fogo/tecido realistas;
+  - **cortes na batida** (librosa), **efeitos e transições** de qualidade (pixelfx, video-shotcraft quando couber);
+  - **voz natural** (ElevenLabs) quando houver narração para publicar;
+  - **revisão quadro a quadro** antes de entregar.
+  - Se a ferramenta melhor gastar créditos, **mostrar o custo e esperar o "sim"**; se não der para usar, dizer qual seria e por quê.
 - **Movimento real** (pessoa, fogo, tecido realistas) = IA de vídeo (vidIQ). **Acabamento** (som, títulos, ritmo, efeitos) = código.
 - **Nunca gaste créditos** (vidIQ, ElevenLabs etc.) sem mostrar o custo e esperar o "sim". Nunca gere duas vezes por engano.
 - Nada é publicado em rede social sem confirmação.
