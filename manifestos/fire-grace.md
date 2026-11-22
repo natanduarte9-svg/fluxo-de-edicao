@@ -19,7 +19,7 @@
 - **Legendas estilo karaokê** (a palavra cantada acende no tempo da música).
 
 ### Só nos Shorts
-- **Sticker "Inscreva-se + deixe o like + ative o sininho"** (o nosso `ferramentas/sticker-inscreva.py` já tem joinha, botão de inscrição e sino; no mínimo 5 s na tela, como no GTA).
+- **Sticker "Inscreva-se + deixe o like + ative o sininho"**, **no mesmo estilo do GTA** (`ferramentas/sticker-inscreva.py`: joinha, botão de inscrição e sino), **com até 10 s na tela** (usar `python ferramentas/sticker-inscreva.py <pasta> 10`).
 
 ## Para completar (perguntar ao usuário)
 1. ~~Formatos~~ (respondido acima). Falta: o vídeo **longo** também leva o sticker?

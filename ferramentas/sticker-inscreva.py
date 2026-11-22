@@ -1,12 +1,12 @@
 """Sticker animado "Inscreva-se": PNGs com transparência, 30 fps, 4 s.
-Uso: python sticker.py <pasta_saida>
+Uso: python sticker.py <pasta_saida> [duracao_s]  (padrão 5,6 s; FIRE & GRACE: 10 s)
 Linha do tempo: 0-0.35 s entra (pop), 1.0-1.5 s cursor vai ao botão, 1.6 s clique (vira INSCRITO),
 1.9-2.6 s sino balança, 3.6-4.0 s sai. Determinístico (sem aleatório)."""
 import math, os, sys
 from PIL import Image, ImageDraw, ImageFont
 
 OUT = sys.argv[1]; os.makedirs(OUT, exist_ok=True)
-FPS, DUR = 30, 5.6
+FPS, DUR = 30, float(sys.argv[2]) if len(sys.argv) > 2 else 5.6
 W, H = 760, 300                      # quadro do sticker (com folga para rotação/cursor)
 CW, CH = 560, 120                    # cartão
 FB = ImageFont.truetype("/usr/share/fonts/opentype/inter/Inter-Black.otf", 34)
