@@ -141,6 +141,8 @@ Short 9:16, 2160×3840, 60 fps, 46,2 s, −13,8 LUFS. Folha de quadros a cada 0,
 9. Só então apertar **"Programar"**.
 - Pelo Metricool/vidIQ, isso equivale a: `privacy: public` na data agendada, `madeForKids: false`, `isAiGeneratedContent: true`, sem promoção paga; conferir no Studio depois que o vídeo processar.
 
+- O passo a passo no YouTube Studio é o mesmo do GTA (ver `manifestos/gta.md`), trocando: **Uso de IA: "Sim"**, **categoria: Música**, playlist do canal gospel.
+
 ## Pendente
 - [x] Vídeo de referência estudado (seção acima).
 - [x] Encerramento original recebido e traduzido; logo extraído em boa qualidade.
