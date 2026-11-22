@@ -63,6 +63,9 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - Liberado `mcp.vidiq.com` no ambiente (envio de arquivos ao vidIQ).
 - **YouTube Create não tem conexão** (app de celular). Alternativa: Veo/MiniMax pelo vidIQ, ou o usuário gera no app e manda pelo Drive.
 
+### 22/11/2026: teste do Short "mapa dos supercarros"
+- Feito só para testar o aprendizado (não publicar). Ver `projetos/gta-mapa-exoticos/`. Sites de jogos são bloqueados pela rede; **miniaturas do YouTube (i.ytimg.com) e GitHub funcionam** para pegar imagens de referência.
+
 ### Contas e saldos (21/11/2026)
 - **OpusClip:** plano de teste, **90 minutos** de processamento (~1 min de saldo por minuto de vídeo). Aceita link do Google Drive e pode limitar o trecho (`rangeStart`/`rangeEnd`). No teste, os cortes podem sair com marca d'água.
 - **vidIQ:** 2 créditos (150 renovam em 27/11).
