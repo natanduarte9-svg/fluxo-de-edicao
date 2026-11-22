@@ -10,9 +10,20 @@
 - Movimento real (personagem, fogo, tecido) = **IA de vídeo** (vidIQ); acabamento em código.
 - Sem texto, logos ou pessoas extras **dentro** da cena gerada por IA.
 
+## Formatos e fluxo de publicação (respondido em 22/11/2026)
+1. **Primeiro o vídeo longo:** a **música inteira**, **16:9** (1920×1080), postado no YouTube primeiro.
+2. **Depois, 3 Shorts tirados desse vídeo longo:** **no máximo 35 s** cada, **9:16** (1080×1920).
+3. **Coletâneas** também fazem parte do plano (várias músicas num vídeo longo).
+
+### Em todos (longo e Shorts)
+- **Legendas estilo karaokê** (a palavra cantada acende no tempo da música).
+
+### Só nos Shorts
+- **Sticker "Inscreva-se + deixe o like + ative o sininho"** (o nosso `ferramentas/sticker-inscreva.py` já tem joinha, botão de inscrição e sino; no mínimo 5 s na tela, como no GTA).
+
 ## Para completar (perguntar ao usuário)
-1. Formatos: só Shorts, ou também vídeo longo da música inteira? Coletânea?
-2. Letra na tela? Estilo (karaokê palavra por palavra, frases inteiras)? Fonte e cores?
+1. ~~Formatos~~ (respondido acima). Falta: o vídeo **longo** também leva o sticker?
+2. ~~Estilo da letra: karaokê~~ (respondido). Falta: fonte e cores da legenda; onde fica na tela.
 3. Logo ou marca d'água do canal? Onde?
 4. Sticker de inscrição (como no GTA)?
 5. Ritmo: cortes na batida da música? Quantas imagens por minuto?
