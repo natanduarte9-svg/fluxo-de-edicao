@@ -21,12 +21,15 @@
 ### Só nos Shorts
 - **Sticker "Inscreva-se + deixe o like + ative o sininho"**, **no mesmo estilo do GTA** (`ferramentas/sticker-inscreva.py`: joinha, botão de inscrição e sino), **com até 10 s na tela** (usar `python ferramentas/sticker-inscreva.py <pasta> 10`).
 
-## Para completar (perguntar ao usuário)
-1. ~~Formatos~~ (respondido acima). Falta: o vídeo **longo** também leva o sticker?
-2. ~~Estilo da letra: karaokê~~ (respondido). Falta: fonte e cores da legenda; onde fica na tela.
-3. Logo ou marca d'água do canal? Onde?
-4. Sticker de inscrição (como no GTA)?
-5. Ritmo: cortes na batida da música? Quantas imagens por minuto?
-6. Efeitos preferidos: luz divina, partículas douradas, fogo, raios de sol?
-7. Intro e encerramento fixos?
-8. Vídeos já publicados para eu estudar (links ou arquivos).
+### Respostas de 22/11/2026
+- **Logo do canal: não usar.**
+- **Sticker:** o mesmo do GTA, até 10 s (ver acima).
+- **Imagens e ritmo:**
+  - Vídeo feito a partir de **uma imagem estática de referência** → **não trocar a imagem**; o movimento vem dela.
+  - **Criação de vídeo com movimento** → o usuário manda um prompt e **eu elaboro cena por cena** (storyboard com plano, câmera, duração e ação de cada cena) **antes de gerar**, para sair perfeito. Mostrar o roteiro de cenas e esperar a aprovação.
+- **Abertura: não existe. Encerramento: existe** (copiar do vídeo de referência).
+- **Efeitos, estilo da legenda karaokê e encerramento:** tirar do **vídeo de referência editado no CapCut** que o usuário vai mandar (link pendente). Estudar quadro a quadro e anotar aqui: fonte, cores, posição e animação da legenda; efeitos; encerramento.
+
+## Pendente
+- [ ] Receber o vídeo de referência do CapCut e fazer a engenharia reversa (efeitos, legenda, encerramento).
+- [ ] Confirmar no primeiro vídeo longo se ele também leva o sticker (até agora: só nos Shorts).
