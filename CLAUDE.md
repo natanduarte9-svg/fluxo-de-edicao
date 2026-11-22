@@ -32,6 +32,7 @@ Depois diga à pessoa para recarregar a sessão, se a skill ainda não aparecer.
   - **voz natural** (ElevenLabs) quando houver narração para publicar;
   - **revisão quadro a quadro** antes de entregar.
   - Se a ferramenta melhor gastar créditos, **mostrar o custo e esperar o "sim"**; se não der para usar, dizer qual seria e por quê.
+- ★ **Enquanto os canais não monetizam: só créditos/tokens grátis, nada pago.** Quando os créditos grátis de uma ferramenta acabarem, **trocar por outra de qualidade excelente que ainda tenha créditos grátis** (rodízio). Antes de gerar, **conferir o saldo** de cada uma. A tabela de rodízio está no `GUIA-PRODUCAO.md` (seção 10).
 - **Movimento real** (pessoa, fogo, tecido realistas) = IA de vídeo (vidIQ). **Acabamento** (som, títulos, ritmo, efeitos) = código.
 - **Nunca gaste créditos** (vidIQ, ElevenLabs etc.) sem mostrar o custo e esperar o "sim". Nunca gere duas vezes por engano.
 - Nada é publicado em rede social sem confirmação.

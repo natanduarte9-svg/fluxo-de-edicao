@@ -239,3 +239,17 @@ Antes de terminar: abra a página, corrija erros e garanta que a animação grav
 - **Mix:** voz comprimida e à frente; música **abaixada ~12 dB** enquanto há voz (ducking); efeitos nos movimentos de câmera.
 - **Legenda:** 2–3 palavras por vez, palavra falada em amarelo, faixa escura semitransparente atrás para ler sobre qualquer fundo; nunca em cima de cartão, título ou sticker.
 - **Imagens de referência:** sites de jogos são bloqueados; miniaturas do YouTube (`i.ytimg.com/vi/<id>/maxresdefault.jpg`) funcionam para testes.
+
+## 10. Rodízio de ferramentas grátis (regra do usuário, 22/11/2026)
+Enquanto os canais não monetizam, **só créditos grátis**. Acabou numa, passa para a próxima da mesma linha, **sempre a de melhor qualidade disponível**. Conferir o saldo antes (ex.: `vidiq_balance`, `account_get_usage` do ElevenLabs, `opusclip_get_usage`).
+
+| Precisa de... | 1ª opção (melhor) | Se acabar → | Último recurso (grátis e ilimitado) |
+|---|---|---|---|
+| **Vídeo com movimento real** (imagem → vídeo) | **vidIQ** (Veo 3.1 Lite / MiniMax H3), 150 créditos/mês, renova todo dia 27 | **YouTube Create** no celular (foto para vídeo com Veo, grátis; o usuário gera e manda pelo Drive) · planos grátis de outros geradores (Hailuo, Dreamina/CapCut, PixVerse) feitos pelo usuário | Animação em código (three.js, 2,5D): câmera, luz, partículas — sem movimento do personagem |
+| **Voz / narração** | **ElevenLabs** (plano grátis: ~10 mil caracteres/mês) | — | **Kokoro** local (`pm_alex`, `pm_santa`, `pf_dora`), grátis e ilimitado, menos natural |
+| **Cortes automáticos de vídeo longo** | **OpusClip** (teste: 90 min) | **Descript** (se tiver créditos) | Edição aqui com ffmpeg (grátis, sem marca d'água) |
+| **Música** | Trilha original sintetizada aqui / biblioteca do lemo-opuscar (CC0/CC BY) | ElevenLabs Music (se houver créditos) | Trilha em código |
+| **Edição, 3D, legendas, efeitos** | **Tudo aqui, grátis:** three.js + pós-processamento, lemo-opuscar, pixelfx, video-shotcraft, librosa, ffmpeg | — | — |
+
+- Nunca gerar duas vezes por engano; nunca ativar plano pago, recarga ou "overage".
+- Se nenhuma opção grátis de alta qualidade sobrar para aquele passo, **avisar o usuário** e propor esperar a renovação (ex.: vidIQ dia 27) em vez de baixar a qualidade sem dizer.
