@@ -115,7 +115,14 @@ Short 9:16, 2160×3840, 60 fps, 46,2 s, −13,8 LUFS. Folha de quadros a cada 0,
 ## Publicação (conectado em 22/11/2026)
 - **Canal no YouTube:** FIRE & GRACE (`UCu2-et8aU5qh8zUYBAxkDDg`), conta Google natanmusicagospel@gmail.com.
 - **Agendamento pelo Metricool** (marca `8216784`, dona: natanduarte9@gmail.com, fuso America/Sao_Paulo). O vidIQ do Claude não aceita um 2º canal no plano grátis.
-- **Horários atuais do usuário (usar até termos dados reais):** vídeo longo **19h40**; Shorts **depois das 20h**; às vezes **8h10/8h15**.
+- ★ **Agenda fixa de cada música (definida pelo usuário em 22/11/2026):**
+  | Dia | Hora | O que |
+  |---|---|---|
+  | Dia 1 | **19h40** | **Vídeo longo** (16:9) — sempre o primeiro |
+  | Dia 1 | **20h00** | **Short 1** |
+  | Dia 2 | **20h00** | **Short 2** |
+  | Dia 3 | **20h00** | **Short 3** |
+- ★ **Todo Short leva ao vídeo longo do Dia 1:** usar o recurso **"Vídeo relacionado"** do Short no YouTube Studio (aparece como link embaixo do Short) apontando para o longo, além do cartão final "assista o vídeo completo clicando no título" e um link para o longo na descrição. O vídeo relacionado só pode ser escolhido **depois** que o longo estiver publicado (ou agendado), então agendar o longo primeiro.
 - ⚠️ Os "melhores horários" do Metricool (16h/10h) **não são do canal**: o canal acabou de ser conectado e ele ainda não tem dados; é média geral. **Não usar.**
 - **Fonte certa:** YouTube Studio → Análises → Público → "Quando seus espectadores estão no YouTube". **Em 21/11/2026 ainda dizia "Não há dados suficientes"**. Olhar de novo daqui a algumas semanas.
 - **Público (Studio, últimos 28 dias, em 21/11/2026):** 1,8 mil espectadores por mês; +77 inscritos; **97,7% novos espectadores**; **85% no celular** (8,7% TV); **86% Brasil**; idade: **35–44 (28%)**, **25–34 (25,6%)**, 45–54 (15,9%), 13–17 (15%), 55–64 (11,5%); **60% mulheres**. Vídeos mais vistos: "À MEIA-NOITE EU VOU TE..." (1,4 mil) e "ELE MORREU POR AMOR" (1,1 mil).
