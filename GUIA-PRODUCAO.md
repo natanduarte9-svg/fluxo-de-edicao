@@ -69,6 +69,10 @@ O que aprendi estudando 10 repositórios de motion graphics para o Claude Code (
 21. **Volume final: −14 LUFS** (o padrão do YouTube).
 22. **Fugir do "piano e cordas genérico".**
 
+### Elementos do canal
+- **Acentos nas legendas:** usar fonte com todos os acentos maiúsculos (Ã, Õ, É, Í, À...). O CapCut já saiu com "NãO" e "PRISãO" por falta deles. Sempre conferir num quadro.
+- **Nunca cobrir o sticker de "se inscrever"** nem outros elementos que o usuário colocou no CapCut. Antes de pôr título ou efeito, olhar os quadros onde eles aparecem e deixar espaço.
+
 ### O que evitar (cara de template de IA)
 - Explosão de partículas genérica, separação RGB, reflexo de lente, neon e quique exagerado.
 - Texto demais na tela; legenda cobrindo o assunto; assunto pequeno ou colado na borda.
@@ -139,3 +143,92 @@ npm init -y && npm i three @react-three/fiber @react-three/drei @react-three/rap
 **ffmpeg 7+:** no ambiente na nuvem, os sites de build estática são bloqueados. O que funcionou foi tirar o binário do pacote `imageio-ffmpeg` do PyPI (`pip download --no-deps imageio-ffmpeg`, extrair o `.whl` e copiar `imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-*` para `/usr/local/bin/ffmpeg`).
 
 **ClaudeAnimationBase sem placa de vídeo:** usar `--soft-gl` e apontar `--chrome` para o Chromium do Playwright. Fica lento (≈7 s por quadro).
+
+---
+
+## 7. Escolha do modelo: Opus 5.5, Fable 5.2 ou Sonnet 5.5
+
+Pesquisa de 22/11/2026 (repositório `sandbase-lab/awesome-fable-5-2`, relatos de criadores na semana de lançamento; nada disso foi medido de forma independente ainda).
+
+| Modelo | Quando usar | Custo |
+|---|---|---|
+| **Opus 5.5** (padrão) | O dia a dia: edição, Shorts, montagem, ffmpeg, roteiro | Incluído no plano Pro |
+| **Fable 5.2** (lançado em 09/11/2026) | Peças especiais: motion graphics muito detalhado, cenas 3D, física, "vídeo vitrine" | **Mais caro, não mais barato**: criadores relatam 1,5x a 4x o custo do Opus na mesma cena (US$ 8 / US$ 40 por milhão de tokens). No Pro, o Fable pode exigir créditos de uso extra (relatado para o 5.1; confirmar no app antes de usar) |
+| **Sonnet 5.5** | **Reserva quando o limite do Opus acabar**: tarefas simples, cortes, legendas, textos | O mais econômico dentro do plano |
+
+**Importante:** o Fable **não serve de reserva para quando faltar limite**. Ele gasta mais. A reserva barata é o **Sonnet 5.5**.
+
+### O que o Matt Penny mediu ("Claude Fable 5.2 Just Changed Motion Graphics Forever", transcrição lida em 22/11/2026)
+- **Velocidade e custo:** na assinatura, o Fable 5.2 foi **~5x mais lento** e **~3 a 4x mais caro** que o Opus 5.5 para gerar o mesmo vídeo. Na API: Opus US$ 20 e Fable US$ 40 por milhão de tokens de saída.
+- **Qualidade:** melhor (reflexos, iluminação, acabamento "premium"), mas **não é um salto enorme quando você usa os repositórios certos, referências e boas ferramentas**. Em vários testes, sem as etiquetas, ele não saberia dizer qual era qual. Diferença clara: cenas isométricas e 3D detalhadas.
+- **Lançamento:** a Anthropic dá *resets* grátis no modelo novo; no começo ele tende a estar mais rápido e mais barato do que nunca.
+- **Conclusão dele:** nem tudo precisa do Fable. Use quando a peça pede o detalhe extra.
+
+### Como gastar menos (o que mais desperdiça é refazer)
+1. **Manifesto de vídeo** (a dica nº 1): um arquivo com o seu jeito de fazer vídeo: ritmo, cores, espaçamento, tipografia, transições de entrada e saída, efeitos sonoros, música, e exemplos de vídeos anteriores. Com ele, o primeiro resultado já sai certo e não precisa refazer 3 ou 4 vezes. Dá para criar a partir de vídeos que você já editou (engenharia reversa) ou respondendo perguntas. **Os nossos ficam em `manifestos/`.**
+2. **Fable planeja, Opus executa:** o modelo mais inteligente faz o plano (roteiro, storyboard, decisões) e o Opus constrói. Mais barato e mais rápido.
+
+### As dicas dele (valem para qualquer modelo)
+1. **Seja específico:** pense no que quer e descreva com o máximo de detalhe.
+2. **Fale em vez de digitar:** pelo **microfone** do app. Falando, você dá mais contexto naturalmente, e é mais rápido.
+3. **Use o manifesto de vídeo.**
+4. **Mande referências:** print de um estilo de que gostou, ou o link de um vídeo para analisar.
+5. **Storyboard antes de vídeos longos:** ver os quadros-chave antes de gastar tempo e dinheiro.
+6. **Conecte ferramentas de IA:** vídeo/imagem por IA (Higgsfield, TopView, fal) e ElevenLabs para música e efeitos sonoros.
+
+**Como trocar de modelo no Claude Code:** digite `/model` e escolha; ou toque no nome do modelo embaixo da caixa de mensagem (ex.: "Opus 5.5 Médio"). Todas as skills, o guia e as ferramentas funcionam igual em qualquer modelo.
+
+**O que dizem do Fable 5.2:** mais detalhe, movimento e mecânica de jogo do que o Opus 5.5 ("um salto"); às vezes resolve em esforço *medium* o que o Opus precisava de *max*. Mesmo assim, ele **não assiste vídeo**: revisa quadros parados. Peça sempre a folha de quadros.
+
+### Os 7 padrões de prompt que funcionaram com o Fable (valem para o Opus também)
+1. **Diga o entregável e o renderizador na primeira frase:** "um arquivo HTML, 1080×1920, 15 segundos, Canvas/Three.js".
+2. **Dê uma régua de qualidade em vez de especificação:** "como um keynote da Apple", "qualidade AAA", "o vídeo mais bonito que você conseguir".
+3. **Dê um trabalho que não dá para fingir:** física real, mecanismo real, simulação.
+4. **Coreografe o que se move, batida por batida:** descreva as transições (como um estado vira o próximo), não só a lista de cenas.
+5. **Escreva a restrição física em voz alta:** "um plano contínuo, sem cortes", "a serpente nunca atravessa o casco".
+6. **Escolha o esforço e diga qual:** comece em *medium* para rascunho; suba para *high/max* só quando a composição estiver certa (o custo pode dobrar).
+7. **Mande ele conferir o próprio trabalho:** estudar as referências quadro a quadro (um quadro a cada 0,25 s) e abrir a página, corrigir erros e garantir o loop antes de entregar.
+
+### Modelo de prompt (preencher)
+```text
+Um arquivo HTML autocontido, {1080x1920}, {segundos} segundos, {Canvas/Three.js}, sem arquivos externos.
+Objetivo: {uma frase — o que o espectador deve sentir ou entender}.
+Régua: {como um keynote da Apple / qualidade AAA / o mais bonito que você conseguir}.
+Trabalho real: {o mecanismo que precisa funcionar — física, fogo, partículas}.
+Batidas: abre em {primeiro quadro}; depois {transição 1 -> 2 -> 3}; fecha em {último quadro}.
+Regra fixa: {o que nunca muda — um plano só, sem cortes, nunca atravessa X}.
+Esforço: {medium|high|max}.
+Antes de terminar: abra a página, corrija erros e garanta que a animação grava limpa em {segundos} s.
+```
+
+---
+
+## 8. Claude + CapCut (vídeo do Matt Penny, transcrição lida em 22/11/2026)
+
+### Como ele trabalha
+- Uma **"CapCut Bridge"** (scripts) liga o Claude ao **CapCut instalado no computador**. O Claude cria o projeto, corta, põe textos, efeitos e músicas **dentro do CapCut**, e até aperta botões dele (ex.: remover fundo).
+- **⚠️ Para nós: isso exige CapCut de computador.** O usuário trabalha só pelo **celular** (CapCut do celular não pode ser controlado). Então o nosso fluxo é: **eu edito aqui na nuvem e entrego o vídeo pronto** (ou partes separadas para ajustes no CapCut do celular).
+
+### Lições que valem para nós
+1. **Transcrição com o tempo de cada palavra** é a base de tudo: cortar silêncios e erros, encaixar legenda karaokê, efeitos e imagens no momento certo. Ele usa **Deepgram** (grátis para começar); nós já temos o **faster-whisper** instalado (grátis, roda aqui).
+2. **IA faz 90%, você faz os 10% finais.** Ajuste pequeno (meio segundo, volume, posição) é mais rápido à mão do que pedindo para a IA renderizar tudo de novo. **Para o celular:** quando fizer sentido, entregar também **uma versão sem legenda** e o **arquivo de legenda (.srt)**, para o usuário ajustar no CapCut.
+3. **Guia de estilo / manifesto** é "o ativo mais importante" (igual ao vídeo do Fable). Os nossos: `manifestos/`.
+4. **Biblioteca de efeitos sonoros com "dicionário":** a IA não ouve áudio, então cada efeito precisa de uma **descrição em texto** (nome do arquivo + o que soa). Efeitos **pré-aprovados** soam melhor que efeitos gerados por IA (os gerados ficaram "50% ruins"). **Música de fundo por IA (ElevenLabs) funciona bem;** para áudio viral, usar biblioteca.
+5. **Pedido específico** quando não há skill: dizer onde entra cada coisa, cores, fontes, e terminar com uma **checagem**: "assista tudo, veja se nada cobre o rosto, se texto não bate na legenda, se está tudo escrito certo e se não há trecho parado".
+6. **Erros comuns viram skill de checagem:** depois de achar os erros que se repetem, criar uma checagem que os procura sempre.
+7. **Processos com passos (ex.: rotoscopia: texto entre a pessoa e o fundo) viram skill:** descrever o passo a passo uma vez, salvar, e depois só pedir "rotoscopa aqui".
+8. **Imagem real vs. imagem de IA:** para lugar, pessoa ou objeto real, buscar **foto real** (ele usa Brave Image Search, com chave de API); IA só para o que é ilustrativo.
+9. **B-roll por IA:** pedir ideias à IA ("onde caberia um B-roll de 3–4 s e o que mostrar?"), escolher, e gerar com modelo e formato definidos (ex.: Kling, 720p, 16:9). Texto dentro de vídeo de IA costuma sair ilegível.
+10. **Correção de cor:** acertar os valores uma vez e salvar como padrão.
+11. **Não deixar a IA copiar edições antigas** do mesmo arquivo quando quiser uma nova ("não use edições anteriores deste clipe").
+
+### O capcut-kit (github.com/matt-j-penny/capcut-kit), estudado em 22/11/2026
+- **Precisa do CapCut de computador.** No **Mac** funciona tudo: edita os arquivos de projeto do CapCut e também "clica" nos botões dele. No **Windows**, só a parte de arquivos (criar o projeto com os cortes, textos, imagens, posição e keyframes), e ela **nunca foi testada** em Windows de verdade. **No celular não funciona.** Por isso não instalamos.
+- Se um dia houver um computador próprio: instalar o CapCut, o Claude Code nele, `uv` e `ffmpeg`, e rodar `uv run capcut-bridge.py doctor` antes de confiar.
+- Regras dele que valem para nós:
+  - **Legenda sempre a partir de UMA transcrição oficial**, a do áudio que vai ser entregue. Transcrição de um pedaço solto faz a legenda escorregar no fim.
+  - **Arquivo de correções** de palavras que a transcrição erra (ex.: nomes próprios, "Claude", termos bíblicos). Corrigir só o texto exibido e aumentar a lista a cada erro novo.
+  - **Jogar fora "lascas" de palavra com menos de 0,2 s** (começos falsos nos cortes).
+  - **Área segura nos verticais 1080×1920:** tudo que importa entre **y=200 e y=1620** (fora disso, a interface do Shorts/TikTok cobre).
+  - **Último quadro:** evitar quadro preto no final, porque o Shorts repete o vídeo em loop e o preto vira uma "piscada". Segurar o último quadro (no FIRE & GRACE o final já é o cartão preto do encerramento, então tudo bem).
+  - Dois estilos prontos de legenda dele: (A) caixa preta arredondada com palavras surgindo uma a uma, no centro; (B) Inter Bold branca com contorno preto, sem caixa, baixa, 3–4 palavras por linha, sem animação.

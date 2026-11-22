@@ -35,14 +35,38 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 | **YouTube Create** | Não há conexão com ele. O app do YouTube (Shorts) tem "foto para vídeo" grátis; dá para testar pelo celular |
 | Envio ao GitHub falhou (403) | Voltou a funcionar depois de reconectar o GitHub |
 | ClaudeAnimationBase sem placa de vídeo | `--soft-gl` e Chromium do Playwright; ≈7 s por quadro |
+| **Google Drive** bloqueado pela rede | Liberar o Drive exige aprovar pelo **computador** (no celular não aparece a opção). Sem computador: anexar o arquivo no chat, ou usar ferramentas que baixam o link pelos servidores delas (OpusClip, Descript) |
+| Aprovações de ambiente (rede, script) | **Só aparecem para aprovar no computador** (navegador em claude.ai/code). No celular a janela diz "revise no computador". Feito com notebook emprestado em 21/11 |
+| Google Drive liberado | Link compartilhado baixa direto: `https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t` |
+| Arquivo grande (gameplay de 2 h, 1,64 GB) | Não cabe como anexo. Melhor: cortar os melhores trechos no **CapCut** (20 s a 2 min, 1080p 30 fps) e anexar um por vez |
 
 ### Pesquisa: ferramentas de foto para vídeo com movimento real (nov/2026)
 - **Melhor qualidade (pagas):** Google Veo 3.1 (o mais realista), Kling 3.0 (melhor para pessoas; custo-benefício; 4K), Runway Gen-4.5 (uso profissional, controle de câmera).
 - **Com plano grátis:** Hailuo (créditos diários), Dreamina/CapCut, PixVerse, Luma Dream Machine (rascunhos rápidos), Pika 2.5 (até 15 s).
 - **Atenção:** o Sora (OpenAI) está sendo descontinuado. Planos grátis costumam ter marca d'água, resolução menor e restrição de uso comercial.
 
+### Ferramentas próprias criadas
+- `ferramentas/short-gameplay.sh`: corta um trecho, põe título em 2 linhas abaixo do sticker do canal, 1080×1920, −14 LUFS.
+- `ferramentas/sticker-inscreva.py`: sticker animado "Inscreva-se" em PT-BR (5,6 s, transparente; o usuário quer **no mínimo 5 s na tela**). Aplicar com `overlay=160:110` no momento desejado.
+
+### 22/11/2026: estudo do Fable 5.2
+- Vídeo pedido: "Claude Fable 5.2 Just Changed Motion Graphics Forever" (Matt Penny). **YouTube liberado no ambiente, mas o YouTube bloqueia servidores na nuvem** ("confirme que não é robô"): só deu para ler o título. Para estudar um vídeo do YouTube: o usuário copia a transcrição ("Mostrar transcrição") e cola no chat, ou vidIQ (5 créditos).
+- Estudado pelos guias do `sandbase-lab/awesome-fable-5-2` e pesquisa na web. Resultado na seção 7 do `GUIA-PRODUCAO.md`. **Conclusão: Fable é mais caro que o Opus; a reserva barata é o Sonnet 5.5.**
+- Depois, o usuário colou a **transcrição** do vídeo. Lições na seção 7 do guia: Fable ~5x mais lento e ~3–4x mais caro; a maior economia é não refazer, usando um **manifesto de vídeo**; Fable planeja e Opus executa. Criados `manifestos/gta.md` (completo, a partir dos Shorts) e `manifestos/fire-grace.md` (rascunho com perguntas).
+
+### 22/11/2026: Claude + CapCut
+- Transcrição colada pelo usuário (vídeo do Matt Penny sobre editar no CapCut com o Claude). Lições na seção 8 do guia. **A "CapCut Bridge" precisa de CapCut no computador; o usuário só tem celular**, então seguimos editando na nuvem e entregando pronto (com versão sem legenda + .srt quando ajudar).
+
+### Contas e saldos (21/11/2026)
+- **OpusClip:** plano de teste, **90 minutos** de processamento (~1 min de saldo por minuto de vídeo). Aceita link do Google Drive e pode limitar o trecho (`rangeStart`/`rangeEnd`). No teste, os cortes podem sair com marca d'água.
+- **vidIQ:** 2 créditos (150 renovam em 27/11).
+- **ElevenLabs:** plano grátis, sem geração de vídeo.
+
 ### Pendências
 - [ ] **27/11, 19h:** gerar o vídeo do Elias (reanexar a imagem e confirmar o custo).
+- [x] **Shorts de GTA, parte 1:** 3 Shorts entregues (ver `projetos/gta-shorts-01/`). Mandar as próximas partes quando houver.
+- [ ] Completar o `manifestos/fire-grace.md` com o usuário (8 perguntas no fim do arquivo).
+- [ ] Montar uma **biblioteca de efeitos sonoros com dicionário** (CC0, ex.: Freesound pelo `sfx-source.py` do video-shotcraft) para GTA e FIRE & GRACE.
 - [ ] Testar o react-three-rapier, o react-postprocessing e o video-shotcraft num projeto real.
-- [ ] Salvar o script de instalação como ambiente da nuvem (aprovação pendente).
-- [ ] Opcional: levar este branch para o `main` (pull request).
+- [x] Ambiente da nuvem **fluxo-de-edicao** criado com o script de instalação e o Google Drive liberado (aprovado pelo notebook em 21/11). Confirmar na próxima sessão nova que o script rodou sozinho.
+- [x] Levar tudo para o `main` (PR #1, mesclado em 21/11).

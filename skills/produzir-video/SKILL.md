@@ -16,6 +16,10 @@ Leia também `HISTORICO.md` (nesta pasta, atalho para a raiz): decisões, proble
 - Faça **uma rodada só** de perguntas, numa mensagem, já com a sua sugestão em cada uma. Depois disso, decida sozinho e siga.
 - Antes de **gastar créditos** (vidIQ, ElevenLabs ou outro serviço pago), diga o custo exato e espere o "sim". Nunca repita uma geração paga para "tentar de novo" sem perguntar.
 - Antes de publicar em qualquer rede, mostre o texto e espere o "sim".
+- **Modelo:** Opus 5.5 no dia a dia; Sonnet 5.5 se o limite acabar; Fable 5.2 só para peças muito detalhadas (é mais lento e mais caro). Uma boa economia: **Fable planeja, Opus executa** (ver seção 7 do guia).
+
+## 0. Ler o manifesto do canal
+Antes de tudo, leia o manifesto do canal em `manifestos/` (na raiz do repositório). Ele diz o formato, o texto, o som, o sticker e o que o usuário já corrigiu antes. **Siga-o sem perguntar de novo o que já está lá.** Se o canal não tiver manifesto, crie um a partir das respostas da rodada de perguntas. Ao terminar, acrescente ao manifesto toda correção que o usuário pediu.
 
 ## 1. Entender o pedido (uma rodada de perguntas)
 Pule o que o pedido já responde. Pergunte só o que falta:
