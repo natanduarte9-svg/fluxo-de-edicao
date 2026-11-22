@@ -49,6 +49,10 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - `ferramentas/short-gameplay.sh`: corta um trecho, põe título em 2 linhas abaixo do sticker do canal, 1080×1920, −14 LUFS.
 - `ferramentas/sticker-inscreva.py`: sticker animado "Inscreva-se" em PT-BR (5,6 s, transparente; o usuário quer **no mínimo 5 s na tela**). Aplicar com `overlay=160:110` no momento desejado.
 
+### 22/11/2026: estudo do Fable 5.2
+- Vídeo pedido: "Claude Fable 5.2 Just Changed Motion Graphics Forever" (Matt Penny). **YouTube liberado no ambiente, mas o YouTube bloqueia servidores na nuvem** ("confirme que não é robô"): só deu para ler o título. Para estudar um vídeo do YouTube: o usuário copia a transcrição ("Mostrar transcrição") e cola no chat, ou vidIQ (5 créditos).
+- Estudado pelos guias do `sandbase-lab/awesome-fable-5-2` e pesquisa na web. Resultado na seção 7 do `GUIA-PRODUCAO.md`. **Conclusão: Fable é mais caro que o Opus; a reserva barata é o Sonnet 5.5.**
+
 ### Contas e saldos (21/11/2026)
 - **OpusClip:** plano de teste, **90 minutos** de processamento (~1 min de saldo por minuto de vídeo). Aceita link do Google Drive e pode limitar o trecho (`rangeStart`/`rangeEnd`). No teste, os cortes podem sair com marca d'água.
 - **vidIQ:** 2 créditos (150 renovam em 27/11).

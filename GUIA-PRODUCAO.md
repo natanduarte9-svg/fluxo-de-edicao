@@ -142,3 +142,42 @@ npm init -y && npm i three @react-three/fiber @react-three/drei @react-three/rap
 **ffmpeg 7+:** no ambiente na nuvem, os sites de build estática são bloqueados. O que funcionou foi tirar o binário do pacote `imageio-ffmpeg` do PyPI (`pip download --no-deps imageio-ffmpeg`, extrair o `.whl` e copiar `imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-*` para `/usr/local/bin/ffmpeg`).
 
 **ClaudeAnimationBase sem placa de vídeo:** usar `--soft-gl` e apontar `--chrome` para o Chromium do Playwright. Fica lento (≈7 s por quadro).
+
+---
+
+## 7. Escolha do modelo: Opus 5.5, Fable 5.2 ou Sonnet 5.5
+
+Pesquisa de 22/11/2026 (repositório `sandbase-lab/awesome-fable-5-2`, relatos de criadores na semana de lançamento; nada disso foi medido de forma independente ainda).
+
+| Modelo | Quando usar | Custo |
+|---|---|---|
+| **Opus 5.5** (padrão) | O dia a dia: edição, Shorts, montagem, ffmpeg, roteiro | Incluído no plano Pro |
+| **Fable 5.2** (lançado em 09/11/2026) | Peças especiais: motion graphics muito detalhado, cenas 3D, física, "vídeo vitrine" | **Mais caro, não mais barato**: criadores relatam 1,5x a 4x o custo do Opus na mesma cena (US$ 8 / US$ 40 por milhão de tokens). No Pro, o Fable pode exigir créditos de uso extra (relatado para o 5.1; confirmar no app antes de usar) |
+| **Sonnet 5.5** | **Reserva quando o limite do Opus acabar**: tarefas simples, cortes, legendas, textos | O mais econômico dentro do plano |
+
+**Importante:** o Fable **não serve de reserva para quando faltar limite**. Ele gasta mais. A reserva barata é o **Sonnet 5.5**.
+
+**Como trocar de modelo no Claude Code:** digite `/model` e escolha; ou toque no nome do modelo embaixo da caixa de mensagem (ex.: "Opus 5.5 Médio"). Todas as skills, o guia e as ferramentas funcionam igual em qualquer modelo.
+
+**O que dizem do Fable 5.2:** mais detalhe, movimento e mecânica de jogo do que o Opus 5.5 ("um salto"); às vezes resolve em esforço *medium* o que o Opus precisava de *max*. Mesmo assim, ele **não assiste vídeo**: revisa quadros parados. Peça sempre a folha de quadros.
+
+### Os 7 padrões de prompt que funcionaram com o Fable (valem para o Opus também)
+1. **Diga o entregável e o renderizador na primeira frase:** "um arquivo HTML, 1080×1920, 15 segundos, Canvas/Three.js".
+2. **Dê uma régua de qualidade em vez de especificação:** "como um keynote da Apple", "qualidade AAA", "o vídeo mais bonito que você conseguir".
+3. **Dê um trabalho que não dá para fingir:** física real, mecanismo real, simulação.
+4. **Coreografe o que se move, batida por batida:** descreva as transições (como um estado vira o próximo), não só a lista de cenas.
+5. **Escreva a restrição física em voz alta:** "um plano contínuo, sem cortes", "a serpente nunca atravessa o casco".
+6. **Escolha o esforço e diga qual:** comece em *medium* para rascunho; suba para *high/max* só quando a composição estiver certa (o custo pode dobrar).
+7. **Mande ele conferir o próprio trabalho:** estudar as referências quadro a quadro (um quadro a cada 0,25 s) e abrir a página, corrigir erros e garantir o loop antes de entregar.
+
+### Modelo de prompt (preencher)
+```text
+Um arquivo HTML autocontido, {1080x1920}, {segundos} segundos, {Canvas/Three.js}, sem arquivos externos.
+Objetivo: {uma frase — o que o espectador deve sentir ou entender}.
+Régua: {como um keynote da Apple / qualidade AAA / o mais bonito que você conseguir}.
+Trabalho real: {o mecanismo que precisa funcionar — física, fogo, partículas}.
+Batidas: abre em {primeiro quadro}; depois {transição 1 -> 2 -> 3}; fecha em {último quadro}.
+Regra fixa: {o que nunca muda — um plano só, sem cortes, nunca atravessa X}.
+Esforço: {medium|high|max}.
+Antes de terminar: abra a página, corrija erros e garanta que a animação grava limpa em {segundos} s.
+```
