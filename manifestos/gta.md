@@ -23,6 +23,8 @@ Construído por engenharia reversa dos Shorts de 21–22/11/2026 (`projetos/gta-
 - Se o vídeo não tiver sticker, usar o nosso (`ferramentas/sticker-inscreva.py`): cartão branco, joinha, botão INSCREVA-SE → clique → INSCRITO, sino. ★ **No mínimo 5 s na tela** (hoje 5,6 s). Em vídeos de ~1 min, aparecer 2 vezes (ex.: 0:04 e 0:40).
 
 ## Som
+- ★ **Narração só quando o usuário pedir** (vídeos didáticos/explicativos). No dia a dia: **vozes e som do próprio jogo**.
+- ★ **Voz escolhida para narrar: Microsoft `pt-BR-AntonioNeural`** (edge-tts, grátis; ElevenLabs só se o usuário pedir e houver crédito).
 - ★ **Só o som do jogo, sem música** (pedido do usuário).
 - Volume padrão do YouTube: **−14 LUFS**, pico −1,5 dB. Fade curto na entrada (0,1 s) e na saída (0,5 s).
 

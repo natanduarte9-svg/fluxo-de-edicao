@@ -259,3 +259,4 @@ Enquanto os canais não monetizam, **só créditos grátis**. Acabou numa, passa
 - **Precisa passar o proxy**: `edge_tts.Communicate(texto, "pt-BR-AntonioNeural", rate="+5%", proxy=os.environ["HTTPS_PROXY"])`.
 - Vantagem extra: o edge-tts devolve o **tempo exato de cada palavra** (eventos `WordBoundary`), então a legenda karaokê fica **sincronizada de verdade**, sem estimativa.
 - Para comparar: `projetos/gta-aula/comparacao-vozes.mp3` (Antonio, Francisca, Thalita, Kokoro).
+- ★ **Voz oficial dos dois canais: `pt-BR-AntonioNeural`** (escolha do usuário, 23/11/2026). Narração **só quando o usuário pedir**.
