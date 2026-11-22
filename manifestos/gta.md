@@ -42,7 +42,6 @@ Construído por engenharia reversa dos Shorts de 21–22/11/2026 (`projetos/gta-
   | Dia 3 | **20h00** | **Short 3** |
 - ★ **Todo Short leva ao vídeo longo do Dia 1:** "Vídeo relacionado" do YouTube apontando para o longo + link do longo na descrição. Agendar o longo primeiro.
 - Quando houver só Shorts soltos (sem vídeo longo), postar às **20h**, um por dia.
-- **Agendado pelo usuário:** Short "OS CARROS VOARAM DA PONTE no GTA 6 😱 #shorts" → **23/11/2026, 20:00** (playlist GTA6).
 
 ## ★ Checklist de publicação no YouTube (pedido do usuário em 22/11/2026, vale para os dois canais)
 1. **Título chamativo** (até 100 caracteres).
@@ -56,7 +55,9 @@ Construído por engenharia reversa dos Shorts de 21–22/11/2026 (`projetos/gta-
 9. Só então apertar **"Programar"**.
 - Pelo Metricool/vidIQ, isso equivale a: `privacy: public` na data agendada, `madeForKids: false`, `isAiGeneratedContent: false`, sem promoção paga; conferir no Studio depois que o vídeo processar.
 
-### ★ Passo a passo do usuário no YouTube Studio (gravação de 22/11/2026, Short "OS CARROS VOARAM DA PONTE")
+### ★ Passo a passo do usuário no YouTube Studio (gravação de 22/11/2026, usando o Short "OS CARROS VOARAM DA PONTE" só como EXEMPLO)
+- ★ **Cada vídeo tem o seu próprio título, descrição, tags e hashtags**, criados para aquele vídeo. Nunca reaproveitar os do exemplo.
+- ★ **O "vídeo relacionado" dos Shorts é o vídeo longo do mesmo conjunto** (o longo de onde os Shorts saíram), não um vídeo qualquer.
 Feito em **studio.youtube.com** (versão de computador, no navegador do celular):
 1. **Criar → Enviar vídeos** → escolher o arquivo (pasta Downloads).
 2. **Detalhes:**
