@@ -94,7 +94,7 @@ Short 9:16, 2160×3840, 60 fps, 46,2 s, −13,8 LUFS. Folha de quadros a cada 0,
 2. 42–43,5 s: as pílulas **LIKE** e **SUBSCRIBE** deslizam para fora do botão.
 3. 44 s: **"FIRE & GRACE"** em amarelo com brilho.
 4. 44,5 s: o texto se escreve com brilho amarelo e fica **"assista o vídeo completo clicando no título ."** (branco com brilho amarelo, minúsculas).
-- Botões em inglês aqui (LIKE/SUBSCRIBE); no vídeo 1, em português (INSCREVA-SE). **Padrão a usar: português** (confirmar com o usuário).
+- Botões em inglês aqui (LIKE/SUBSCRIBE); no vídeo 1, em português (INSCREVA-SE). ★ **Decidido pelo usuário: sempre em português** — "CURTIR"/"LIKE" com coração e "INSCREVA-SE" com sino (como no vídeo 1).
 
 ### Som
 - Só a música. A música segue tocando no cartão final.
