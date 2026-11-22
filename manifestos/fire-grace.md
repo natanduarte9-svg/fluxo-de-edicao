@@ -112,6 +112,13 @@ Short 9:16, 2160×3840, 60 fps, 46,2 s, −13,8 LUFS. Folha de quadros a cada 0,
 - Logo em PNG transparente: `assets/fire-grace-logo.png` (410×410).
 - **Uso nos Shorts:** escurecer a cena até o preto (~0,7 s), colar o cartão, deixar a música seguindo; a legenda karaokê pode continuar por cima, como na referência 2. Contar os 6 s do cartão dentro do limite de 35 s do Short.
 
+## Publicação (conectado em 22/11/2026)
+- **Canal no YouTube:** FIRE & GRACE (`UCu2-et8aU5qh8zUYBAxkDDg`), conta Google natanmusicagospel@gmail.com.
+- **Agendamento pelo Metricool** (marca `8216784`, dona: natanduarte9@gmail.com, fuso America/Sao_Paulo). O vidIQ do Claude não aceita um 2º canal no plano grátis.
+- **Melhores horários (Metricool, público do canal):** pico às **16h** de segunda a sexta (o mais forte: **quarta e quinta 16h**); segundo pico às **10h**. Fim de semana bem mais fraco (melhor 16h).
+- **Agenda sugerida:** vídeo longo **quarta 16h**; os 3 Shorts **quinta 16h, sexta 10h e sábado 16h** (ou segunda/terça 16h da semana seguinte).
+- **Para agendar:** o vídeo pronto precisa de um link público (ex.: Google Drive compartilhado); o Metricool importa. Sempre mostrar a agenda e esperar o "sim" do usuário.
+
 ## Pendente
 - [x] Vídeo de referência estudado (seção acima).
 - [x] Encerramento original recebido e traduzido; logo extraído em boa qualidade.

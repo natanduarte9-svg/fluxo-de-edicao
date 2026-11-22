@@ -29,6 +29,9 @@ Construído por engenharia reversa dos Shorts de 21–22/11/2026 (`projetos/gta-
 ## Transições
 - Ao juntar trechos: fade de 0,3 s na imagem e no som.
 
+## Publicação
+- **Canal:** JOGATINA FACIL (`UCUVvM4v7SHp-wxtsFYrEmWA`, @natanduarte7304), **conectado ao vidIQ do Claude com permissão de publicar** (desde 22/11/2026). Upload e agendamento pelo vidIQ (`vidiq_video_upload` + `vidiq_social_post_*`), sempre com o "sim" do usuário.
+
 ## Entrega
 - MP4 H.264 + AAC, sem marca d'água, mandado pelo chat.
 - Ferramenta: `ferramentas/short-gameplay.sh`.
