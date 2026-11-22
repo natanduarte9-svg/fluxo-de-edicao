@@ -79,6 +79,7 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 ### 23/11/2026: voz substituta do ElevenLabs
 - Pedido do usuário: substituto melhor que o Kokoro ("voz nada natural") para quando o ElevenLabs acabar. Pesquisado: XTTS v2 e Qwen3-TTS (bons, mas precisam baixar modelos do Hugging Face, bloqueado aqui, e são lentos sem placa de vídeo); **escolhido: vozes neurais da Microsoft (edge-tts)**, grátis e naturais. Liberado `speech.platform.bing.com` (aprovado pelo notebook). Ver seção 10 do guia.
 - Orientado o usuário a sair das contas no notebook emprestado (Claude, Metricool, vidIQ, GitHub, Google) e conferir pelo celular.
+- **Concluído (23/11):** saiu das contas no notebook e apagou os dados de 24 h. Pelo celular, desconectou as sessões do Windows nas duas contas Google (natanduarte9 e natanmusicagospel). GitHub sem sessão do Windows. vidIQ e Metricool seguem ligados aos canais (não dependem do notebook). Caminho no celular: Configurações → Google → Gerenciar sua Conta → Segurança e login → Seus dispositivos.
 
 ### Contas e saldos (21/11/2026)
 - **OpusClip:** plano de teste, **90 minutos** de processamento (~1 min de saldo por minuto de vídeo). Aceita link do Google Drive e pode limitar o trecho (`rangeStart`/`rangeEnd`). No teste, os cortes podem sair com marca d'água.
