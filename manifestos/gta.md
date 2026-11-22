@@ -42,11 +42,13 @@ Vídeo `minhaproducao.mp4` (30 s, 9:16), feito por ele no **YouTube Create + Cap
 6. **Final:** pergunta para comentar ("e você teria esse carro na sua garagem? comenta") + **sticker de inscrição** (canto superior direito) nos últimos ~7 s.
 **Texto na tela:** legenda **no topo** (y ≈ 15–25%), caixa alta, fonte condensada pesada, **branca com a palavra-chave em amarelo** e contorno preto, poucas palavras por vez.
 **O que isso ensina (padrão a seguir):** cenas **realistas e cinematográficas** (não desenho), **um movimento contínuo de câmera do macro ao detalhe** (mapa → cidade → rua → carro), transições que **viajam pelo espaço** (nuvens), narração que **conduz o olhar** ("preste atenção no mapa"), revelação do carro como clímax e CTA no fim.
-**Pontos a melhorar quando fizermos o nosso:** volume estava em **−18,6 LUFS** (usar −14); legenda quebrava palavra no meio ("M / ÁQUINAS", "PRESENÇ / A") e juntava palavras ("PRESTEATENÇÃO"); nome do carro saiu "GROTCHITA" (escrever "Grotti Cheetah"); exportar em **1080×1920** (veio em 720×1280).
+**Pontos a melhorar quando fizermos o nosso:** volume estava em **−18,6 LUFS** (usar −14); legenda quebrava palavra no meio ("M / ÁQUINAS", "PRESENÇ / A") e juntava palavras ("PRESTEATENÇÃO"); nome do carro saiu "GROTCHITA" (escrever "Grotti Cheetah"); exportar em **1080×1920** (veio em 720×1280 só porque era teste).
 **Como ele fez (processo do usuário):**
 1. Pediu a uma IA de texto um **roteiro cena por cena**, com **prompt de cada cena** e **imagens de referência**.
 2. Gerou **cada cena** no **YouTube Create** (foto/prompt → vídeo com IA, grátis).
 3. **Montou no CapCut**: ordem, transições, narração, legenda, sticker.
+
+★ **Resolução:** sempre **começar em 1080** (gerar as cenas em 1080p quando o gerador permitir). Calcular os créditos antes; se o saldo grátis não der para o vídeo inteiro em 1080, **avisar o usuário** e propor a alternativa (ex.: gerar em 720/768p e ampliar para 1080×1920 na montagem, menos cenas, ou esperar a renovação). Nunca baixar a resolução sem avisar.
 
 ★ **O nosso processo padrão para vídeos assim (divisão de trabalho):**
 1. **Eu escrevo o roteiro cena por cena** (`ROTEIRO.md`): para cada cena, duração, movimento de câmera, o que acontece, **prompt pronto para o gerador de vídeo** (em inglês, curto) e, quando ajudar, **prompt da imagem de referência** ou o print do jogo a usar como primeiro quadro. Mostro antes e espero o "ok".

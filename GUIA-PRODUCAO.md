@@ -252,6 +252,7 @@ Enquanto os canais não monetizam, **só créditos grátis**. Acabou numa, passa
 | **Edição, 3D, legendas, efeitos** | **Tudo aqui, grátis:** three.js + pós-processamento, lemo-opuscar, pixelfx, video-shotcraft, librosa, ffmpeg | — | — |
 
 - Nunca gerar duas vezes por engano; nunca ativar plano pago, recarga ou "overage".
+- ★ **Resolução padrão 1080** nos dois canais. Fazer a conta de créditos antes (resolução × duração × nº de cenas); se não couber, **avisar e propor** (720/768p ampliado, menos cenas ou esperar renovar) — nunca reduzir em silêncio.
 - Se nenhuma opção grátis de alta qualidade sobrar para aquele passo, **avisar o usuário** e propor esperar a renovação (ex.: vidIQ dia 27) em vez de baixar a qualidade sem dizer.
 
 ### Vozes da Microsoft (edge-tts) — liberadas em 22/11/2026
