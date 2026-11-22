@@ -43,6 +43,16 @@ Vídeo `minhaproducao.mp4` (30 s, 9:16), feito por ele no **YouTube Create + Cap
 **Texto na tela:** legenda **no topo** (y ≈ 15–25%), caixa alta, fonte condensada pesada, **branca com a palavra-chave em amarelo** e contorno preto, poucas palavras por vez.
 **O que isso ensina (padrão a seguir):** cenas **realistas e cinematográficas** (não desenho), **um movimento contínuo de câmera do macro ao detalhe** (mapa → cidade → rua → carro), transições que **viajam pelo espaço** (nuvens), narração que **conduz o olhar** ("preste atenção no mapa"), revelação do carro como clímax e CTA no fim.
 **Pontos a melhorar quando fizermos o nosso:** volume estava em **−18,6 LUFS** (usar −14); legenda quebrava palavra no meio ("M / ÁQUINAS", "PRESENÇ / A") e juntava palavras ("PRESTEATENÇÃO"); nome do carro saiu "GROTCHITA" (escrever "Grotti Cheetah"); exportar em **1080×1920** (veio em 720×1280).
+**Como ele fez (processo do usuário):**
+1. Pediu a uma IA de texto um **roteiro cena por cena**, com **prompt de cada cena** e **imagens de referência**.
+2. Gerou **cada cena** no **YouTube Create** (foto/prompt → vídeo com IA, grátis).
+3. **Montou no CapCut**: ordem, transições, narração, legenda, sticker.
+
+★ **O nosso processo padrão para vídeos assim (divisão de trabalho):**
+1. **Eu escrevo o roteiro cena por cena** (`ROTEIRO.md`): para cada cena, duração, movimento de câmera, o que acontece, **prompt pronto para o gerador de vídeo** (em inglês, curto) e, quando ajudar, **prompt da imagem de referência** ou o print do jogo a usar como primeiro quadro. Mostro antes e espero o "ok".
+2. **As cenas são geradas** pelo gerador grátis da vez (rodízio): **YouTube Create pelo usuário** (ele manda os clipes pelo Drive) ou **vidIQ por mim** (com o custo mostrado antes).
+3. **Eu monto tudo aqui**: ordem e transições (inclusive as "viagens" mapa → cidade → rua), narração Antonio quando pedida, legenda karaokê sincronizada, sticker, música/efeitos, **−14 LUFS**, **1080×1920**, revisão quadro a quadro.
+
 **Como reproduzir esse nível aqui:** cena aérea/mapa realista e o carro com movimento → **IA de vídeo** (vidIQ Veo/MiniMax, ou YouTube Create no celular, conforme o rodízio grátis); mergulho mapa→cidade e travessia das nuvens → **three.js** (plano com textura do mapa + partículas de nuvem volumétrica + transição) ou IA de vídeo com quadro inicial/final; montagem, legenda karaokê sincronizada (edge-tts dá o tempo de cada palavra), sticker, −14 LUFS e 1080×1920 → **aqui, em código**.
 
 ## Formato "Aula de GTA" (lousa própria) — teste de 22/11/2026

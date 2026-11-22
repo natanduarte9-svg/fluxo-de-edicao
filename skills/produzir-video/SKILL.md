@@ -60,6 +60,8 @@ Antes de planejar, confira se as ferramentas estão instaladas (`claude plugin l
 Siga o método da ferramenta escolhida (o `AGENTS.md` do lemo-opuscar, o `SKILL.md` do pixelfx ou do shotcraft). Renderização determinística: cada quadro depende só do tempo `t`.
 
 ## 4. Planejar (antes de qualquer código ou geração)
+★ **Para vídeos realistas (cenas por IA), o roteiro traz o prompt pronto de cada cena** (para o YouTube Create do usuário ou para o vidIQ) — é o processo que o usuário já usa e aprovou (ver `manifestos/gta.md`, referência de qualidade).
+
 Escreva `ROTEIRO.md` na pasta do projeto:
 1. **Gancho dos primeiros 3 segundos.**
 2. **Arco:** começo, virada, final que ecoa o começo.
