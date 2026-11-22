@@ -32,7 +32,16 @@ Construído por engenharia reversa dos Shorts de 21–22/11/2026 (`projetos/gta-
 ## Publicação
 - **Canal:** JOGATINA FACIL (`UCUVvM4v7SHp-wxtsFYrEmWA`, @natanduarte7304), **conectado ao vidIQ do Claude com permissão de publicar** (desde 22/11/2026). Upload e agendamento pelo vidIQ (`vidiq_video_upload` + `vidiq_social_post_*`), sempre com o "sim" do usuário.
 
-- **Horário:** o Studio ainda não tem dados ("Não há dados suficientes", 21/11/2026). Canal pequeno: 17 espectadores/mês, 94% novos. Seguir o padrão do usuário (Shorts depois das 20h).
+- **Horário:** o Studio ainda não tem dados ("Não há dados suficientes", 21/11/2026). Canal pequeno: 17 espectadores/mês, 94% novos.
+- ★ **Mesma agenda do FIRE & GRACE (pedido do usuário em 22/11/2026):**
+  | Dia | Hora | O que |
+  |---|---|---|
+  | Dia 1 | **19h40** | **Vídeo longo** — sempre o primeiro |
+  | Dia 1 | **20h00** | **Short 1** |
+  | Dia 2 | **20h00** | **Short 2** |
+  | Dia 3 | **20h00** | **Short 3** |
+- ★ **Todo Short leva ao vídeo longo do Dia 1:** "Vídeo relacionado" do YouTube apontando para o longo + link do longo na descrição. Agendar o longo primeiro.
+- Quando houver só Shorts soltos (sem vídeo longo), postar às **20h**, um por dia.
 
 ## Entrega
 - MP4 H.264 + AAC, sem marca d'água, mandado pelo chat.
