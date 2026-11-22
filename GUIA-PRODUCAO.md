@@ -200,3 +200,24 @@ Regra fixa: {o que nunca muda — um plano só, sem cortes, nunca atravessa X}.
 Esforço: {medium|high|max}.
 Antes de terminar: abra a página, corrija erros e garanta que a animação grava limpa em {segundos} s.
 ```
+
+---
+
+## 8. Claude + CapCut (vídeo do Matt Penny, transcrição lida em 22/11/2026)
+
+### Como ele trabalha
+- Uma **"CapCut Bridge"** (scripts) liga o Claude ao **CapCut instalado no computador**. O Claude cria o projeto, corta, põe textos, efeitos e músicas **dentro do CapCut**, e até aperta botões dele (ex.: remover fundo).
+- **⚠️ Para nós: isso exige CapCut de computador.** O usuário trabalha só pelo **celular** (CapCut do celular não pode ser controlado). Então o nosso fluxo é: **eu edito aqui na nuvem e entrego o vídeo pronto** (ou partes separadas para ajustes no CapCut do celular).
+
+### Lições que valem para nós
+1. **Transcrição com o tempo de cada palavra** é a base de tudo: cortar silêncios e erros, encaixar legenda karaokê, efeitos e imagens no momento certo. Ele usa **Deepgram** (grátis para começar); nós já temos o **faster-whisper** instalado (grátis, roda aqui).
+2. **IA faz 90%, você faz os 10% finais.** Ajuste pequeno (meio segundo, volume, posição) é mais rápido à mão do que pedindo para a IA renderizar tudo de novo. **Para o celular:** quando fizer sentido, entregar também **uma versão sem legenda** e o **arquivo de legenda (.srt)**, para o usuário ajustar no CapCut.
+3. **Guia de estilo / manifesto** é "o ativo mais importante" (igual ao vídeo do Fable). Os nossos: `manifestos/`.
+4. **Biblioteca de efeitos sonoros com "dicionário":** a IA não ouve áudio, então cada efeito precisa de uma **descrição em texto** (nome do arquivo + o que soa). Efeitos **pré-aprovados** soam melhor que efeitos gerados por IA (os gerados ficaram "50% ruins"). **Música de fundo por IA (ElevenLabs) funciona bem;** para áudio viral, usar biblioteca.
+5. **Pedido específico** quando não há skill: dizer onde entra cada coisa, cores, fontes, e terminar com uma **checagem**: "assista tudo, veja se nada cobre o rosto, se texto não bate na legenda, se está tudo escrito certo e se não há trecho parado".
+6. **Erros comuns viram skill de checagem:** depois de achar os erros que se repetem, criar uma checagem que os procura sempre.
+7. **Processos com passos (ex.: rotoscopia: texto entre a pessoa e o fundo) viram skill:** descrever o passo a passo uma vez, salvar, e depois só pedir "rotoscopa aqui".
+8. **Imagem real vs. imagem de IA:** para lugar, pessoa ou objeto real, buscar **foto real** (ele usa Brave Image Search, com chave de API); IA só para o que é ilustrativo.
+9. **B-roll por IA:** pedir ideias à IA ("onde caberia um B-roll de 3–4 s e o que mostrar?"), escolher, e gerar com modelo e formato definidos (ex.: Kling, 720p, 16:9). Texto dentro de vídeo de IA costuma sair ilegível.
+10. **Correção de cor:** acertar os valores uma vez e salvar como padrão.
+11. **Não deixar a IA copiar edições antigas** do mesmo arquivo quando quiser uma nova ("não use edições anteriores deste clipe").

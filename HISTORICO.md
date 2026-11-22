@@ -54,6 +54,9 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - Estudado pelos guias do `sandbase-lab/awesome-fable-5-2` e pesquisa na web. Resultado na seção 7 do `GUIA-PRODUCAO.md`. **Conclusão: Fable é mais caro que o Opus; a reserva barata é o Sonnet 5.5.**
 - Depois, o usuário colou a **transcrição** do vídeo. Lições na seção 7 do guia: Fable ~5x mais lento e ~3–4x mais caro; a maior economia é não refazer, usando um **manifesto de vídeo**; Fable planeja e Opus executa. Criados `manifestos/gta.md` (completo, a partir dos Shorts) e `manifestos/fire-grace.md` (rascunho com perguntas).
 
+### 22/11/2026: Claude + CapCut
+- Transcrição colada pelo usuário (vídeo do Matt Penny sobre editar no CapCut com o Claude). Lições na seção 8 do guia. **A "CapCut Bridge" precisa de CapCut no computador; o usuário só tem celular**, então seguimos editando na nuvem e entregando pronto (com versão sem legenda + .srt quando ajudar).
+
 ### Contas e saldos (21/11/2026)
 - **OpusClip:** plano de teste, **90 minutos** de processamento (~1 min de saldo por minuto de vídeo). Aceita link do Google Drive e pode limitar o trecho (`rangeStart`/`rangeEnd`). No teste, os cortes podem sair com marca d'água.
 - **vidIQ:** 2 créditos (150 renovam em 27/11).
@@ -63,6 +66,7 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - [ ] **27/11, 19h:** gerar o vídeo do Elias (reanexar a imagem e confirmar o custo).
 - [x] **Shorts de GTA, parte 1:** 3 Shorts entregues (ver `projetos/gta-shorts-01/`). Mandar as próximas partes quando houver.
 - [ ] Completar o `manifestos/fire-grace.md` com o usuário (8 perguntas no fim do arquivo).
+- [ ] Montar uma **biblioteca de efeitos sonoros com dicionário** (CC0, ex.: Freesound pelo `sfx-source.py` do video-shotcraft) para GTA e FIRE & GRACE.
 - [ ] Testar o react-three-rapier, o react-postprocessing e o video-shotcraft num projeto real.
 - [x] Ambiente da nuvem **fluxo-de-edicao** criado com o script de instalação e o Google Drive liberado (aprovado pelo notebook em 21/11). Confirmar na próxima sessão nova que o script rodou sozinho.
 - [x] Levar tudo para o `main` (PR #1, mesclado em 21/11).
