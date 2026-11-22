@@ -35,6 +35,9 @@ Se o pedido for um pacote completo de lançamento do canal (título, thumbnail, 
 Antes de planejar, confira se as ferramentas estão instaladas (`claude plugin list`, `ffmpeg -version`, pasta `~/motion-kit`). O que faltar, instale seguindo a seção 6 do guia, avisando a pessoa. **ffmpeg precisa ser 7 ou mais novo.**
 
 ## 3. Escolher as ferramentas
+★ **Só créditos grátis enquanto os canais não monetizam**: conferir o saldo e seguir o rodízio da seção 10 do guia.
+★ **Sempre a opção mais profissional disponível** (regra do usuário: os canais precisam monetizar). Comece pela melhor ferramenta da tabela e só desça para uma mais simples com motivo, dizendo qual seria a melhor e por que não foi usada.
+
 | O vídeo precisa de... | Use |
 |---|---|
 | Movimento real (pessoa, fogo, água, tecido) | **3A. IA de vídeo**: vidIQ (`vidiq_generate_video`), imagem como primeiro quadro |
@@ -57,6 +60,8 @@ Antes de planejar, confira se as ferramentas estão instaladas (`claude plugin l
 Siga o método da ferramenta escolhida (o `AGENTS.md` do lemo-opuscar, o `SKILL.md` do pixelfx ou do shotcraft). Renderização determinística: cada quadro depende só do tempo `t`.
 
 ## 4. Planejar (antes de qualquer código ou geração)
+★ **Para vídeos realistas (cenas por IA), o roteiro traz o prompt pronto de cada cena** (para o YouTube Create do usuário ou para o vidIQ) — é o processo que o usuário já usa e aprovou (ver `manifestos/gta.md`, referência de qualidade).
+
 Escreva `ROTEIRO.md` na pasta do projeto:
 1. **Gancho dos primeiros 3 segundos.**
 2. **Arco:** começo, virada, final que ecoa o começo.

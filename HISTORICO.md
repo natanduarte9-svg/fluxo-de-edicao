@@ -63,6 +63,23 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - Liberado `mcp.vidiq.com` no ambiente (envio de arquivos ao vidIQ).
 - **YouTube Create não tem conexão** (app de celular). Alternativa: Veo/MiniMax pelo vidIQ, ou o usuário gera no app e manda pelo Drive.
 
+### 22/11/2026: teste do Short "mapa dos supercarros"
+- Feito só para testar o aprendizado (não publicar). Ver `projetos/gta-mapa-exoticos/`. Sites de jogos são bloqueados pela rede; **miniaturas do YouTube (i.ytimg.com) e GitHub funcionam** para pegar imagens de referência.
+
+### 22/11/2026: retorno do usuário sobre os testes do mapa
+- "Ficou bom, mas pode melhorar. Nos próximos testes, usar os **melhores recursos**, algo **mais profissional**", citando o **three.js** (3D).
+- ★ **Regra para os próximos testes:** não ficar só em 2D com PIL. Usar o que temos de melhor:
+  1. **three.js** (cena 3D de verdade: mapa em relevo/inclinado, câmera voando, pinos 3D, carro em cartão 3D com reflexo) + **react-postprocessing**/`core/three/post.js` do lemo-opuscar (brilho, profundidade de campo, granulado).
+  2. Um **estilo do lemo-opuscar** que combine (ex.: *3D Map Explainer*, *Satellite Briefing*, *Glass Product Render*), seguindo o `DIRECTOR.md` (roteiro antes, plano marcante, 4+ movimentos de câmera).
+  3. **librosa** para cortes e impactos na batida da trilha.
+  4. **Voz melhor** (ElevenLabs, com custo mostrado antes) quando for para valer.
+  5. **Imagens reais do jogo** (prints do usuário) quando for para publicar.
+- Sem placa de vídeo aqui, o 3D renderiza mais devagar (minutos por vídeo curto), mas funciona.
+
+### 23/11/2026: voz substituta do ElevenLabs
+- Pedido do usuário: substituto melhor que o Kokoro ("voz nada natural") para quando o ElevenLabs acabar. Pesquisado: XTTS v2 e Qwen3-TTS (bons, mas precisam baixar modelos do Hugging Face, bloqueado aqui, e são lentos sem placa de vídeo); **escolhido: vozes neurais da Microsoft (edge-tts)**, grátis e naturais. Liberado `speech.platform.bing.com` (aprovado pelo notebook). Ver seção 10 do guia.
+- Orientado o usuário a sair das contas no notebook emprestado (Claude, Metricool, vidIQ, GitHub, Google) e conferir pelo celular.
+
 ### Contas e saldos (21/11/2026)
 - **OpusClip:** plano de teste, **90 minutos** de processamento (~1 min de saldo por minuto de vídeo). Aceita link do Google Drive e pode limitar o trecho (`rangeStart`/`rangeEnd`). No teste, os cortes podem sair com marca d'água.
 - **vidIQ:** 2 créditos (150 renovam em 27/11).

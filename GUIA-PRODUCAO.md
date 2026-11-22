@@ -232,3 +232,32 @@ Antes de terminar: abra a página, corrija erros e garanta que a animação grav
   - **Área segura nos verticais 1080×1920:** tudo que importa entre **y=200 e y=1620** (fora disso, a interface do Shorts/TikTok cobre).
   - **Último quadro:** evitar quadro preto no final, porque o Shorts repete o vídeo em loop e o preto vira uma "piscada". Segurar o último quadro (no FIRE & GRACE o final já é o cartão preto do encerramento, então tudo bem).
   - Dois estilos prontos de legenda dele: (A) caixa preta arredondada com palavras surgindo uma a uma, no centro; (B) Inter Bold branca com contorno preto, sem caixa, baixa, 3–4 palavras por linha, sem animação.
+
+## 9. Narração e legenda sincronizada (aprendido no teste de 22/11/2026)
+- **Voz grátis em português do Brasil:** Kokoro (já instalado no lemo-opuscar) tem `pm_alex`, `pm_santa` (masculinas) e `pf_dora` (feminina). Rodar `core/tts/tts.py` com `"lang": "pt-br"`. Escrever números por extenso no texto da voz ("GTA seis") e em algarismo na legenda ("GTA 6").
+- **Tempo de cada palavra:** o modelo de transcrição (Whisper) não baixa aqui (Hugging Face bloqueado). Alternativa que funcionou: achar as pausas no áudio de cada frase e distribuir as palavras pelo tamanho. Para precisão total, liberar o Hugging Face no ambiente (pelo computador) e usar o faster-whisper.
+- **Mix:** voz comprimida e à frente; música **abaixada ~12 dB** enquanto há voz (ducking); efeitos nos movimentos de câmera.
+- **Legenda:** 2–3 palavras por vez, palavra falada em amarelo, faixa escura semitransparente atrás para ler sobre qualquer fundo; nunca em cima de cartão, título ou sticker.
+- **Imagens de referência:** sites de jogos são bloqueados; miniaturas do YouTube (`i.ytimg.com/vi/<id>/maxresdefault.jpg`) funcionam para testes.
+
+## 10. Rodízio de ferramentas grátis (regra do usuário, 22/11/2026)
+Enquanto os canais não monetizam, **só créditos grátis**. Acabou numa, passa para a próxima da mesma linha, **sempre a de melhor qualidade disponível**. Conferir o saldo antes (ex.: `vidiq_balance`, `account_get_usage` do ElevenLabs, `opusclip_get_usage`).
+
+| Precisa de... | 1ª opção (melhor) | Se acabar → | Último recurso (grátis e ilimitado) |
+|---|---|---|---|
+| **Vídeo com movimento real** (imagem → vídeo) | **vidIQ** (Veo 3.1 Lite / MiniMax H3), 150 créditos/mês, renova todo dia 27 | **YouTube Create** no celular (foto para vídeo com Veo, grátis; o usuário gera e manda pelo Drive) · planos grátis de outros geradores (Hailuo, Dreamina/CapCut, PixVerse) feitos pelo usuário | Animação em código (three.js, 2,5D): câmera, luz, partículas — sem movimento do personagem |
+| **Voz / narração** | **ElevenLabs** (plano grátis: ~10 mil caracteres/mês) | **Vozes neurais da Microsoft (edge-tts)**, grátis e sem limite prático, bem naturais: `pt-BR-AntonioNeural` (masc.), `pt-BR-FranciscaNeural` (fem.), `pt-BR-ThalitaMultilingualNeural` (fem.) | **Kokoro** local (`pm_alex`, `pm_santa`, `pf_dora`): voz pouco natural, só se nada mais funcionar |
+| **Cortes automáticos de vídeo longo** | **OpusClip** (teste: 90 min) | **Descript** (se tiver créditos) | Edição aqui com ffmpeg (grátis, sem marca d'água) |
+| **Música** | Trilha original sintetizada aqui / biblioteca do lemo-opuscar (CC0/CC BY) | ElevenLabs Music (se houver créditos) | Trilha em código |
+| **Edição, 3D, legendas, efeitos** | **Tudo aqui, grátis:** three.js + pós-processamento, lemo-opuscar, pixelfx, video-shotcraft, librosa, ffmpeg | — | — |
+
+- Nunca gerar duas vezes por engano; nunca ativar plano pago, recarga ou "overage".
+- ★ **Resolução padrão 1080** nos dois canais. Fazer a conta de créditos antes (resolução × duração × nº de cenas); se não couber, **avisar e propor** (720/768p ampliado, menos cenas ou esperar renovar) — nunca reduzir em silêncio.
+- Se nenhuma opção grátis de alta qualidade sobrar para aquele passo, **avisar o usuário** e propor esperar a renovação (ex.: vidIQ dia 27) em vez de baixar a qualidade sem dizer.
+
+### Vozes da Microsoft (edge-tts) — liberadas em 22/11/2026
+- Host liberado no ambiente: `speech.platform.bing.com`. A biblioteca `edge-tts` já vem no nível "voice" do lemo-opuscar (`/root/lemo-opuscar/.venv`).
+- **Precisa passar o proxy**: `edge_tts.Communicate(texto, "pt-BR-AntonioNeural", rate="+5%", proxy=os.environ["HTTPS_PROXY"])`.
+- Vantagem extra: o edge-tts devolve o **tempo exato de cada palavra** (eventos `WordBoundary`), então a legenda karaokê fica **sincronizada de verdade**, sem estimativa.
+- Para comparar: `projetos/gta-aula/comparacao-vozes.mp3` (Antonio, Francisca, Thalita, Kokoro).
+- ★ **Voz oficial dos dois canais: `pt-BR-AntonioNeural`** (escolha do usuário, 23/11/2026). Narração **só quando o usuário pedir**.

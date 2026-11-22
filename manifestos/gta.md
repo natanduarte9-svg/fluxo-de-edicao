@@ -23,11 +23,47 @@ Construído por engenharia reversa dos Shorts de 21–22/11/2026 (`projetos/gta-
 - Se o vídeo não tiver sticker, usar o nosso (`ferramentas/sticker-inscreva.py`): cartão branco, joinha, botão INSCREVA-SE → clique → INSCRITO, sino. ★ **No mínimo 5 s na tela** (hoje 5,6 s). Em vídeos de ~1 min, aparecer 2 vezes (ex.: 0:04 e 0:40).
 
 ## Som
+- ★ **Narração só quando o usuário pedir** (vídeos didáticos/explicativos). No dia a dia: **vozes e som do próprio jogo**.
+- ★ **Voz escolhida para narrar: Microsoft `pt-BR-AntonioNeural`** (edge-tts, grátis; ElevenLabs só se o usuário pedir e houver crédito).
 - ★ **Só o som do jogo, sem música** (pedido do usuário).
 - Volume padrão do YouTube: **−14 LUFS**, pico −1,5 dB. Fade curto na entrada (0,1 s) e na saída (0,5 s).
 
 ## Transições
 - Ao juntar trechos: fade de 0,3 s na imagem e no som.
+
+## ★ Referência de qualidade feita pelo usuário (23/11/2026) — "é assim que eu quero"
+Vídeo `minhaproducao.mp4` (30 s, 9:16), feito por ele no **YouTube Create + CapCut**. Quadros: `assets/gta-ref-usuario-mapa-carro.jpg`.
+**Estrutura (uma tomada contínua, sem cortes secos):**
+1. **0–8 s — mapa realista estilo satélite** de Leonida (relevo, mar turquesa, nomes das regiões), câmera **aproximando devagar** com **nuvens passando**; narração-gancho: "Você... para conhecer uma das máquinas mais impressionantes do GTA 6? Hoje vamos falar do Grotti Cheetah... **preste atenção no mapa e acompanhe**".
+2. **8–13 s — mergulho** até a região (Port Gellhorn): o mapa vira **vista aérea 3D da cidade**, "é aqui que vamos investigar a localização desse supercarro".
+3. **13–14 s — transição atravessando as nuvens** (a câmera desce do céu para a rua).
+4. **14–16 s — cidade ao pôr do sol**, câmera descendo até o prédio: "agora olha só essa..."
+5. **16–30 s — o carro em cena de cinema** (branco com faixa vermelha, chão molhado, palmeiras, hotel curvo), câmera **avançando/girando devagar** até um close na frente; **faróis acendendo** no final.
+6. **Final:** pergunta para comentar ("e você teria esse carro na sua garagem? comenta") + **sticker de inscrição** (canto superior direito) nos últimos ~7 s.
+**Texto na tela:** legenda **no topo** (y ≈ 15–25%), caixa alta, fonte condensada pesada, **branca com a palavra-chave em amarelo** e contorno preto, poucas palavras por vez.
+**O que isso ensina (padrão a seguir):** cenas **realistas e cinematográficas** (não desenho), **um movimento contínuo de câmera do macro ao detalhe** (mapa → cidade → rua → carro), transições que **viajam pelo espaço** (nuvens), narração que **conduz o olhar** ("preste atenção no mapa"), revelação do carro como clímax e CTA no fim.
+**Pontos a melhorar quando fizermos o nosso:** volume estava em **−18,6 LUFS** (usar −14); legenda quebrava palavra no meio ("M / ÁQUINAS", "PRESENÇ / A") e juntava palavras ("PRESTEATENÇÃO"); nome do carro saiu "GROTCHITA" (escrever "Grotti Cheetah"); exportar em **1080×1920** (veio em 720×1280 só porque era teste).
+**Como ele fez (processo do usuário):**
+1. Pediu a uma IA de texto um **roteiro cena por cena**, com **prompt de cada cena** e **imagens de referência**.
+2. Gerou **cada cena** no **YouTube Create** (foto/prompt → vídeo com IA, grátis).
+3. **Montou no CapCut**: ordem, transições, narração, legenda, sticker.
+
+★ **Resolução:** sempre **começar em 1080** (gerar as cenas em 1080p quando o gerador permitir). Calcular os créditos antes; se o saldo grátis não der para o vídeo inteiro em 1080, **avisar o usuário** e propor a alternativa (ex.: gerar em 720/768p e ampliar para 1080×1920 na montagem, menos cenas, ou esperar a renovação). Nunca baixar a resolução sem avisar.
+
+★ **O nosso processo padrão para vídeos assim (divisão de trabalho):**
+1. **Eu escrevo o roteiro cena por cena** (`ROTEIRO.md`): para cada cena, duração, movimento de câmera, o que acontece, **prompt pronto para o gerador de vídeo** (em inglês, curto) e, quando ajudar, **prompt da imagem de referência** ou o print do jogo a usar como primeiro quadro. Mostro antes e espero o "ok".
+2. **As cenas são geradas** pelo gerador grátis da vez (rodízio): **YouTube Create pelo usuário** (ele manda os clipes pelo Drive) ou **vidIQ por mim** (com o custo mostrado antes).
+3. **Eu monto tudo aqui**: ordem e transições (inclusive as "viagens" mapa → cidade → rua), narração Antonio quando pedida, legenda karaokê sincronizada, sticker, música/efeitos, **−14 LUFS**, **1080×1920**, revisão quadro a quadro.
+
+**Como reproduzir esse nível aqui:** cena aérea/mapa realista e o carro com movimento → **IA de vídeo** (vidIQ Veo/MiniMax, ou YouTube Create no celular, conforme o rodízio grátis); mergulho mapa→cidade e travessia das nuvens → **three.js** (plano com textura do mapa + partículas de nuvem volumétrica + transição) ou IA de vídeo com quadro inicial/final; montagem, legenda karaokê sincronizada (edge-tts dá o tempo de cada palavra), sticker, −14 LUFS e 1080×1920 → **aqui, em código**.
+
+## Formato "Aula de GTA" (lousa própria) — teste de 22/11/2026
+- ★ **Não copiar o vídeo de referência de outra pessoa:** aproveitar só o estilo; usar voz, roteiro, cenário e transições próprios. Ver `projetos/gta-aula/PROJETO.md`.
+
+## Formato "lousa" (didático) — primeiro teste de 22/11/2026 (parecido demais com a referência; usar a "Aula de GTA")
+- Referência do usuário: Reel "Emulador de Xbox" (Instagram). Estrutura: **quadro-negro de giz** no gancho → **quadro verde** com título de desenho + **monitor no pedestal** + selos + estrelinhas → **transição de papel** desenhando o próximo monitor → final "SEGUE!/COMENTA!". **Etiqueta amarela** ("• CARRO 1 · LOCAL") acima da **legenda** na faixa de terra, palavra falada em amarelo.
+- Didático: o monitor mostra **primeiro o que é** (foto) e **depois onde fica** (mapa com pino e círculo de giz), no ritmo da narração.
+- Base em código: `projetos/gta-mapa-exoticos/render_lousa.py`.
 
 ## Publicação
 - **Canal:** JOGATINA FACIL (`UCUVvM4v7SHp-wxtsFYrEmWA`, @natanduarte7304), **conectado ao vidIQ do Claude com permissão de publicar** (desde 22/11/2026). Upload e agendamento pelo vidIQ (`vidiq_video_upload` + `vidiq_social_post_*`), sempre com o "sim" do usuário.
