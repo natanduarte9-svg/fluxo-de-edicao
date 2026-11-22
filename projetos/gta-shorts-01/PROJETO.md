@@ -26,3 +26,23 @@
 - Revisão: −14,0/−14,1 LUFS, nenhum quadro preto.
 
 Uso: `SRC=<fonte> ./make.sh <saída.mp4> <início_s> <fim_s> "LINHA 1" "LINHA 2"` (com `parte-drive.mp4` na mesma pasta).
+
+## Textos para publicar (22/11/2026)
+
+### Short 1: ponte (`short1-ponte.mp4`)
+- **Título:** OS CARROS VOARAM DA PONTE no GTA 6 😱 #shorts
+- **Descrição:**
+  > Eu só queria atravessar a ponte... e os carros saíram VOANDO! 😱🚗
+  > A física do GTA 6 está insana: olha a altura que esses carros foram parar.
+  > 👉 Inscreva-se e ative o sininho para mais momentos insanos de GTA 6!
+  > #GTA6 #GTAVI #GTA6Brasil #Shorts #Gameplay #ViceCity #RockstarGames
+- **Tags (397 caracteres):** gta 6, gta vi, gta 6 gameplay, gta 6 brasil, gta 6 pt br, gta 6 ponte, carros voando gta 6, gta 6 física, gta 6 momentos insanos, gta 6 cenas épicas, gta 6 shorts, gta 6 leonida, gta 6 vice city, grand theft auto 6, grand theft auto vi, rockstar games, gta 6 perseguição, gta 6 acidente, gta 6 legendado, gameplay gta 6 português, melhores momentos gta 6, gta 6 explosão, jogos 2026, gta 6 dublado
+
+### Short 2: fuga + cais (`short-fuga-cais-sticker.mp4`)
+- **Título:** ELE NÃO ESPERAVA POR ISSO... 😳 Acerto de contas no GTA 6 #shorts
+- **Descrição:**
+  > Primeiro a fuga... depois o acerto de contas no cais. Ele não esperava por esse final! 😳🔫
+  > Uma das cenas mais pesadas do GTA 6 até agora.
+  > 👉 Inscreva-se e ative o sininho para mais cenas de GTA 6!
+  > #GTA6 #GTAVI #GTA6Brasil #Shorts #Gameplay #ViceCity #RockstarGames
+- **Tags (385 caracteres):** gta 6, gta vi, gta 6 gameplay, gta 6 brasil, gta 6 pt br, gta 6 missão, gta 6 cena final, gta 6 acerto de contas, gta 6 traição, gta 6 cais, gta 6 fuga, gta 6 perseguição, gta 6 cutscene, gta 6 história, gta 6 shorts, gta 6 leonida, gta 6 vice city, grand theft auto 6, grand theft auto vi, rockstar games, gta 6 legendado, gameplay gta 6 português, melhores momentos gta 6, jogos 2026
