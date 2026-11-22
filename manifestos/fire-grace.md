@@ -134,12 +134,12 @@ Short 9:16, 2160×3840, 60 fps, 46,2 s, −13,8 LUFS. Folha de quadros a cada 0,
 2. **Descrição:** convite para **se inscrever**; contar um pouco do que acontece no vídeo; **uma pergunta para as pessoas comentarem**; **hashtags** no fim (as 3 primeiras aparecem acima do título). Nos Shorts, também o link do vídeo longo.
 3. **Tags:** campo "Tags" do YouTube, **até 500 caracteres no total** (é esse o limite do YouTube; a descrição é que vai até 5.000).
 4. **"Contém promoção paga": NÃO** (desmarcado).
-5. **"Conteúdo alterado ou sintético" (uso de IA): NÃO**, conforme o usuário. ⚠️ Exceção a confirmar no FIRE & GRACE: cenas **realistas** geradas por IA (ex.: Elias com movimento real feito no vidIQ/Veo) entram na regra do YouTube que pede marcar "Sim"; avisar o usuário nesses casos antes de publicar.
+5. ★ **"Conteúdo alterado ou sintético" (uso de IA): SIM** — no FIRE & GRACE as cenas são criadas com IA (decidido pelo usuário em 22/11/2026). Vale para o longo e para os Shorts.
 6. Público: **"Não é conteúdo para crianças"**.
 7. **Esperar o processamento chegar a 100%** antes de mexer na visibilidade.
 8. Visibilidade: **Público**, com **programação** (data e hora da agenda).
 9. Só então apertar **"Programar"**.
-- Pelo Metricool/vidIQ, isso equivale a: `privacy: public` na data agendada, `madeForKids: false`, `isAiGeneratedContent: false` (salvo a exceção acima), sem promoção paga; conferir no Studio depois que o vídeo processar.
+- Pelo Metricool/vidIQ, isso equivale a: `privacy: public` na data agendada, `madeForKids: false`, `isAiGeneratedContent: true`, sem promoção paga; conferir no Studio depois que o vídeo processar.
 
 ## Pendente
 - [x] Vídeo de referência estudado (seção acima).
