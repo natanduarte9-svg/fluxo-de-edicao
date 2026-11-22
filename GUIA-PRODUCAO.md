@@ -221,3 +221,14 @@ Antes de terminar: abra a página, corrija erros e garanta que a animação grav
 9. **B-roll por IA:** pedir ideias à IA ("onde caberia um B-roll de 3–4 s e o que mostrar?"), escolher, e gerar com modelo e formato definidos (ex.: Kling, 720p, 16:9). Texto dentro de vídeo de IA costuma sair ilegível.
 10. **Correção de cor:** acertar os valores uma vez e salvar como padrão.
 11. **Não deixar a IA copiar edições antigas** do mesmo arquivo quando quiser uma nova ("não use edições anteriores deste clipe").
+
+### O capcut-kit (github.com/matt-j-penny/capcut-kit), estudado em 22/11/2026
+- **Precisa do CapCut de computador.** No **Mac** funciona tudo: edita os arquivos de projeto do CapCut e também "clica" nos botões dele. No **Windows**, só a parte de arquivos (criar o projeto com os cortes, textos, imagens, posição e keyframes), e ela **nunca foi testada** em Windows de verdade. **No celular não funciona.** Por isso não instalamos.
+- Se um dia houver um computador próprio: instalar o CapCut, o Claude Code nele, `uv` e `ffmpeg`, e rodar `uv run capcut-bridge.py doctor` antes de confiar.
+- Regras dele que valem para nós:
+  - **Legenda sempre a partir de UMA transcrição oficial**, a do áudio que vai ser entregue. Transcrição de um pedaço solto faz a legenda escorregar no fim.
+  - **Arquivo de correções** de palavras que a transcrição erra (ex.: nomes próprios, "Claude", termos bíblicos). Corrigir só o texto exibido e aumentar a lista a cada erro novo.
+  - **Jogar fora "lascas" de palavra com menos de 0,2 s** (começos falsos nos cortes).
+  - **Área segura nos verticais 1080×1920:** tudo que importa entre **y=200 e y=1620** (fora disso, a interface do Shorts/TikTok cobre).
+  - **Último quadro:** evitar quadro preto no final, porque o Shorts repete o vídeo em loop e o preto vira uma "piscada". Segurar o último quadro (no FIRE & GRACE o final já é o cartão preto do encerramento, então tudo bem).
+  - Dois estilos prontos de legenda dele: (A) caixa preta arredondada com palavras surgindo uma a uma, no centro; (B) Inter Bold branca com contorno preto, sem caixa, baixa, 3–4 palavras por linha, sem animação.
