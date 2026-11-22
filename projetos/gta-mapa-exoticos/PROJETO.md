@@ -15,9 +15,13 @@ As páginas não puderam ser abertas aqui (rede bloqueia os sites); a comparaç�
 
 **Fontes de desempate recomendadas:** mapa interativo da **GTABase** com os 124 "Standout Vehicles" (https://www.gtabase.com/gta-6/map/?feature=standout-vehicle) e as páginas de cada carro na **Game8**.
 
-**Proposta:** manter 1, 3, 4 e 5; **trocar o Itali RSX** (ou o usuário confere no jogo).
+**Decisão (22/11/2026):** trocar o Itali RSX pelo **Pegassi Infernus**:
+| 2 | **Pegassi Infernus** | Várias fontes concordam: **estacionamento (prédio-garagem) da Delegacia de Crosstown, NW 9th Street, Vice City**, quase todas no **7º andar** (uma diz 9º). Entrada pela porta lateral à direita da guarita (código 5270, segundo um guia) ou esperando um policial sair pelo portão. Tem **rastreador**; os guias sugerem fugir pelo salto do terraço. Carro da lista do Randy. | **ALTA** (local) |
+
+**Lista final (a conferir no jogo):** 1. Progen Emerus "Royal Ruby" (Vespucci Mansion) · 2. Pegassi Infernus (Delegacia de Crosstown, 7º andar) · 3. Pfister Comet "Class Act" (Starfish Island, mansão SO) · 4. Truffade Thrax (reboque no Boone Speedway) · 5. Pegassi Tempesta dourado (Crimson Palms, rampa da garagem).
 
 ## Fontes
+- https://insider-gaming.com/where-to-find-the-pegassi-infernus-gta-6/ · https://gamerant.com/gta-6-pegassi-infernus-location-randy-wish-list/ · https://www.pushsquare.com/guides/gta-6-randys-wish-list-vehicle-locations
 - https://game8.co/games/GTA-6/archives/639210 (Emerus) · https://game8.co/games/GTA-6/archives/639125 (Itali RSX) · https://game8.co/games/GTA-6/archives/639201 (Comet)
 - https://gamerant.com/gta-6-vespucci-mansion-kingpin-heathen-rifle-ar-progen-royal-ruby-emerus-super-car/
 - https://www.ezg.com/blog/gta-6-vespucci-mansion-guide
