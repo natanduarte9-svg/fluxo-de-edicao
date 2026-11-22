@@ -99,8 +99,14 @@ Short 9:16, 2160×3840, 60 fps, 46,2 s, −13,8 LUFS. Folha de quadros a cada 0,
 ### Som
 - Só a música. A música segue tocando no cartão final.
 
+## Encerramento oficial (pronto para usar)
+- **`assets/encerramento-pt-16x9.mp4`** (vídeo longo) e **`assets/encerramento-pt-9x16.mp4`** (Shorts, com "assista o vídeo completo clicando no título" aparecendo aos 3,9 s). 6 s, com o som original.
+- Feito a partir do encerramento enviado pelo usuário (`encerramento.mp4`, 1920×1080, 6 s): logo do leão surge com clarão, botão do YouTube, pílulas **CURTIR** e **INSCREVA-SE** (traduzidas quadro a quadro de LIKE/SUBSCRIBE com `ferramentas/traduzir-encerramento.py`, fonte Montserrat ExtraBold) e "FIRE & GRACE" em amarelo.
+- Logo em PNG transparente: `assets/fire-grace-logo.png` (410×410).
+- **Uso:** colar no fim de todo vídeo, depois de escurecer a cena até o preto (~0,7 s). A legenda da música pode continuar por cima, como na referência 2.
+
 ## Pendente
 - [x] Vídeo de referência estudado (seção acima).
-- [ ] Pedir ao usuário o **arquivo original do logo** (o recorte do vídeo está em baixa qualidade).
+- [x] Encerramento original recebido e traduzido; logo extraído em boa qualidade.
 - [ ] Montar o cartão de encerramento e a legenda karaokê como ferramentas reutilizáveis (no primeiro vídeo real).
 - [ ] Confirmar no primeiro vídeo longo se ele também leva o sticker (até agora: só nos Shorts).
