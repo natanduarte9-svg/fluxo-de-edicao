@@ -32,6 +32,8 @@ Construído por engenharia reversa dos Shorts de 21–22/11/2026 (`projetos/gta-
 ## Publicação
 - **Canal:** JOGATINA FACIL (`UCUVvM4v7SHp-wxtsFYrEmWA`, @natanduarte7304), **conectado ao vidIQ do Claude com permissão de publicar** (desde 22/11/2026). Upload e agendamento pelo vidIQ (`vidiq_video_upload` + `vidiq_social_post_*`), sempre com o "sim" do usuário.
 
+- **Horário:** o Studio ainda não tem dados ("Não há dados suficientes", 21/11/2026). Canal pequeno: 17 espectadores/mês, 94% novos. Seguir o padrão do usuário (Shorts depois das 20h).
+
 ## Entrega
 - MP4 H.264 + AAC, sem marca d'água, mandado pelo chat.
 - Ferramenta: `ferramentas/short-gameplay.sh`.

@@ -117,7 +117,9 @@ Short 9:16, 2160×3840, 60 fps, 46,2 s, −13,8 LUFS. Folha de quadros a cada 0,
 - **Agendamento pelo Metricool** (marca `8216784`, dona: natanduarte9@gmail.com, fuso America/Sao_Paulo). O vidIQ do Claude não aceita um 2º canal no plano grátis.
 - **Horários atuais do usuário (usar até termos dados reais):** vídeo longo **19h40**; Shorts **depois das 20h**; às vezes **8h10/8h15**.
 - ⚠️ Os "melhores horários" do Metricool (16h/10h) **não são do canal**: o canal acabou de ser conectado e ele ainda não tem dados; é média geral. **Não usar.**
-- **Fonte certa:** YouTube Studio → Análises → Público → "Quando seus espectadores estão no YouTube" (prints pendentes; ou vidIQ `channel_analytics_extended` report=audience, 5 créditos).
+- **Fonte certa:** YouTube Studio → Análises → Público → "Quando seus espectadores estão no YouTube". **Em 21/11/2026 ainda dizia "Não há dados suficientes"**. Olhar de novo daqui a algumas semanas.
+- **Público (Studio, últimos 28 dias, em 21/11/2026):** 1,8 mil espectadores por mês; +77 inscritos; **97,7% novos espectadores**; **85% no celular** (8,7% TV); **86% Brasil**; idade: **35–44 (28%)**, **25–34 (25,6%)**, 45–54 (15,9%), 13–17 (15%), 55–64 (11,5%); **60% mulheres**. Vídeos mais vistos: "À MEIA-NOITE EU VOU TE..." (1,4 mil) e "ELE MORREU POR AMOR" (1,1 mil).
+- **Leitura:** adultos de 25 a 54 anos, no celular → o horário do usuário (**19h40 / depois das 20h**, à noite depois do trabalho, e **8h10** no começo do dia) faz sentido. Manter.
 - **Para agendar:** o vídeo pronto precisa de um link público (ex.: Google Drive compartilhado); o Metricool importa. Sempre mostrar a agenda e esperar o "sim" do usuário.
 
 ## Pendente

@@ -73,7 +73,7 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - [x] **Shorts de GTA, parte 1:** 3 Shorts entregues (ver `projetos/gta-shorts-01/`). Mandar as próximas partes quando houver.
 - [ ] Completar o `manifestos/fire-grace.md` com o usuário (8 perguntas no fim do arquivo).
 - [ ] Montar uma **biblioteca de efeitos sonoros com dicionário** (CC0, ex.: Freesound pelo `sfx-source.py` do video-shotcraft) para GTA e FIRE & GRACE.
-- [ ] Receber os prints do YouTube Studio ("Quando seus espectadores estão no YouTube") dos dois canais e definir os horários nos manifestos.
+- [x] Prints do Studio recebidos (21/11): **os dois canais ainda sem dados de horário**. Mantido o padrão do usuário. Rever em dezembro.
 - [ ] Testar o react-three-rapier, o react-postprocessing e o video-shotcraft num projeto real.
 - [x] Ambiente da nuvem **fluxo-de-edicao** criado com o script de instalação e o Google Drive liberado (aprovado pelo notebook em 21/11). Confirmar na próxima sessão nova que o script rodou sozinho.
 - [x] Levar tudo para o `main` (PR #1, mesclado em 21/11).
