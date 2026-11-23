@@ -107,7 +107,7 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 
 ### Pendências
 - [ ] **27/11, 19h:** gerar o vídeo do Elias (reanexar a imagem e confirmar o custo).
-- [ ] Conferir o Short do Elias no YouTube Studio (100%, sem bloqueio) e colocar na playlist "Mini Documentários".
+- [x] Short do Elias: o usuário pôs na playlist "MINI DOCUMENTÁRIO" e o relacionado "DEUS AINDA RESPONDE COM FOGO". ⚠️ Estava "Programado 24/11 00:00" (erro de fuso do Metricool) → orientado a mudar para Público.
 - [x] **Documentário de Elias, versão 2 (entregue 23/11):** clipes do YouTube Create do usuário (ou vidIQ em 27/11, cenas 3 e 6) → trocar as fotos e reexportar. Depois: título, descrição (com crédito do piano) e agendamento.
 - [x] **Shorts de GTA, parte 1:** 3 Shorts entregues (ver `projetos/gta-shorts-01/`). Mandar as próximas partes quando houver.
 - [ ] Completar o `manifestos/fire-grace.md` com o usuário (8 perguntas no fim do arquivo).
