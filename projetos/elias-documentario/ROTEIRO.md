@@ -30,11 +30,60 @@ Ordem e referências conferidas. Narração diz que Elias foi levado **pelo rede
 `python linha.py` (tempos) → `bash render_all.sh` (quadros) → `python musica.py` → `python mix.py` → ffmpeg (ver HISTORICO).
 
 ## Versão 2 (movimento real): prompts para o YouTube Create (foto para vídeo, vertical)
-O usuário anexa a imagem da cena, cola o prompt e gera (grátis, Veo); manda os 6 clipes pelo Drive. Eu troco as fotos pelos clipes mantendo voz, trilha, legendas e títulos (e removo qualquer som que vier). Alternativa: vidIQ em 27/11 (cenas 3 e 6).
-Modelo (versão 2 dos prompts, 23/11/2026): "Animate this exact image. Do not change it." + o que manter + "Movement:" + "Camera:" + "Do not add people, text, letters or logos." + "Silent video: no sound, no music, no voices, no sound effects." + "Realistic, cinematic, slow and smooth motion." Frases curtas; descrever pessoas pela aparência (o gerador não sabe quem é Elias); nunca descrever uma ação que já está na imagem.
-1. Movement: the old man with the red cloak keeps pointing at the king and speaks. His hair and cloak move gently in the wind. The king stays seated and frowns. The guards stand still. Dust floats in the sunlight. Camera: very slow zoom in toward the man with the red cloak.
-2. Movement: the crows flap their wings and fly holding bread in their beaks. The water of the stream flows over the rocks. Light mist moves slowly. The man stays seated, looking up, with open hands. Camera: very slow zoom out.
-3. Movement: the big fire on the altar burns strongly and moves upward. Sparks and embers fly up. Smoke turns slowly in the dark sky. The water around the altar steams. The man keeps both arms raised and does not move his body much. The people in the back stay bowed. Camera: very slow zoom in toward the fire.
-4. Movement: the young man in white gently holds out the bread and the clay jar. The old man slowly lifts his hand to receive it. The tree branches move softly in the wind. Dust floats in the warm sunlight. Camera: very slow zoom in.
-5. Movement: the older man gently places the red cloak on the young man's shoulders. The young man looks at him, surprised. The oxen move their heads a little. Dust moves softly over the field. Camera: very slow movement to the right.
-6. (v2, a pedido do usuário: o v1 não fez Elias voar) Main movement: the horses made of fire gallop through the air, moving their legs fast, and pull the fire chariot up into the sky. The man with the red cloak rides on the chariot and flies upward with it, toward the whirlwind. The horses, the chariot and the man rise higher and higher, getting smaller as they go up into the clouds. Other movement: the whirlwind spins around them. Flames move on the horses' bodies. The red cloak waves strongly in the wind. Sparks fly everywhere. The young man on the ground stays on the ground, looking up with raised hands. Camera: slow tilt up, following the chariot as it flies into the sky. (Lição: a ação principal vem primeiro, em "Main movement", dita com todas as letras; detalhes depois.)
+O usuário anexa a imagem da cena, cola o prompt e gera (grátis, Veo); manda os 6 clipes pelo Drive. Eu troco as fotos pelos clipes mantendo voz, trilha, legendas e títulos (e removo qualquer som). ★ **Limite do YouTube Create: 900 caracteres por prompt** → manter cada um entre 400 e 650. Ação principal primeiro ("Main movement"), depois "Also", câmera, proibições e "Silent video".
+
+### Cena 1 (461 caracteres)
+```
+Animate this exact image. Keep the same faces, beards, clothes and background.
+Main movement: the man in the red cloak keeps pointing at the king and speaks. His hair and cloak move gently in the wind.
+Also: the king stays seated and frowns, the guards stand still, dust floats in the sunlight.
+Camera: very slow zoom in toward the man in the red cloak.
+No new people, no text. Silent video: no sound, no music, no voices.
+Realistic, cinematic, slow and smooth.
+```
+### Cena 2 (417 caracteres)
+```
+Animate this exact image. Keep the same man, face, clothes, crows and landscape.
+Main movement: the crows flap their wings and fly holding bread in their beaks. The stream water flows over the rocks.
+Also: light mist moves slowly. The man stays seated, looking up, with open hands.
+Camera: very slow zoom out.
+No new people, no text. Silent video: no sound, no music, no voices.
+Realistic, cinematic, slow and smooth.
+```
+### Cena 3 (469 caracteres)
+```
+Animate this exact image. Keep the same man, cloak, altar, people and sky.
+Main movement: the big fire on the altar burns strongly and rises upward. Sparks and embers fly up.
+Also: smoke turns slowly in the dark sky, the water around the altar steams. The man keeps both arms raised. The people in the back stay bowed.
+Camera: very slow zoom in toward the fire.
+No new people, no text. Silent video: no sound, no music, no voices.
+Realistic, cinematic, slow and smooth.
+```
+### Cena 4 (434 caracteres)
+```
+Animate this exact image. Keep the same two people, faces, clothes, tree and desert.
+Main movement: the young man in white gently holds out the bread and the clay jar. The old man slowly lifts his hand to receive it.
+Also: the tree branches move softly in the wind, dust floats in the warm sunlight.
+Camera: very slow zoom in.
+No new people, no text. Silent video: no sound, no music, no voices.
+Realistic, cinematic, slow and smooth.
+```
+### Cena 5 (442 caracteres)
+```
+Animate this exact image. Keep the same two men, faces, clothes, red cloak, oxen and field.
+Main movement: the older man gently places the red cloak on the young man's shoulders. The young man looks at him, surprised.
+Also: the oxen move their heads a little, dust moves softly over the field.
+Camera: very slow movement to the right.
+No new people, no text. Silent video: no sound, no music, no voices.
+Realistic, cinematic, slow and smooth.
+```
+### Cena 6 (607 caracteres)
+```
+Animate this exact image. Keep the same faces, clothes, fire horses, chariot and sky.
+Main movement: the fire horses gallop through the air and pull the fire chariot up into the sky. The man in the red cloak rides the chariot and flies up with it into the whirlwind, getting smaller as they rise into the clouds.
+Also: the whirlwind spins, flames move on the horses, the red cloak waves, sparks fly.
+The young man stays on the ground, looking up with raised hands.
+Camera: slow tilt up following the chariot.
+No new people, no text. Silent video: no sound, no music, no voices.
+Realistic, cinematic, smooth.
+```
