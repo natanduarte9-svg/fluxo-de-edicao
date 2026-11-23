@@ -1,6 +1,6 @@
 # Memória do projeto (leia no início de toda sessão)
 
-Converse em **português**, com frases curtas e sem jargão.
+Converse em **português do Brasil**, com frases curtas e sem jargão. ★ **Toda mensagem ao usuário em português, sempre** (ele não lê inglês; em 23/11 uma resposta saiu em inglês por engano).
 
 ## Palavra-mestra de produção: `/produzir-video`
 Para **qualquer pedido de vídeo, Short ou clipe** (FIRE & GRACE, GTA 6 ou outro), use a skill **`/produzir-video`** (`skills/produzir-video/SKILL.md`). Ela conduz tudo: perguntas, escolha das ferramentas, roteiro, produção, revisão, entrega e registro no histórico.
@@ -17,7 +17,7 @@ Depois diga à pessoa para recarregar a sessão, se a skill ainda não aparecer.
 | `GUIA-PRODUCAO.md` | As regras de produção (ritmo, som, câmera, o que evitar) e os repositórios de motion graphics |
 | `HISTORICO.md` | Diário das sessões: decisões, problemas já resolvidos, preços, **pendências** |
 | `manifestos/` | **O jeito de fazer vídeo de cada canal** (GTA, FIRE & GRACE). Ler antes de qualquer vídeo |
-| `projetos/<nome>/` | Projetos de vídeo em andamento (ex.: `elias-altar-fogo`) |
+| `projetos/<nome>/` | Projetos de vídeo (ex.: `elias-documentario`, o modelo de **mini documentário bíblico**, já publicado) |
 | `scripts/setup-ambiente.sh` | Reinstala todas as ferramentas |
 | `SKILL.md` (raiz) | A skill original `/fluxo-de-edicao` (montar o fluxo de edição) |
 
