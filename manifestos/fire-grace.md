@@ -158,3 +158,8 @@ Short 9:16, 2160×3840, 60 fps, 46,2 s, −13,8 LUFS. Folha de quadros a cada 0,
 - Frases curtas e diretas, uma ideia por linha (Movement / Camera / Do not add / Silent), em inglês. Descrever as pessoas pela aparência, não pelo nome bíblico.
 - ★ **A ação principal vem primeiro** ("Main movement: ..."), dita com todas as letras (quem se move, para onde, até onde). Só descrever detalhes (capa, chamas, faíscas) não faz o gerador mover a cena (ex.: cena 6 do Elias, que não voou).
 - Modelo completo em `projetos/elias-documentario/ROTEIRO.md`.
+
+## ★ Mini documentários bíblicos (formato novo, 23/11/2026)
+- Short 9:16 narrado (voz escolhida pelo usuário: Antonio ou Thalita), cenas do YouTube Create, trilha orquestral, títulos com referência bíblica. Modelo: `projetos/elias-documentario/`.
+- ★ **Playlist "Mini Documentários"** (pública) no FIRE & GRACE: todo mini documentário entra nela. **Não há ferramenta para isso** (Metricool não cria/adiciona playlist; vidIQ grátis só tem o Jogatina) → **lembrar o usuário em toda postagem**: app do YouTube, conta FIRE & GRACE → abrir o Short → ⋮ → Salvar → marcar "Mini Documentários" (no 1º: "+ Nova playlist", pública).
+- Publicação: link público do arquivo via `vidiq_video_upload` (localFile, grátis) → Metricool `createScheduledPost` (youtube, type short, isAiGeneratedContent true, madeForKids false). Horário: Short avulso 20h.
