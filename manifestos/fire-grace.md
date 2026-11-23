@@ -155,4 +155,5 @@ Short 9:16, 2160×3840, 60 fps, 46,2 s, −13,8 LUFS. Folha de quadros a cada 0,
 - O usuário **anexa a imagem de referência** e cola o prompt: o prompt manda **animar aquela imagem exata, sem mudar** rostos, roupas e cenário.
 - **Sempre pedir vídeo sem som** ("Silent video: no sound, no music, no voices, no sound effects"). O áudio é feito aqui; se vier som, eu removo.
 - Frases curtas e diretas, uma ideia por linha (Movement / Camera / Do not add / Silent), em inglês. Descrever as pessoas pela aparência, não pelo nome bíblico.
+- ★ **A ação principal vem primeiro** ("Main movement: ..."), dita com todas as letras (quem se move, para onde, até onde). Só descrever detalhes (capa, chamas, faíscas) não faz o gerador mover a cena (ex.: cena 6 do Elias, que não voou).
 - Modelo completo em `projetos/elias-documentario/ROTEIRO.md`.
