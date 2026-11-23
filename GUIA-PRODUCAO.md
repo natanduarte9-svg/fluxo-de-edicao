@@ -261,7 +261,9 @@ Enquanto os canais não monetizam, **só créditos grátis**. Acabou numa, passa
 - Vantagem extra: o edge-tts devolve o **tempo exato de cada palavra** (eventos `WordBoundary`), então a legenda karaokê fica **sincronizada de verdade**, sem estimativa.
 - Para comparar: `projetos/gta-aula/comparacao-vozes.mp3` (Antonio, Francisca, Thalita, Kokoro).
 - ★ **Pronúncia:** palavras com duas leituras saem erradas às vezes. Corrigir **só no texto da voz** (a legenda continua certa) com acento que marca o som: "a seca" (falta de chuva) → "a sêca". Ver `projetos/elias-documentario/v2/voz.py`. Ouvir com o usuário: ele aponta o que soou errado.
-- ★ **Voz oficial dos dois canais: `pt-BR-AntonioNeural`** (escolha do usuário, 23/11/2026). Narração **só quando o usuário pedir**.
+- ★ **Duas vozes oficiais (decisão do usuário, 23/11/2026): masculina `pt-BR-AntonioNeural` e feminina `pt-BR-ThalitaMultilingualNeural`.** O usuário indica qual em cada vídeo; se não disser, perguntar na rodada de perguntas. Comparação: `entregas/comparacao-vozes-documentario.mp3` (Antonio, Francisca, Thalita).
+- ⚠️ **O edge-tts às vezes devolve a fala cortada** (falha de rede). Sempre conferir: nº de palavras = nº de palavras do texto e duração do áudio ≥ fim da última palavra; refazer só a fala que falhou (`voz.py <ritmo> <nºs das falas>`).
+- (Histórico) Voz oficial dos dois canais até 23/11: `pt-BR-AntonioNeural` (escolha do usuário, 23/11/2026). Narração **só quando o usuário pedir**.
 
 ## 11. Clipes de IA curtos para narração longa (aprendido em 23/11/2026)
 - Clipes de IA costumam ter 8–10 s. Para cobrir uma fala maior **sem refazer a cena**: câmera lenta com quadros intermediários de verdade (fluxo óptico): `setpts=PTS*F,minterpolate=fps=30:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1`. Fica natural até ~1,7×; acima disso, pedir um clipe mais longo ou usar o último quadro com leve aproximação.

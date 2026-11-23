@@ -27,7 +27,8 @@ Pule o que o pedido já responde. Pergunte só o que falta:
 2. **Formato:** Short vertical 9:16 (até 60 s) ou vídeo longo 16:9. Sugestão: Short.
 3. **Material:** imagem de referência, música (Suno ou outra), narração, logo.
 4. **Movimento real?** Se a cena precisa de pessoa, tecido, fogo ou água realistas se movendo, é IA de vídeo (passo 3A). Se é gráfico, estilo desenhado, texto ou efeito, é código (passo 3B). Muitas vezes são os dois.
-5. **Duração** e se quer ver o roteiro antes de produzir. Sugestão: não precisa, eu sigo direto.
+5. **Voz da narração** (se houver): **Antonio** (masculina) ou **Thalita** (feminina). O usuário escolhe por vídeo.
+6. **Duração** e se quer ver o roteiro antes de produzir. Sugestão: não precisa, eu sigo direto.
 
 Se o pedido for um pacote completo de lançamento do canal (título, thumbnail, descrição, música), as skills próprias dele podem ajudar: `fire-grace-musica-completa`, `fire-grace-video-editor`, `gta6-youtube-pacote`, `editor-pro-jogatina`. Use-as para o que elas fazem; esta skill cuida da produção do vídeo.
 

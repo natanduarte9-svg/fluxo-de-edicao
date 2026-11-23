@@ -16,7 +16,7 @@
 3. **Coletâneas** também fazem parte do plano (várias músicas num vídeo longo).
 
 ### Em todos (longo e Shorts)
-- ★ **Sem narração**: o áudio é **a música que o usuário gera (já com voz/canto)**. Se algum dia ele pedir narração, usar a voz **`pt-BR-AntonioNeural`** (Microsoft, grátis).
+- ★ **Sem narração**: o áudio é **a música que o usuário gera (já com voz/canto)**. Narração só quando ele pedir (ex.: documentários bíblicos), com a voz que ele indicar: **Antonio** (`pt-BR-AntonioNeural`, masculina) ou **Thalita** (`pt-BR-ThalitaMultilingualNeural`, feminina).
 - **Legendas estilo karaokê** (a palavra cantada acende no tempo da música).
 - **Som: só o MP3 da música** que o usuário envia.
 
