@@ -31,9 +31,9 @@ Depois diga à pessoa para recarregar a sessão, se a skill ainda não aparecer.
   - **cortes na batida** (librosa), **efeitos e transições** de qualidade (pixelfx, video-shotcraft quando couber);
   - **voz natural** (ElevenLabs) quando houver narração para publicar;
   - **revisão quadro a quadro** antes de entregar.
-  - Se a ferramenta melhor gastar créditos, **mostrar o custo e esperar o "sim"**; se não der para usar, dizer qual seria e por quê.
+  - ★ **Créditos e tokens GRÁTIS podem ser usados para ter qualidade** (autorizado pelo usuário em 23/11/2026): não precisa esperar o "sim", só **avisar o que foi gasto** e quanto sobrou. Se não der para usar, dizer qual seria a melhor ferramenta e por quê.
 - ★ **Enquanto os canais não monetizam: só créditos/tokens grátis, nada pago.** Quando os créditos grátis de uma ferramenta acabarem, **trocar por outra de qualidade excelente que ainda tenha créditos grátis** (rodízio). Antes de gerar, **conferir o saldo** de cada uma. A tabela de rodízio está no `GUIA-PRODUCAO.md` (seção 10).
 - **Movimento real** (pessoa, fogo, tecido realistas) = IA de vídeo (vidIQ). **Acabamento** (som, títulos, ritmo, efeitos) = código.
-- **Nunca gaste créditos** (vidIQ, ElevenLabs etc.) sem mostrar o custo e esperar o "sim". Nunca gere duas vezes por engano.
+- ★ **Dinheiro de verdade, nunca:** nada de plano pago, recarga, "overage" ou compra de créditos. Créditos grátis: pode usar (avisando o que gastou). Nunca gere duas vezes por engano; antes de gerar, conferir o saldo e não deixar uma geração ficar pela metade.
 - Nada é publicado em rede social sem confirmação.
 - Ao terminar um trabalho, **registre no `HISTORICO.md`**, faça commit e envie. Aprendizado novo que vale para todo vídeo vai para o `GUIA-PRODUCAO.md`.
