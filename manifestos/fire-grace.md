@@ -150,3 +150,9 @@ Short 9:16, 2160×3840, 60 fps, 46,2 s, −13,8 LUFS. Folha de quadros a cada 0,
 - [x] Encerramento original recebido e traduzido; logo extraído em boa qualidade.
 - [ ] Montar o cartão de encerramento e a legenda karaokê como ferramentas reutilizáveis (no primeiro vídeo real).
 - [ ] Confirmar no primeiro vídeo longo se ele também leva o sticker (até agora: só nos Shorts).
+
+## ★ Prompts para o YouTube Create (regra do usuário, 23/11/2026)
+- O usuário **anexa a imagem de referência** e cola o prompt: o prompt manda **animar aquela imagem exata, sem mudar** rostos, roupas e cenário.
+- **Sempre pedir vídeo sem som** ("Silent video: no sound, no music, no voices, no sound effects"). O áudio é feito aqui; se vier som, eu removo.
+- Frases curtas e diretas, uma ideia por linha (Movement / Camera / Do not add / Silent), em inglês. Descrever as pessoas pela aparência, não pelo nome bíblico.
+- Modelo completo em `projetos/elias-documentario/ROTEIRO.md`.
