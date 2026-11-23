@@ -261,3 +261,8 @@ Enquanto os canais não monetizam, **só créditos grátis**. Acabou numa, passa
 - Vantagem extra: o edge-tts devolve o **tempo exato de cada palavra** (eventos `WordBoundary`), então a legenda karaokê fica **sincronizada de verdade**, sem estimativa.
 - Para comparar: `projetos/gta-aula/comparacao-vozes.mp3` (Antonio, Francisca, Thalita, Kokoro).
 - ★ **Voz oficial dos dois canais: `pt-BR-AntonioNeural`** (escolha do usuário, 23/11/2026). Narração **só quando o usuário pedir**.
+
+## 11. Clipes de IA curtos para narração longa (aprendido em 23/11/2026)
+- Clipes de IA costumam ter 8–10 s. Para cobrir uma fala maior **sem refazer a cena**: câmera lenta com quadros intermediários de verdade (fluxo óptico): `setpts=PTS*F,minterpolate=fps=30:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1`. Fica natural até ~1,7×; acima disso, pedir um clipe mais longo ou usar o último quadro com leve aproximação.
+- Preservar o movimento do clipe: nada de zoom artificial nem efeito sobre os personagens; o acabamento vem de títulos, legenda, cor, som e transições suaves.
+- Remover o áudio do clipe e fazer o ambiente aqui (controle total da mixagem).

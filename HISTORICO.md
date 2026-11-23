@@ -91,6 +91,13 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - Saldos: vidIQ 22 créditos avulsos (150 renovam 27/11); ElevenLabs 8.044 caracteres (o plano grátis não permite uso comercial da voz, pelo que sei → manter Antonio).
 - **Versão 2 (pendente):** movimento real nas 6 cenas: o usuário gera no YouTube Create com os prompts do `ROTEIRO.md` e manda pelo Drive, ou eu gero as cenas 3 e 6 no vidIQ em 27/11.
 
+### 23/11/2026: documentário de Elias, versão 2 (movimento real)
+- O usuário gerou as 6 cenas no **YouTube Create** com os prompts curtos (≤900 caracteres, "Main movement" primeiro, sem som) e mandou com um novo prompt mestre. Resultado aprovado na conferência: rosto de Elias igual nas 6, a carruagem voa de verdade.
+- ★ **Técnica nova: câmera lenta com quadros intermediários** (`ffmpeg minterpolate=mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1`) para clipes de 10 s cobrirem a narração (até 1,7×) sem "travar". Sem artefatos visíveis. ~25 min para 6 clipes (4 núcleos).
+- Prompt mestre pediu 60–70 s; com o texto inteiro deu **86,7 s** (voz +8%). Música refeita para o novo tempo (o `musica.py` agora calcula os acordes pela duração das cenas).
+- Entregue: cópia leve no chat; mestre (278 MB), `.srt` e pacote de publicação em `/home/user/projeto_elias/exportacao/`. Detalhes: `projetos/elias-documentario/v2/RELATORIO.md`.
+- Pendente: aprovação do usuário → publicar (Metricool precisa de link público do arquivo; mostrar tudo e esperar o "sim").
+
 ### Contas e saldos (21/11/2026)
 - **OpusClip:** plano de teste, **90 minutos** de processamento (~1 min de saldo por minuto de vídeo). Aceita link do Google Drive e pode limitar o trecho (`rangeStart`/`rangeEnd`). No teste, os cortes podem sair com marca d'água.
 - **vidIQ:** 2 créditos (150 renovam em 27/11).
@@ -98,7 +105,7 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 
 ### Pendências
 - [ ] **27/11, 19h:** gerar o vídeo do Elias (reanexar a imagem e confirmar o custo).
-- [ ] **Documentário de Elias, versão 2:** clipes do YouTube Create do usuário (ou vidIQ em 27/11, cenas 3 e 6) → trocar as fotos e reexportar. Depois: título, descrição (com crédito do piano) e agendamento.
+- [x] **Documentário de Elias, versão 2 (entregue 23/11):** clipes do YouTube Create do usuário (ou vidIQ em 27/11, cenas 3 e 6) → trocar as fotos e reexportar. Depois: título, descrição (com crédito do piano) e agendamento.
 - [x] **Shorts de GTA, parte 1:** 3 Shorts entregues (ver `projetos/gta-shorts-01/`). Mandar as próximas partes quando houver.
 - [ ] Completar o `manifestos/fire-grace.md` com o usuário (8 perguntas no fim do arquivo).
 - [ ] Montar uma **biblioteca de efeitos sonoros com dicionário** (CC0, ex.: Freesound pelo `sfx-source.py` do video-shotcraft) para GTA e FIRE & GRACE.
