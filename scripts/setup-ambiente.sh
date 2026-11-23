@@ -19,6 +19,9 @@ claude plugin install pixelfx@pixelfx || true
 # Biblioteca e dependências do lemo-opuscar
 S=$(ls ~/.claude/plugins/cache/lemolab/lemo-opuscar/*/skills/lemo-opuscar/scripts/setup.sh 2>/dev/null | head -1)
 [ -n "$S" ] && { sh "$S" && sh "$S" deps voice music; } || true
+# OpenCV (câmera e efeitos dos documentários) e fontes Cinzel/Montserrat (títulos e legendas)
+[ -x /root/lemo-opuscar/.venv/bin/python ] && uv pip install -q --python /root/lemo-opuscar/.venv/bin/python opencv-python-headless || true
+mkdir -p /home/user/fonts && cp -n "$ROOT/fluxo-de-edicao/ferramentas/fontes/"*.ttf /home/user/fonts/ 2>/dev/null || true
 # Skills: video-shotcraft e /produzir-video
 mkdir -p ~/.claude/skills
 [ -d ~/video-shotcraft ] || git clone -q --depth 1 https://github.com/Vincentwei1021/video-shotcraft ~/video-shotcraft || true

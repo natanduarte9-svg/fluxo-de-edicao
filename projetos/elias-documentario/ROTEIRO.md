@@ -28,3 +28,12 @@ Ordem e referências conferidas. Narração diz que Elias foi levado **pelo rede
 
 ## Como refazer
 `python linha.py` (tempos) → `bash render_all.sh` (quadros) → `python musica.py` → `python mix.py` → ffmpeg (ver HISTORICO).
+
+## Versão 2 (movimento real): prompts para o YouTube Create (foto para vídeo, vertical)
+O usuário gera no celular (grátis, Veo) e manda pelo Drive; eu troco as fotos pelos clipes mantendo voz, trilha, legendas e títulos. Alternativa: vidIQ em 27/11 (172 créditos → cenas 3 e 6).
+1. Elijah keeps pointing at the king and speaks firmly, his robe and long hair moving in a light warm wind. The king stays seated, frowning. Guards stand still holding spears. Dust floats in the sunlight. Slow cinematic push-in toward Elijah. Keep all faces, clothes and the setting identical. No text, no new people.
+2. The crows flap their wings and fly carrying bread in their beaks. The stream flows and splashes over the rocks. Light mist drifts through the canyon. Elijah keeps looking up calmly with open hands. Slow camera pull-back. Keep Elijah's face and clothes identical. No text, no new people.
+3. The fire keeps roaring and rising from the altar, sparks and embers fly upward, thick smoke swirls in the dark stormy sky, the water around the altar boils and steams. Elijah keeps both arms raised. The people in the background bow down to the ground. Slow push-in toward the altar. Keep Elijah identical. No text.
+4. The angel gently offers the bread and the clay jar. Elijah slowly reaches out his hand. The tree branches sway softly in the wind. Warm sun rays and dust float in the air. Slow, gentle push-in. Keep both faces and clothes identical. No text, no new people.
+5. Elijah settles his red mantle over Elisha's shoulders. Elisha looks at him, surprised. The oxen move their heads slowly. Dust blows softly over the plowed field. Slow lateral camera move to the right. Keep both faces and clothes identical. No text, no new people.
+6. The whirlwind spins in the sky, the horses of fire gallop with flaming manes, the chariot wheels burn, Elijah's mantle blows in the wind. Elisha keeps looking up with raised hands. Sparks swirl around them. Slow camera pull-back revealing the sky. Keep both faces identical. No text.

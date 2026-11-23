@@ -81,6 +81,16 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - Orientado o usuário a sair das contas no notebook emprestado (Claude, Metricool, vidIQ, GitHub, Google) e conferir pelo celular.
 - **Concluído (23/11):** saiu das contas no notebook e apagou os dados de 24 h. Pelo celular, desconectou as sessões do Windows nas duas contas Google (natanduarte9 e natanmusicagospel). GitHub sem sessão do Windows. vidIQ e Metricool seguem ligados aos canais (não dependem do notebook). Caminho no celular: Configurações → Google → Gerenciar sua Conta → Segurança e login → Seus dispositivos.
 
+### 23/11/2026: documentário "A vida do profeta Elias" (Short FIRE & GRACE), versão 1
+- Pedido: prompt mestre do usuário + 6 imagens. Decisões dele: **texto da narração inteiro, sem acelerar (~96 s)** e canal **FIRE & GRACE**. Projeto em `projetos/elias-documentario/` (roteiro, prompts da versão 2, scripts).
+- Feito em código, sem gastar créditos: câmera diferente por cena, fogo que cintila e "respira" (cenas 3 e 6), água correndo e névoa (2), poeira na luz (1, 4, 5), brasas, brilho, granulado, vinheta, 2 impactos ("fogo" e "redemoinho"), títulos em Cinzel + referência em dourado, legenda palavra por palavra (tempo exato do edge-tts), sticker na palavra "inscrever", convite final com botões.
+- ★ **Trilha com instrumentos reais gravados** (lemo-opuscar `sampler.py`: piano Salamander CC BY 3.0 — crédito obrigatório na descrição —, orquestra VSCO 2 CE/VCSL CC0). Os pacotes baixam do GitHub Releases (funciona). Ducking: trilha a 15% da voz na fala.
+- Entrega: −14 LUFS, sem quadros pretos. Mestre 420 MB (granulado pesa) em `/home/user/elias-doc/`; cópia leve de 56 MB enviada no chat.
+- Problemas: upscaler por IA (Real-ESRGAN) precisa de PyTorch, e `download.pytorch.org` é bloqueado → ampliação Lanczos (também preserva os rostos). OpenCV instalado no venv do lemo (entrou no script de instalação). Fontes Cinzel/Montserrat guardadas em `ferramentas/fontes/`.
+- ★ **Regra nova do usuário:** créditos/tokens grátis podem ser usados para ter qualidade (avisando o que gastou); **dinheiro de verdade nunca** (CLAUDE.md e skill atualizados).
+- Saldos: vidIQ 22 créditos avulsos (150 renovam 27/11); ElevenLabs 8.044 caracteres (o plano grátis não permite uso comercial da voz, pelo que sei → manter Antonio).
+- **Versão 2 (pendente):** movimento real nas 6 cenas: o usuário gera no YouTube Create com os prompts do `ROTEIRO.md` e manda pelo Drive, ou eu gero as cenas 3 e 6 no vidIQ em 27/11.
+
 ### Contas e saldos (21/11/2026)
 - **OpusClip:** plano de teste, **90 minutos** de processamento (~1 min de saldo por minuto de vídeo). Aceita link do Google Drive e pode limitar o trecho (`rangeStart`/`rangeEnd`). No teste, os cortes podem sair com marca d'água.
 - **vidIQ:** 2 créditos (150 renovam em 27/11).
@@ -88,6 +98,7 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 
 ### Pendências
 - [ ] **27/11, 19h:** gerar o vídeo do Elias (reanexar a imagem e confirmar o custo).
+- [ ] **Documentário de Elias, versão 2:** clipes do YouTube Create do usuário (ou vidIQ em 27/11, cenas 3 e 6) → trocar as fotos e reexportar. Depois: título, descrição (com crédito do piano) e agendamento.
 - [x] **Shorts de GTA, parte 1:** 3 Shorts entregues (ver `projetos/gta-shorts-01/`). Mandar as próximas partes quando houver.
 - [ ] Completar o `manifestos/fire-grace.md` com o usuário (8 perguntas no fim do arquivo).
 - [ ] Montar uma **biblioteca de efeitos sonoros com dicionário** (CC0, ex.: Freesound pelo `sfx-source.py` do video-shotcraft) para GTA e FIRE & GRACE.
