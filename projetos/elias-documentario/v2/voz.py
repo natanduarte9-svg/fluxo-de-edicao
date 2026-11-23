@@ -10,6 +10,7 @@ FALAS = [
 ]
 RATE = sys.argv[1] if len(sys.argv) > 1 else "+0%"
 async def one(i, txt):
+    txt = txt.replace("a seca", "a sêca")  # pronúncia: substantivo (falta de chuva), "e" fechado
     c = edge_tts.Communicate(txt, "pt-BR-AntonioNeural", rate=RATE, proxy=os.environ["HTTPS_PROXY"], boundary="WordBoundary")
     words = []; audio = bytearray()
     async for ch in c.stream():
@@ -20,6 +21,11 @@ async def one(i, txt):
     return words
 async def main():
     out = {}
-    for i, t in enumerate(FALAS, 1): out[i] = await one(i, t)
+    import sys as _s
+    ONLY = [int(x) for x in _s.argv[2:]]
+    out = json.load(open("voz/words.json")) if ONLY else {}
+    for i, t in enumerate(FALAS, 1):
+        if ONLY and i not in ONLY: continue
+        out[str(i) if ONLY else i] = await one(i, t)
     json.dump(out, open("voz/words.json", "w"), ensure_ascii=False, indent=0)
 asyncio.run(main())

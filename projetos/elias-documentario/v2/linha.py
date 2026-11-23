@@ -5,7 +5,7 @@ _W = json.load(open(f"{D}/voz/words.json"))
 
 CENAS = [  # imagem, título, referência, pré (s antes da fala), pós (s depois da fala)
     dict(img=1, titulo="ELIAS: UM PROFETA DE CORAGEM", ref="1 REIS 17:1", pre=0.25, pos=0.6),
-    dict(img=2, titulo="DEUS CUIDA DOS SEUS", ref="1 REIS 17:2–7", pre=0.45, pos=0.6),
+    dict(img=2, titulo="DEUS CUIDA DOS SEUS", ref="1 REIS 17:2–7", pre=0.45, pos=0.6 + 0.104166),  # fala 2 refeita ("sêca"): 0,104 s mais curta; mantém o fim da cena
     dict(img=3, titulo="O FOGO DO SENHOR CAIU!", ref="1 REIS 18:20–39", pre=0.45, pos=1.1),
     dict(img=4, titulo="DEUS TAMBÉM CUIDA DE QUEM ESTÁ CANSADO", ref="1 REIS 19:1–8", pre=0.45, pos=0.7),
     dict(img=5, titulo="UMA MISSÃO QUE CONTINUA", ref="1 REIS 19:19–21", pre=0.45, pos=0.6),

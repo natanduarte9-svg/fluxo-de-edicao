@@ -11,7 +11,7 @@ def load_mp3(p):
     raw = subprocess.check_output(["ffmpeg", "-v", "error", "-i", p, "-f", "f32le", "-ac", "1", "-ar", str(SR), "-"])
     return np.frombuffer(raw, np.float32)
 
-mus, _ = sf.read("trilha.wav", dtype="float32"); amb, _ = sf.read("ambiente.wav", dtype="float32")
+mus, _ = sf.read("audio/trilha.wav", dtype="float32"); amb, _ = sf.read("audio/ambiente.wav", dtype="float32")
 N = int((L.DUR + 0.3) * SR)
 mus = np.pad(mus, ((0, max(0, N - len(mus))), (0, 0)))[:N]; amb = np.pad(amb, ((0, max(0, N - len(amb))), (0, 0)))[:N]
 
@@ -49,7 +49,7 @@ out = voz[:, None] * np.array([1, 1], np.float32) + mus * g[:, None] + amb * ga[
 # fade final junto com a imagem
 nf = int(0.9 * SR); e = int(L.DUR * SR); out[e - nf:e] *= np.linspace(1, 0, nf)[:, None]; out[e:] = 0
 out = X.limit(out.astype(np.float32), ceil=0.95)
-sf.write("mix.wav", out, SR)
+sf.write("audio/mix.wav", out, SR)
 # conferência: quanto a trilha fica abaixo da voz durante a fala
 mr = np.sqrt(((mus * g[:, None]).mean(1)[speech] ** 2).mean())
 print("trilha sob a voz: %.1f dB (%.0f%%)" % (20 * np.log10(mr / v_rms), 100 * mr / v_rms))

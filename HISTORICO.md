@@ -96,6 +96,7 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - ★ **Técnica nova: câmera lenta com quadros intermediários** (`ffmpeg minterpolate=mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1`) para clipes de 10 s cobrirem a narração (até 1,7×) sem "travar". Sem artefatos visíveis. ~25 min para 6 clipes (4 núcleos).
 - Prompt mestre pediu 60–70 s; com o texto inteiro deu **86,7 s** (voz +8%). Música refeita para o novo tempo (o `musica.py` agora calcula os acordes pela duração das cenas).
 - Entregue: cópia leve no chat; mestre (278 MB), `.srt` e pacote de publicação em `/home/user/projeto_elias/exportacao/`. Detalhes: `projetos/elias-documentario/v2/RELATORIO.md`.
+- Correção pedida pelo usuário: "seca" saiu com "e" aberto (séca). Voz refeita só na cena 2 com "sêca" no texto da voz (legenda inalterada), mesmo tempo de cena; só os quadros da cena 2 renderizados de novo.
 - Pendente: aprovação do usuário → publicar (Metricool precisa de link público do arquivo; mostrar tudo e esperar o "sim").
 
 ### Contas e saldos (21/11/2026)
