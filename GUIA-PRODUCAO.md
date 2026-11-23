@@ -260,4 +260,28 @@ Enquanto os canais não monetizam, **só créditos grátis**. Acabou numa, passa
 - **Precisa passar o proxy**: `edge_tts.Communicate(texto, "pt-BR-AntonioNeural", rate="+5%", proxy=os.environ["HTTPS_PROXY"])`.
 - Vantagem extra: o edge-tts devolve o **tempo exato de cada palavra** (eventos `WordBoundary`), então a legenda karaokê fica **sincronizada de verdade**, sem estimativa.
 - Para comparar: `projetos/gta-aula/comparacao-vozes.mp3` (Antonio, Francisca, Thalita, Kokoro).
-- ★ **Voz oficial dos dois canais: `pt-BR-AntonioNeural`** (escolha do usuário, 23/11/2026). Narração **só quando o usuário pedir**.
+- ★ **Pronúncia:** palavras com duas leituras saem erradas às vezes. Corrigir **só no texto da voz** (a legenda continua certa) com acento que marca o som: "a seca" (falta de chuva) → "a sêca". Ver `projetos/elias-documentario/v2/voz.py`. Ouvir com o usuário: ele aponta o que soou errado.
+- ★ **Duas vozes oficiais (decisão do usuário, 23/11/2026): masculina `pt-BR-AntonioNeural` e feminina `pt-BR-ThalitaMultilingualNeural`.** O usuário indica qual em cada vídeo; se não disser, perguntar na rodada de perguntas. Comparação: `entregas/comparacao-vozes-documentario.mp3` (Antonio, Francisca, Thalita).
+- ⚠️ **O edge-tts às vezes devolve a fala cortada** (falha de rede). Sempre conferir: nº de palavras = nº de palavras do texto e duração do áudio ≥ fim da última palavra; refazer só a fala que falhou (`voz.py <ritmo> <nºs das falas>`).
+- (Histórico) Voz oficial dos dois canais até 23/11: `pt-BR-AntonioNeural` (escolha do usuário, 23/11/2026). Narração **só quando o usuário pedir**.
+
+## 11. Clipes de IA curtos para narração longa (aprendido em 23/11/2026)
+- Clipes de IA costumam ter 8–10 s. Para cobrir uma fala maior **sem refazer a cena**: câmera lenta com quadros intermediários de verdade (fluxo óptico): `setpts=PTS*F,minterpolate=fps=30:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1`. Fica natural até ~1,7×; acima disso, pedir um clipe mais longo ou usar o último quadro com leve aproximação.
+- Preservar o movimento do clipe: nada de zoom artificial nem efeito sobre os personagens; o acabamento vem de títulos, legenda, cor, som e transições suaves.
+- Remover o áudio do clipe e fazer o ambiente aqui (controle total da mixagem).
+
+## 12. Receita completa: mini documentário bíblico (Elias, 23/11/2026 — aprovado e publicado)
+Modelo pronto em `projetos/elias-documentario/` (v1 = fotos; v2 = clipes; v2-thalita = voz feminina). Passo a passo:
+1. **Prompt mestre + imagens do usuário** → ler, conferir a ordem e a precisão bíblica (referências, "redemoinho" leva Elias; a carruagem separa).
+2. **Prompts de cena para o YouTube Create** (o usuário gera no celular, grátis): "Animate this exact image…", **"Main movement" primeiro**, "Also", câmera, "No new people, no text", **"Silent video: no sound, no music, no voices"**. **≤ 900 caracteres** (manter 400–650). Pessoas descritas pela aparência.
+3. **Voz** (a que o usuário escolher: Antonio ou Thalita) por fala, com tempo de cada palavra; conferir se nenhuma fala veio cortada; corrigir pronúncia só no texto da voz ("a sêca").
+4. **Linha do tempo** (`linha.py`) a partir das falas: pré 0,45 s, pós 0,6–1,6 s, dissolve 0,9 s.
+5. **Clipes**: câmera lenta por fluxo óptico até caber na fala (seção 11); sem zoom artificial; sem o áudio do clipe.
+6. **Acabamento** (`render.py`): título em Cinzel + referência em dourado com contorno, legenda Montserrat palavra por palavra (palavras-chave em dourado, y≈1500, nunca sobre rosto), brilho suave, cor, vinheta, granulado leve, sticker "Inscreva-se" na palavra "inscrever", convite final (QUAL HISTÓRIA… + COMENTE / LIKE / INSCREVA-SE).
+7. **Trilha original com instrumentos reais** (`musica.py`, `core/audio/sampler.py` do lemo-opuscar: piano Salamander + orquestra VSCO/VCSL; baixa sozinha do GitHub Releases). Arco: curiosidade → contemplação → cresce até o clímax (silêncio de 0,75 s antes) → delicado → esperança → grandioso → acolhedor. Acordes calculados pela duração de cada cena.
+8. **Mixagem** (`mix.py`): ducking com a trilha a ~15% da voz durante a fala; ambiente sintetizado bem baixo; −14 LUFS em dois passes.
+9. **Revisão**: folha de contato, quadros de perto (fogo, rostos), blackdetect, ebur128. Mandar **cópia leve** (crf 25) para o celular; guardar o mestre.
+10. **Pacote de publicação** (`PUBLICACAO.md`): títulos, descrição com referências e **crédito obrigatório do piano** (CC BY 3.0), tags ≤ 450 caracteres, IA = SIM.
+11. **Publicar** (só depois do "sim"): `vidiq_video_upload` com `localFile` (grátis, dá link público) → Metricool `createScheduledPost` (YouTube `short`, público, `isAiGeneratedContent: true`, `madeForKids: false`). Deixar um lembrete (`send_later`) 15 min depois do horário para conferir. Lembrar o usuário: conferir "Verificações" no Studio e **pôr na playlist "Mini Documentários"**.
+- Duração: o texto inteiro do usuário vale mais que a meta de segundos; Shorts aceitam até 3 min. Avisar quando passar da meta.
+- Tempo de produção aqui: ~25 min de câmera lenta + ~15 min de render (4 núcleos).

@@ -14,7 +14,7 @@ Leia também `HISTORICO.md` (nesta pasta, atalho para a raiz): decisões, proble
 ## Como falar
 - Português, frases curtas, sem jargão sem explicar.
 - Faça **uma rodada só** de perguntas, numa mensagem, já com a sua sugestão em cada uma. Depois disso, decida sozinho e siga.
-- Antes de **gastar créditos** (vidIQ, ElevenLabs ou outro serviço pago), diga o custo exato e espere o "sim". Nunca repita uma geração paga para "tentar de novo" sem perguntar.
+- ★ **Créditos grátis (vidIQ, ElevenLabs etc.) podem ser usados para ter qualidade** sem esperar o "sim" (autorizado em 23/11/2026): avise o que gastou e o saldo. **Dinheiro de verdade, nunca** (plano pago, recarga, overage). Não repita uma geração para "tentar de novo" sem motivo claro.
 - Antes de publicar em qualquer rede, mostre o texto e espere o "sim".
 - **Modelo:** Opus 5.5 no dia a dia; Sonnet 5.5 se o limite acabar; Fable 5.2 só para peças muito detalhadas (é mais lento e mais caro). Uma boa economia: **Fable planeja, Opus executa** (ver seção 7 do guia).
 
@@ -27,7 +27,8 @@ Pule o que o pedido já responde. Pergunte só o que falta:
 2. **Formato:** Short vertical 9:16 (até 60 s) ou vídeo longo 16:9. Sugestão: Short.
 3. **Material:** imagem de referência, música (Suno ou outra), narração, logo.
 4. **Movimento real?** Se a cena precisa de pessoa, tecido, fogo ou água realistas se movendo, é IA de vídeo (passo 3A). Se é gráfico, estilo desenhado, texto ou efeito, é código (passo 3B). Muitas vezes são os dois.
-5. **Duração** e se quer ver o roteiro antes de produzir. Sugestão: não precisa, eu sigo direto.
+5. **Voz da narração** (se houver): **Antonio** (masculina) ou **Thalita** (feminina). O usuário escolhe por vídeo.
+6. **Duração** e se quer ver o roteiro antes de produzir. Sugestão: não precisa, eu sigo direto.
 
 Se o pedido for um pacote completo de lançamento do canal (título, thumbnail, descrição, música), as skills próprias dele podem ajudar: `fire-grace-musica-completa`, `fire-grace-video-editor`, `gta6-youtube-pacote`, `editor-pro-jogatina`. Use-as para o que elas fazem; esta skill cuida da produção do vídeo.
 
@@ -54,7 +55,7 @@ Antes de planejar, confira se as ferramentas estão instaladas (`claude plugin l
 - Prompt **curto e direto**, em inglês: o que se move, a câmera, o que preservar, o que é proibido (texto, logos, pessoas extras).
 - **Não descreva uma ação que já está na imagem.** Braços já erguidos: "continuam erguidos", nunca "levanta os braços".
 - Consulte preços com `vidiq_model_list` (grátis). Mais barato: MiniMax H3. Mais realista e barato: Veo 3.1 Lite.
-- Confira o saldo (`vidiq_balance`), diga o custo e espere o "sim". Depois acompanhe com `vidiq_job_poll` até concluir.
+- Confira o saldo (`vidiq_balance`) e o custo (`vidiq_model_list`), gere e avise o que gastou. Depois acompanhe com `vidiq_job_poll` até concluir.
 
 ### 3B. Código
 Siga o método da ferramenta escolhida (o `AGENTS.md` do lemo-opuscar, o `SKILL.md` do pixelfx ou do shotcraft). Renderização determinística: cada quadro depende só do tempo `t`.

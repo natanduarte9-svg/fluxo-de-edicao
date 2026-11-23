@@ -1,6 +1,6 @@
 # Memória do projeto (leia no início de toda sessão)
 
-Converse em **português**, com frases curtas e sem jargão.
+Converse em **português do Brasil**, com frases curtas e sem jargão. ★ **Toda mensagem ao usuário em português, sempre** (ele não lê inglês; em 23/11 uma resposta saiu em inglês por engano).
 
 ## Palavra-mestra de produção: `/produzir-video`
 Para **qualquer pedido de vídeo, Short ou clipe** (FIRE & GRACE, GTA 6 ou outro), use a skill **`/produzir-video`** (`skills/produzir-video/SKILL.md`). Ela conduz tudo: perguntas, escolha das ferramentas, roteiro, produção, revisão, entrega e registro no histórico.
@@ -17,7 +17,7 @@ Depois diga à pessoa para recarregar a sessão, se a skill ainda não aparecer.
 | `GUIA-PRODUCAO.md` | As regras de produção (ritmo, som, câmera, o que evitar) e os repositórios de motion graphics |
 | `HISTORICO.md` | Diário das sessões: decisões, problemas já resolvidos, preços, **pendências** |
 | `manifestos/` | **O jeito de fazer vídeo de cada canal** (GTA, FIRE & GRACE). Ler antes de qualquer vídeo |
-| `projetos/<nome>/` | Projetos de vídeo em andamento (ex.: `elias-altar-fogo`) |
+| `projetos/<nome>/` | Projetos de vídeo (ex.: `elias-documentario`, o modelo de **mini documentário bíblico**, já publicado) |
 | `scripts/setup-ambiente.sh` | Reinstala todas as ferramentas |
 | `SKILL.md` (raiz) | A skill original `/fluxo-de-edicao` (montar o fluxo de edição) |
 
@@ -31,9 +31,9 @@ Depois diga à pessoa para recarregar a sessão, se a skill ainda não aparecer.
   - **cortes na batida** (librosa), **efeitos e transições** de qualidade (pixelfx, video-shotcraft quando couber);
   - **voz natural** (ElevenLabs) quando houver narração para publicar;
   - **revisão quadro a quadro** antes de entregar.
-  - Se a ferramenta melhor gastar créditos, **mostrar o custo e esperar o "sim"**; se não der para usar, dizer qual seria e por quê.
+  - ★ **Créditos e tokens GRÁTIS podem ser usados para ter qualidade** (autorizado pelo usuário em 23/11/2026): não precisa esperar o "sim", só **avisar o que foi gasto** e quanto sobrou. Se não der para usar, dizer qual seria a melhor ferramenta e por quê.
 - ★ **Enquanto os canais não monetizam: só créditos/tokens grátis, nada pago.** Quando os créditos grátis de uma ferramenta acabarem, **trocar por outra de qualidade excelente que ainda tenha créditos grátis** (rodízio). Antes de gerar, **conferir o saldo** de cada uma. A tabela de rodízio está no `GUIA-PRODUCAO.md` (seção 10).
 - **Movimento real** (pessoa, fogo, tecido realistas) = IA de vídeo (vidIQ). **Acabamento** (som, títulos, ritmo, efeitos) = código.
-- **Nunca gaste créditos** (vidIQ, ElevenLabs etc.) sem mostrar o custo e esperar o "sim". Nunca gere duas vezes por engano.
+- ★ **Dinheiro de verdade, nunca:** nada de plano pago, recarga, "overage" ou compra de créditos. Créditos grátis: pode usar (avisando o que gastou). Nunca gere duas vezes por engano; antes de gerar, conferir o saldo e não deixar uma geração ficar pela metade.
 - Nada é publicado em rede social sem confirmação.
 - Ao terminar um trabalho, **registre no `HISTORICO.md`**, faça commit e envie. Aprendizado novo que vale para todo vídeo vai para o `GUIA-PRODUCAO.md`.

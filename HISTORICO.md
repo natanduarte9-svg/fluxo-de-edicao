@@ -79,6 +79,26 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 ### 23/11/2026: voz substituta do ElevenLabs
 - Pedido do usuário: substituto melhor que o Kokoro ("voz nada natural") para quando o ElevenLabs acabar. Pesquisado: XTTS v2 e Qwen3-TTS (bons, mas precisam baixar modelos do Hugging Face, bloqueado aqui, e são lentos sem placa de vídeo); **escolhido: vozes neurais da Microsoft (edge-tts)**, grátis e naturais. Liberado `speech.platform.bing.com` (aprovado pelo notebook). Ver seção 10 do guia.
 - Orientado o usuário a sair das contas no notebook emprestado (Claude, Metricool, vidIQ, GitHub, Google) e conferir pelo celular.
+- **Concluído (23/11):** saiu das contas no notebook e apagou os dados de 24 h. Pelo celular, desconectou as sessões do Windows nas duas contas Google (natanduarte9 e natanmusicagospel). GitHub sem sessão do Windows. vidIQ e Metricool seguem ligados aos canais (não dependem do notebook). Caminho no celular: Configurações → Google → Gerenciar sua Conta → Segurança e login → Seus dispositivos.
+
+### 23/11/2026: documentário "A vida do profeta Elias" (Short FIRE & GRACE), versão 1
+- Pedido: prompt mestre do usuário + 6 imagens. Decisões dele: **texto da narração inteiro, sem acelerar (~96 s)** e canal **FIRE & GRACE**. Projeto em `projetos/elias-documentario/` (roteiro, prompts da versão 2, scripts).
+- Feito em código, sem gastar créditos: câmera diferente por cena, fogo que cintila e "respira" (cenas 3 e 6), água correndo e névoa (2), poeira na luz (1, 4, 5), brasas, brilho, granulado, vinheta, 2 impactos ("fogo" e "redemoinho"), títulos em Cinzel + referência em dourado, legenda palavra por palavra (tempo exato do edge-tts), sticker na palavra "inscrever", convite final com botões.
+- ★ **Trilha com instrumentos reais gravados** (lemo-opuscar `sampler.py`: piano Salamander CC BY 3.0 — crédito obrigatório na descrição —, orquestra VSCO 2 CE/VCSL CC0). Os pacotes baixam do GitHub Releases (funciona). Ducking: trilha a 15% da voz na fala.
+- Entrega: −14 LUFS, sem quadros pretos. Mestre 420 MB (granulado pesa) em `/home/user/elias-doc/`; cópia leve de 56 MB enviada no chat.
+- Problemas: upscaler por IA (Real-ESRGAN) precisa de PyTorch, e `download.pytorch.org` é bloqueado → ampliação Lanczos (também preserva os rostos). OpenCV instalado no venv do lemo (entrou no script de instalação). Fontes Cinzel/Montserrat guardadas em `ferramentas/fontes/`.
+- ★ **Regra nova do usuário:** créditos/tokens grátis podem ser usados para ter qualidade (avisando o que gastou); **dinheiro de verdade nunca** (CLAUDE.md e skill atualizados).
+- Saldos: vidIQ 22 créditos avulsos (150 renovam 27/11); ElevenLabs 8.044 caracteres (o plano grátis não permite uso comercial da voz, pelo que sei → manter Antonio).
+- **Versão 2 (pendente):** movimento real nas 6 cenas: o usuário gera no YouTube Create com os prompts do `ROTEIRO.md` e manda pelo Drive, ou eu gero as cenas 3 e 6 no vidIQ em 27/11.
+
+### 23/11/2026: documentário de Elias, versão 2 (movimento real)
+- O usuário gerou as 6 cenas no **YouTube Create** com os prompts curtos (≤900 caracteres, "Main movement" primeiro, sem som) e mandou com um novo prompt mestre. Resultado aprovado na conferência: rosto de Elias igual nas 6, a carruagem voa de verdade.
+- ★ **Técnica nova: câmera lenta com quadros intermediários** (`ffmpeg minterpolate=mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1`) para clipes de 10 s cobrirem a narração (até 1,7×) sem "travar". Sem artefatos visíveis. ~25 min para 6 clipes (4 núcleos).
+- Prompt mestre pediu 60–70 s; com o texto inteiro deu **86,7 s** (voz +8%). Música refeita para o novo tempo (o `musica.py` agora calcula os acordes pela duração das cenas).
+- Entregue: cópia leve no chat; mestre (278 MB), `.srt` e pacote de publicação em `/home/user/projeto_elias/exportacao/`. Detalhes: `projetos/elias-documentario/v2/RELATORIO.md`.
+- Correção pedida pelo usuário: "seca" saiu com "e" aberto (séca). Voz refeita só na cena 2 com "sêca" no texto da voz (legenda inalterada), mesmo tempo de cena; só os quadros da cena 2 renderizados de novo.
+- **Versão com voz feminina (Thalita)**, a pedido do usuário (preferiu a Thalita à Francisca). As duas versões ficam guardadas: `/home/user/projeto_elias/exportacao/documentario_historia_de_elias.mp4` (Antonio) e `/home/user/projeto_elias_thalita/exportacao/documentario_historia_de_elias_thalita.mp4` (Thalita, ritmo +3%, cada cena termina no mesmo instante da versão Antonio → reaproveitou as câmeras lentas). Scripts em `projetos/elias-documentario/v2-thalita/`.
+- ★ **Publicado (agendado) com a voz da Thalita:** Metricool post 439175771, YouTube Short, **23/11/2026 20h00** (Brasília), público, IA = sim, não infantil, categoria Educação, título "A HISTÓRIA DE ELIAS: o profeta que viu o fogo cair do céu 🔥". Arquivo enviado pelo `vidiq_video_upload` (localFile, grátis; o Metricool copiou para o servidor dele). Lembrete às 20h15 para conferir. Usuário vai criar a playlist pública **"Mini Documentários"** pelo app (não há ferramenta para isso). (Metricool precisa de link público do arquivo; mostrar tudo e esperar o "sim").
 
 ### Contas e saldos (21/11/2026)
 - **OpusClip:** plano de teste, **90 minutos** de processamento (~1 min de saldo por minuto de vídeo). Aceita link do Google Drive e pode limitar o trecho (`rangeStart`/`rangeEnd`). No teste, os cortes podem sair com marca d'água.
@@ -87,6 +107,8 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 
 ### Pendências
 - [ ] **27/11, 19h:** gerar o vídeo do Elias (reanexar a imagem e confirmar o custo).
+- [ ] Conferir o Short do Elias no YouTube Studio (100%, sem bloqueio) e colocar na playlist "Mini Documentários".
+- [x] **Documentário de Elias, versão 2 (entregue 23/11):** clipes do YouTube Create do usuário (ou vidIQ em 27/11, cenas 3 e 6) → trocar as fotos e reexportar. Depois: título, descrição (com crédito do piano) e agendamento.
 - [x] **Shorts de GTA, parte 1:** 3 Shorts entregues (ver `projetos/gta-shorts-01/`). Mandar as próximas partes quando houver.
 - [ ] Completar o `manifestos/fire-grace.md` com o usuário (8 perguntas no fim do arquivo).
 - [ ] Montar uma **biblioteca de efeitos sonoros com dicionário** (CC0, ex.: Freesound pelo `sfx-source.py` do video-shotcraft) para GTA e FIRE & GRACE.
