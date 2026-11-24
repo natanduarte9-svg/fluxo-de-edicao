@@ -100,6 +100,12 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - **Versão com voz feminina (Thalita)**, a pedido do usuário (preferiu a Thalita à Francisca). As duas versões ficam guardadas: `/home/user/projeto_elias/exportacao/documentario_historia_de_elias.mp4` (Antonio) e `/home/user/projeto_elias_thalita/exportacao/documentario_historia_de_elias_thalita.mp4` (Thalita, ritmo +3%, cada cena termina no mesmo instante da versão Antonio → reaproveitou as câmeras lentas). Scripts em `projetos/elias-documentario/v2-thalita/`.
 - ★ **Publicado (agendado) com a voz da Thalita:** Metricool post 439175771, YouTube Short, **23/11/2026 20h00** (Brasília), público, IA = sim, não infantil, categoria Educação, título "A HISTÓRIA DE ELIAS: o profeta que viu o fogo cair do céu 🔥". Arquivo enviado pelo `vidiq_video_upload` (localFile, grátis; o Metricool copiou para o servidor dele). Conferido às 20h15: **PUBLICADO** sem erro → https://www.youtube.com/shorts/AzTanu9SXWw Usuário vai criar a playlist pública **"Mini Documentários"** pelo app (não há ferramenta para isso). (Metricool precisa de link público do arquivo; mostrar tudo e esperar o "sim").
 
+### 24/11/2026: 5 Shorts do Jogatina Fácil a partir da gameplay de 2h25
+- Pedido: exatamente 5 Shorts de 20–28 s (máx. 30). Baixada a gameplay inteira do Drive (1,6 GB) — **o Drive liberado no ambiente resolve arquivos grandes, sem precisar cortar no CapCut**.
+- ★ Técnica nova: **achar os melhores momentos por análise de som + movimento** (`projetos/gta-cortes-pantano/analisar.py`), depois folhas de contato para escolher. Mostrada ao usuário uma imagem com 5 escolhidos + 2 reservas; aprovou os 5.
+- Entregues 5 Shorts (25–26 s, −14 LUFS, 1080×1920, som do jogo, sticker 5,6 s). Detalhes em `projetos/gta-cortes-pantano/PROJETO.md`.
+- Pendente: títulos/descrições/tags e agendamento (vidIQ, 20h, um por dia), perguntar qual live usar como vídeo relacionado.
+
 ### Contas e saldos (21/11/2026)
 - **OpusClip:** plano de teste, **90 minutos** de processamento (~1 min de saldo por minuto de vídeo). Aceita link do Google Drive e pode limitar o trecho (`rangeStart`/`rangeEnd`). No teste, os cortes podem sair com marca d'água.
 - **vidIQ:** 2 créditos (150 renovam em 27/11).
