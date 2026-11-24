@@ -9,11 +9,12 @@ CENAS = [
     dict(ref="ATOS 16:27–29", pre=0.45, pos=0.7),
     dict(ref="ATOS 16:30–32", pre=0.45, pos=0.8),
     dict(ref="ATOS 16:33–34", pre=0.45, pos=3.2),   # fim: cartão ATOS 16:25–34
+    dict(ref=None, pre=0.5, pos=1.5),                # convite final (pedido do usuário)
 ]
 # Versão Thalita: cada cena termina no MESMO instante da versão Antonio (reaproveita as câmeras lentas)
 FIM_ALVO = [13.27, 26.25, 39.62, 55.26, 67.12, 88.83]
 _ini = 0.0
-for _i, _c in enumerate(CENAS, 1):
+for _i, _c in enumerate(CENAS[:len(FIM_ALVO)], 1):
     _w = _W[str(_i)]
     _c["pos"] = round(FIM_ALVO[_i - 1] - (_ini + _c["pre"] - _w[0][1] + _w[-1][2]), 4)
     _ini = FIM_ALVO[_i - 1]
@@ -37,6 +38,7 @@ T_TERREMOTO = quando(3, "terremoto")
 T_GRITOU = quando(4, "Não")
 T_CREIA = quando(5, "Creia")
 T_FINAL = quando(6, "Quando")
+T_COMENTE = quando(7, "comente"); T_LIKE = quando(7, "like"); T_INSCREVA = quando(7, "inscreva")
 if __name__ == "__main__":
     for i, c in enumerate(CENAS, 1): print(i, "ini %.2f fim %.2f (%.1f s)" % (c["ini"], c["fim"], c["fim"] - c["ini"]))
     print("DUR %.2f terremoto %.2f gritou %.2f creia %.2f final %.2f" % (DUR, T_TERREMOTO, T_GRITOU, T_CREIA, T_FINAL))

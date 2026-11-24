@@ -2,7 +2,7 @@
 suaviza o "s" (de-esser) e corta o agudo onde só há chiado. Gera voz/f<k>_limpa.wav."""
 import numpy as np, soundfile as sf, noisereduce as nr
 from scipy.signal import butter, sosfilt, sosfiltfilt
-for k in range(1, 7):
+for k in range(1, 8):
     x, sr = sf.read(f"voz/f{k}.wav"); x = x.astype(np.float32)
     y = nr.reduce_noise(y=x, sr=sr, stationary=True, prop_decrease=0.85, n_fft=1024)
     # de-esser: comprime só a faixa 5–9 kHz quando ela passa do limite
