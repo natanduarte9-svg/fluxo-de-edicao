@@ -60,3 +60,6 @@ Recomendação do usuário: duração de 8 a 10 s; câmera avançando lentamente
 | Seedance 2 | 280 | |
 | Seedance 2.5 | 360 | Até 30 s |
 | Veo 3.1 | 640 | Máxima qualidade |
+
+
+> **24/11/2026:** projeto encerrado a pedido do usuário. O mini documentário `projetos/elias-documentario/` (publicado no FIRE & GRACE) tomou o lugar deste vídeo.

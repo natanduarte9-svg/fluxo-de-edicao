@@ -117,7 +117,7 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - **ElevenLabs:** plano grátis, sem geração de vídeo.
 
 ### Pendências
-- [ ] **27/11, 19h:** gerar o vídeo do Elias (reanexar a imagem e confirmar o custo).
+- [x] ~~27/11, 19h: gerar o vídeo do Elias no altar~~ — **cancelado pelo usuário em 24/11**: o mini documentário de Elias (publicado) ocupou o lugar. Lembrete apagado.
 - [x] Short do Elias: o usuário pôs na playlist "MINI DOCUMENTÁRIO" e o relacionado "DEUS AINDA RESPONDE COM FOGO". ⚠️ Estava "Programado 24/11 00:00" (erro de fuso do Metricool) → orientado a mudar para Público.
 - [x] **Documentário de Elias, versão 2 (entregue 23/11):** clipes do YouTube Create do usuário (ou vidIQ em 27/11, cenas 3 e 6) → trocar as fotos e reexportar. Depois: título, descrição (com crédito do piano) e agendamento.
 - [x] **Shorts de GTA, parte 1:** 3 Shorts entregues (ver `projetos/gta-shorts-01/`). Mandar as próximas partes quando houver.
