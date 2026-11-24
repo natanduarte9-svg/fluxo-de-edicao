@@ -8,7 +8,7 @@ import sys, json, subprocess
 out, S, E, L1, L2 = sys.argv[1], float(sys.argv[2]), float(sys.argv[3]), sys.argv[4], sys.argv[5]
 n = sys.argv[6] if len(sys.argv) > 6 else None
 D = round(E - S, 3); FO = D - 0.5
-SRC = "src/gameplay.mp4"; FONT = "/usr/share/fonts/opentype/inter/InterDisplay-Black.otf"
+SRC = __import__("os").environ.get("SRC", "src/gameplay.mp4"); FONT = "/usr/share/fonts/opentype/inter/InterDisplay-Black.otf"
 open("tmp/l1.txt", "w").write(L1); open("tmp/l2.txt", "w").write(L2)
 fz = "if(lt(t,0.25),40+t*200,90)"
 fc = ("[0:v]split=2[a][b];"

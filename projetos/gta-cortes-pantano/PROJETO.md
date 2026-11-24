@@ -33,3 +33,8 @@ Canal JOGATINA FACIL, público, categoria Jogos (20), um por dia às 20h (Brasí
 | 27/11 20h | 4 QUE EXPLOSÃO FOI ESSA?! 💥 GTA 6 | 65a1a955-b7f5-460a-a689-1ba858447730 | fceb9b28 |
 | 28/11 20h | 5 BRIGA NO BARCO ACABOU NA HÉLICE! 😱 GTA 6 | 6e1facdb-2b28-4c46-9cf4-340f9a7f3e60 | f469f1b6 |
 - O vidIQ não define "vídeo relacionado", "não é para crianças" nem "uso de IA": o usuário confere no Studio depois que cada um processar.
+
+## Short 6 — "UM AVIÃO CAIU / NO PASTO!" (pedido em 24/11/2026, até 40 s)
+Montagem de 5 trechos com transição suave de 0,3 s (xfade + acrossfade), 37,8 s, sem falas do jogo:
+0:03:47–0:03:54 (dirige até a fumaça) · 0:03:57–0:04:03 (pasto pegando fogo) · 0:04:22–0:04:27 (pega a carga e põe na caminhonete) · 0:04:47–0:05:03 (o pessoal chega na caminhonete preta e ele derruba todos) · 0:05:20–0:05:25 (explosão).
+O jogo não mostra o avião caindo, só a coluna de fumaça (desde 0:02:52). Montagem: `SRC=tmp/aviao_16x9.mp4 LIMITE=40 python fazer_short.py ...`.
