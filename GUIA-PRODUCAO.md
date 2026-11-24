@@ -288,3 +288,11 @@ Modelo pronto em `projetos/elias-documentario/` (v1 = fotos; v2 = clipes; v2-tha
 - ⚠️ **vidIQ grátis: no máximo 3 envios ao YouTube por dia** (zera à meia-noite do Pacífico, 5h em Brasília). Com mais Shorts, programar 3 e deixar um lembrete (`send_later`) para o dia seguinte. Conferir o horário programado com `vidiq_user_videos` (scheduledPublishAt em UTC; 23:00Z = 20h).
 - Duração: o texto inteiro do usuário vale mais que a meta de segundos; Shorts aceitam até 3 min. Avisar quando passar da meta.
 - Tempo de produção aqui: ~25 min de câmera lenta + ~15 min de render (4 núcleos).
+
+## 13. Trilha emocional para mini documentário (pedido do usuário, 24/11/2026)
+O usuário pediu trilha **"mais envolvente, acolhedora, emocional, um pouco mais alta, abaixando na narração"**. Modelo: `projetos/paulo-silas-prisao/v-thalita/musica2.py`.
+- **Uma música contínua** (não pedaços por cena): piano em arpejo de colcheias + melodia simples que volta, sobre cordas quentes com ataque lento; ~66 BPM, um acorde por compasso.
+- Progressão emocional **Bm–G–D–A** (vi–IV–I–V), com Em/A de passagem; resolve em ré maior no fim.
+- **Crescendo por cena** (intensidade 0,3 → 0,8): só piano e cordas graves no começo; violoncelo no louvor; violinos a partir do clímax; melodia nos violinos no final; harpa e sino na última nota.
+- Clímax (ex.: terremoto) **numa troca de acorde** (grade alinhada), com subida de tímpano e trêmulo; impacto quente, sem metais estridentes.
+- **Volume:** trilha a ~18% da voz durante a fala (−15 dB) e −6,5 dB nos intervalos (antes: 13% e −8,5 dB). Fade de 1,2 s na entrada e 2 s na saída.

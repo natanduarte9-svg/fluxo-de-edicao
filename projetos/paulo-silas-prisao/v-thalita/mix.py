@@ -38,8 +38,8 @@ def env(x):
     return uniform_filter1d(e, int(0.25 * SR))
 me = env(mus); med = np.median(me[me > 1e-4])
 # sob a fala: trilha a ~ -18 dB da voz (≈12%), dinâmica comprimida; nos intervalos: ~ -8 dB, dinâmica quase livre
-g_speech = v_rms * db(-18) / med * (me / med) ** (0.35 - 1)
-g_gap = v_rms * db(-8.5) / med * (me / med) ** (0.75 - 1)
+g_speech = v_rms * db(-15) / med * (me / med) ** (0.35 - 1)   # trilha 2: um pouco mais alta (≈18% da voz)
+g_gap = v_rms * db(-6.5) / med * (me / med) ** (0.75 - 1)
 g = np.minimum(g_speech, 4) * sp + np.minimum(g_gap, 6) * (1 - sp)
 g = uniform_filter1d(g, int(0.12 * SR))
 ae = env(amb); amed = np.median(ae[ae > 1e-5]) if (ae > 1e-5).any() else 1

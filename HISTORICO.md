@@ -105,6 +105,7 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - ★ Novo: **pausas dramáticas dentro da fala** (`voz.py` com partes por cena) e checagem automática de fala cortada.
 - ⚠️ Respondi em inglês de novo durante o trabalho; o usuário pediu português. Regra reforçada no CLAUDE.md.
 - Pedidos do usuário: **voz da Thalita** (versão Antonio guardada), **tirar o chiado** (vinha da voz do edge-tts, não do som dos clipes; resolvido com `ferramentas/limpar_voz.py` e sem ambiente de ruído) e **convite no final** narrado ("se inscreva, deixe o like e comente qual outra história…") com pergunta e botões. Final: 97,7 s, −14,4 LUFS, `/home/user/projeto_paulo_thalita/exportacao/PAULO_E_SILAS_NA_PRISAO_DOCUMENTARIO_THALITA.mp4`.
+- Trilha refeita a pedido: contínua, emocional e acolhedora (Bm–G–D–A, piano + cordas, crescendo), ~18% da voz na fala. Guia seção 13.
 - Pendente: aprovação → publicar (Metricool, conferir agenda e visibilidade).
 
 ### 24/11/2026: retorno do usuário sobre o mini documentário
