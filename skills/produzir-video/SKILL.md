@@ -12,7 +12,8 @@ As regras de direção, ritmo, som e câmera estão em `GUIA-PRODUCAO.md`, nesta
 Leia também `HISTORICO.md` (nesta pasta, atalho para a raiz): decisões, problemas já resolvidos, preços e pendências das sessões anteriores. Não repita um erro que já está lá. Projetos em andamento ficam em `projetos/<nome>/` na raiz do repositório.
 
 ## Como falar
-- Português, frases curtas, sem jargão sem explicar.
+- ★★ **Português do Brasil em TODA mensagem**, inclusive avisos curtos durante o trabalho (o usuário não lê inglês). Frases curtas, sem jargão sem explicar.
+- **Só mandar um vídeo depois que a exportação terminar** (esperar o aviso do comando em segundo plano).
 - Faça **uma rodada só** de perguntas, numa mensagem, já com a sua sugestão em cada uma. Depois disso, decida sozinho e siga.
 - ★ **Créditos grátis (vidIQ, ElevenLabs etc.) podem ser usados para ter qualidade** sem esperar o "sim" (autorizado em 23/11/2026): avise o que gastou e o saldo. **Dinheiro de verdade, nunca** (plano pago, recarga, overage). Não repita uma geração para "tentar de novo" sem motivo claro.
 - Antes de publicar em qualquer rede, mostre o texto e espere o "sim".
@@ -25,7 +26,7 @@ Antes de tudo, leia o manifesto do canal em `manifestos/` (na raiz do repositór
 Pule o que o pedido já responde. Pergunte só o que falta:
 1. **Canal:** FIRE & GRACE (gospel), GTA 6 ou outro.
 2. **Formato:** Short vertical 9:16 (até 60 s) ou vídeo longo 16:9. Sugestão: Short.
-3. **Material:** imagem de referência, música (Suno ou outra), narração, logo.
+3. **Material:** imagem de referência, música (Suno ou outra), narração, logo. ★ Se o usuário mandar uma música dele do Suno, ela é a trilha (seção 13 do guia).
 4. **Movimento real?** Se a cena precisa de pessoa, tecido, fogo ou água realistas se movendo, é IA de vídeo (passo 3A). Se é gráfico, estilo desenhado, texto ou efeito, é código (passo 3B). Muitas vezes são os dois.
 5. **Voz da narração** (se houver): **Antonio** (masculina) ou **Thalita** (feminina). O usuário escolhe por vídeo.
 6. **Duração** e se quer ver o roteiro antes de produzir. Sugestão: não precisa, eu sigo direto.

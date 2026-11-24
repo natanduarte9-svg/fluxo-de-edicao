@@ -100,6 +100,21 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - **Versão com voz feminina (Thalita)**, a pedido do usuário (preferiu a Thalita à Francisca). As duas versões ficam guardadas: `/home/user/projeto_elias/exportacao/documentario_historia_de_elias.mp4` (Antonio) e `/home/user/projeto_elias_thalita/exportacao/documentario_historia_de_elias_thalita.mp4` (Thalita, ritmo +3%, cada cena termina no mesmo instante da versão Antonio → reaproveitou as câmeras lentas). Scripts em `projetos/elias-documentario/v2-thalita/`.
 - ★ **Publicado (agendado) com a voz da Thalita:** Metricool post 439175771, YouTube Short, **23/11/2026 20h00** (Brasília), público, IA = sim, não infantil, categoria Educação, título "A HISTÓRIA DE ELIAS: o profeta que viu o fogo cair do céu 🔥". Arquivo enviado pelo `vidiq_video_upload` (localFile, grátis; o Metricool copiou para o servidor dele). Conferido às 20h15: **PUBLICADO** sem erro → https://www.youtube.com/shorts/AzTanu9SXWw Usuário vai criar a playlist pública **"Mini Documentários"** pelo app (não há ferramenta para isso). (Metricool precisa de link público do arquivo; mostrar tudo e esperar o "sim").
 
+### 24/11/2026: resumo do dia (o que aprendemos)
+- **GTA:** achar os melhores momentos de uma gameplay longa (som + movimento), falas do jogo em legenda grande, títulos com palavras simples, limite de 3 envios/dia do vidIQ, conferir a agenda do canal antes de programar.
+- **FIRE & GRACE:** 2º mini documentário (Paulo e Silas) com pausas dramáticas, voz limpa (sem chiado), convite final narrado, trilha emocional contínua e, por fim, a **música do usuário (Suno)** como trilha; aprovado ("ficou excelente") e agendado.
+- **Atendimento:** sempre em português; só mandar vídeo depois que a exportação terminar; conferir a visibilidade no Studio depois de publicar pelo Metricool.
+- O lembrete do Elias no altar (27/11) foi cancelado pelo usuário.
+
+### 24/11/2026: 2º mini documentário — Paulo e Silas na prisão (FIRE & GRACE)
+- Prompt mestre + 6 clipes do YouTube Create. Montado pela receita da seção 12 (voz Antonio, câmera lenta, trilha real, legenda, referências, cartão final ATOS 16:25–34). 88,8 s. Projeto: `projetos/paulo-silas-prisao/`.
+- ★ Novo: **pausas dramáticas dentro da fala** (`voz.py` com partes por cena) e checagem automática de fala cortada.
+- ⚠️ Respondi em inglês de novo durante o trabalho; o usuário pediu português. Regra reforçada no CLAUDE.md.
+- Pedidos do usuário: **voz da Thalita** (versão Antonio guardada), **tirar o chiado** (vinha da voz do edge-tts, não do som dos clipes; resolvido com `ferramentas/limpar_voz.py` e sem ambiente de ruído) e **convite no final** narrado ("se inscreva, deixe o like e comente qual outra história…") com pergunta e botões. Final: 97,7 s, −14,4 LUFS, `/home/user/projeto_paulo_thalita/exportacao/PAULO_E_SILAS_NA_PRISAO_DOCUMENTARIO_THALITA.mp4`.
+- Trilha refeita a pedido: contínua, emocional e acolhedora (Bm–G–D–A, piano + cordas, crescendo), ~18% da voz na fala. Guia seção 13.
+- Trilha mais alta a pedido (24% da voz + corte de médios na fala). Depois o usuário mandou a música dele do Suno, **"Prayer at Midnight"** (2:53): virou a trilha (início até 81 s + clímax final 155,75–173,2 s).
+- ★ **Aprovado ("ficou excelente") e agendado:** Metricool post 440845916, YouTube Short, **24/11/2026 20h00**, título "PAULO E SILAS NA PRISÃO: o louvor que abriu as portas 🔥", público, IA = sim, Educação. Lembrete 20h15 para conferir a visibilidade (erro de fuso do Metricool no Elias).
+
 ### 24/11/2026: retorno do usuário sobre o mini documentário
 - ★ O usuário disse que o Short do Elias (mini documentário) **"deu super certo, foi muito bom"** e que vão **produzir mais vídeos como aquele logo**. Formato aprovado: seguir a receita da seção 12 do guia. Ideia: usar os comentários ("qual história você quer ver?") para escolher a próxima.
 

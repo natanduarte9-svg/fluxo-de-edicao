@@ -1,6 +1,6 @@
 # Memória do projeto (leia no início de toda sessão)
 
-Converse em **português do Brasil**, com frases curtas e sem jargão. ★ **Toda mensagem ao usuário em português, sempre** (ele não lê inglês; em 23/11 uma resposta saiu em inglês por engano).
+Converse em **português do Brasil**, com frases curtas e sem jargão. ★★ **TODA mensagem ao usuário em português do Brasil, SEMPRE, inclusive os avisos curtos durante o trabalho** ("agora vou...", "pronto"). Ele não lê inglês. Já saiu em inglês por engano em 23/11 e de novo em 24/11; antes de enviar qualquer texto, conferir o idioma.
 
 ## Palavra-mestra de produção: `/produzir-video`
 Para **qualquer pedido de vídeo, Short ou clipe** (FIRE & GRACE, GTA 6 ou outro), use a skill **`/produzir-video`** (`skills/produzir-video/SKILL.md`). Ela conduz tudo: perguntas, escolha das ferramentas, roteiro, produção, revisão, entrega e registro no histórico.
