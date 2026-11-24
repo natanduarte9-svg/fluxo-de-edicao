@@ -11,8 +11,14 @@ Fonte: gameplay do usuário no Drive (1,6 GB, 1280×720, 2h25), baixada direto (
 | 2 | 0:43:01–0:43:26 | 25 s | ACUADO ATRÁS / DO MURO! |
 | 3 | 0:44:09–0:44:34 | 25 s | FUGA DE / HELICÓPTERO! |
 | 4 | 0:46:16–0:46:42 | 26 s | QUE EXPLOSÃO / FOI ESSA?! |
-| 5 | 0:46:45–0:47:11 | 26 s | FUGA DE BARCO / NO PÂNTANO! |
+| 5 | 0:48:00–0:48:26 | 26 s | BRIGA NO BARCO / ACABOU NA HÉLICE! (trocado a pedido: briga corpo a corpo no aerobarco, cabeça na hélice) |
 Reservas: 0:03:56 pasto pegando fogo; 0:48:27 pouso do helicóptero.
 
 ## Montagem (`fazer_short.sh`)
 Gameplay 16:9 no centro + cópia desfocada e escurecida atrás (1080×1920), título y=410/515, sticker "Inscreva-se" 5,6 s a partir de 1,0 s (overlay 160:110), só o som do jogo, −14 LUFS, sem acelerar. Duração conferida no ffprobe (todos ≤ 26 s), sem quadros pretos.
+
+## Correções do usuário (24/11/2026)
+- ★ **Falas do jogo grandes na faixa de baixo**, logo abaixo do gameplay (y=1290): nome em amarelo, fala em branco, Montserrat ExtraBold 54, contorno preto. Sincronizadas com a legenda do jogo.
+- Como: `legendas_jogo.py` acha quando a legenda do jogo muda (recorte y 578–672, 5 qps, máscara do texto) e monta uma folha; eu leio o texto na folha e escrevo `falas.json`; `legenda_png.py` desenha cada fala; `fazer_short.py` (substitui o .sh) sobrepõe com `enable=between(t,a,b)` e confere que nenhum passa de 30 s.
+- Palavrões com asterisco só na legenda grande (c*ralho, p*rra, f*der, p*ta, m*rda), para não atrapalhar a monetização; o som do jogo fica igual. (Avisado ao usuário; pode tirar se ele pedir.)
+- Short 5 refeito: a briga no barco (0:48:00–0:48:26).

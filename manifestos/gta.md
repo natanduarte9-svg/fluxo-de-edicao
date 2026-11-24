@@ -18,6 +18,8 @@ Construído por engenharia reversa dos Shorts de 21–22/11/2026 (`projetos/gta-
 - As legendas do próprio jogo também ficam.
 - **Título (gancho):** 2 linhas na faixa desfocada de cima: linha 1 branca, linha 2 **amarela** (#FFD21F), Inter Display Black 90 px, contorno preto de 8 px, entrando com um "pulo" nos primeiros 0,25 s. Posição y=410 e y=515 (1080×1920). Frases curtas e curiosas: "OS CARROS VOARAM / DA PONTE!", "ELE NÃO ESPERAVA / POR ISSO...".
 
+- ★ **Falas do jogo em legenda GRANDE na faixa de baixo** (pedido do usuário em 24/11/2026), logo abaixo do gameplay: nome do personagem em amarelo, fala em branco, contorno preto, sincronizada com a legenda do jogo. Em todo Short com diálogo. Palavrões com asterisco na legenda (monetização). Ferramentas em `projetos/gta-cortes-pantano/`.
+
 ## Sticker "Inscreva-se"
 - ★ **O sticker de se inscrever nunca pode ser coberto** por título, efeito ou qualquer outra coisa. O do CapCut aparece na faixa de cima (y≈180–375) no começo e em outros momentos: olhar os quadros antes de pôr texto.
 - Se o vídeo não tiver sticker, usar o nosso (`ferramentas/sticker-inscreva.py`): cartão branco, joinha, botão INSCREVA-SE → clique → INSCRITO, sino. ★ **No mínimo 5 s na tela** (hoje 5,6 s). Em vídeos de ~1 min, aparecer 2 vezes (ex.: 0:04 e 0:40).

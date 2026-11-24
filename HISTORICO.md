@@ -104,6 +104,7 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - Pedido: exatamente 5 Shorts de 20–28 s (máx. 30). Baixada a gameplay inteira do Drive (1,6 GB) — **o Drive liberado no ambiente resolve arquivos grandes, sem precisar cortar no CapCut**.
 - ★ Técnica nova: **achar os melhores momentos por análise de som + movimento** (`projetos/gta-cortes-pantano/analisar.py`), depois folhas de contato para escolher. Mostrada ao usuário uma imagem com 5 escolhidos + 2 reservas; aprovou os 5.
 - Entregues 5 Shorts (25–26 s, −14 LUFS, 1080×1920, som do jogo, sticker 5,6 s). Detalhes em `projetos/gta-cortes-pantano/PROJETO.md`.
+- Correções do usuário: **falas do jogo em legenda grande na faixa de baixo** (lidas quadro a quadro da legenda do jogo, palavrões com asterisco) e **Short 5 trocado** pela briga no aerobarco (0:48:00–0:48:26, cabeça na hélice). Regra nova no manifesto do GTA.
 - Pendente: títulos/descrições/tags e agendamento (vidIQ, 20h, um por dia), perguntar qual live usar como vídeo relacionado.
 
 ### Contas e saldos (21/11/2026)
