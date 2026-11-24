@@ -41,3 +41,8 @@ O jogo não mostra o avião caindo, só a coluna de fumaça (desde 0:02:52). Mon
 
 ### Short 6 refeito a pedido (24/11): "ELES CHEGARAM / NA HORA ERRADA!" — 37,7 s
 Trecho contínuo 0:04:30–0:05:04 (inimigos Kingfishers chegam enquanto ele carrega a carga → mira em câmera lenta no carro deles → troca de tiros → **tiro de espingarda na cabeça** em 0:05:02) + 0:05:21–0:05:25 (**o avião explode** ao fundo), transição de 0,3 s. Falas dos Kingfishers em legenda grande.
+
+## Publicação — situação em 24/11/2026 (aprovado pelo usuário: "sim, pode incluir e siga com a programação")
+- ✅ Programados e conferidos no YouTube (scheduledPublishAt 23:00 UTC = 20h Brasília): Short 1 G-xsMzqgS-g (24/11), Short 2 kQgLABooT70 (25/11), Short 3 WpCOhGSuE3M (26/11).
+- ⏳ **Limite do vidIQ grátis: 3 envios ao YouTube por dia** (zera à meia-noite do Pacífico = 5h Brasília). Shorts 4 (27/11), 5 (28/11) e 6 (29/11, postId 17b20733-15d1-4b78-b596-1c6228062993, rev 52cc9fed) ficam para 25/11 às 6h (lembrete agendado).
+- O canal já tinha 2 Shorts do usuário programados para 24/11 (19h00 "DROGA CAINDO DO CÉU" e 19h45 "ELE NÃO ESPERAVA POR ISSO").

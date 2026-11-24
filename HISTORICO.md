@@ -108,7 +108,8 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - ★ Técnica nova: **achar os melhores momentos por análise de som + movimento** (`projetos/gta-cortes-pantano/analisar.py`), depois folhas de contato para escolher. Mostrada ao usuário uma imagem com 5 escolhidos + 2 reservas; aprovou os 5.
 - Entregues 5 Shorts (25–26 s, −14 LUFS, 1080×1920, som do jogo, sticker 5,6 s). Detalhes em `projetos/gta-cortes-pantano/PROJETO.md`.
 - Correções do usuário: **falas do jogo em legenda grande na faixa de baixo** (lidas quadro a quadro da legenda do jogo, palavrões com asterisco) e **Short 5 trocado** pela briga no aerobarco (0:48:00–0:48:26, cabeça na hélice). Regra nova no manifesto do GTA.
-- Pendente: títulos/descrições/tags e agendamento (vidIQ, 20h, um por dia), perguntar qual live usar como vídeo relacionado.
+- Short 6 a pedido: "ELES CHEGARAM NA HORA ERRADA!" (0:04:30–0:05:04 + explosão do avião, 37,7 s).
+- Publicação aprovada: 6 Shorts, um por dia às 20h (24 a 29/11), vídeo relacionado = live "Primeiras horas de gta6 parte 4". Shorts 1–3 programados e conferidos (20h certinho); 4–6 esperam o limite diário do vidIQ (lembrete 25/11 6h). vidIQ: 12 créditos (150 renovam 27/11).
 
 ### Contas e saldos (21/11/2026)
 - **OpusClip:** plano de teste, **90 minutos** de processamento (~1 min de saldo por minuto de vídeo). Aceita link do Google Drive e pode limitar o trecho (`rangeStart`/`rangeEnd`). No teste, os cortes podem sair com marca d'água.
