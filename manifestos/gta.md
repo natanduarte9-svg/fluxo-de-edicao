@@ -80,6 +80,7 @@ Vídeo `minhaproducao.mp4` (30 s, 9:16), feito por ele no **YouTube Create + Cap
   | Dia 3 | **20h00** | **Short 3** |
 - ★ **Todo Short leva ao vídeo longo do Dia 1:** "Vídeo relacionado" do YouTube apontando para o longo + link do longo na descrição. Agendar o longo primeiro.
 - Quando houver só Shorts soltos (sem vídeo longo), postar às **20h**, um por dia.
+- ★ **Antes de programar, ver o que o usuário já deixou programado no canal** (`vidiq_user_videos` com private): ele também agenda Shorts pelo Studio. Não colocar mais de um Short nosso no mesmo dia dos dele (pedido em 24/11/2026).
 
 ## ★ Checklist de publicação no YouTube (pedido do usuário em 22/11/2026, vale para os dois canais)
 1. **Título chamativo** (até 100 caracteres).
