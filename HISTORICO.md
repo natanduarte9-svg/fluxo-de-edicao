@@ -107,7 +107,7 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - Pedidos do usuário: **voz da Thalita** (versão Antonio guardada), **tirar o chiado** (vinha da voz do edge-tts, não do som dos clipes; resolvido com `ferramentas/limpar_voz.py` e sem ambiente de ruído) e **convite no final** narrado ("se inscreva, deixe o like e comente qual outra história…") com pergunta e botões. Final: 97,7 s, −14,4 LUFS, `/home/user/projeto_paulo_thalita/exportacao/PAULO_E_SILAS_NA_PRISAO_DOCUMENTARIO_THALITA.mp4`.
 - Trilha refeita a pedido: contínua, emocional e acolhedora (Bm–G–D–A, piano + cordas, crescendo), ~18% da voz na fala. Guia seção 13.
 - Trilha mais alta a pedido (24% da voz + corte de médios na fala). Depois o usuário mandou a música dele do Suno, **"Prayer at Midnight"** (2:53): virou a trilha (início até 81 s + clímax final 155,75–173,2 s).
-- Pendente: aprovação → publicar (Metricool, conferir agenda e visibilidade).
+- ★ **Aprovado ("ficou excelente") e agendado:** Metricool post 440845916, YouTube Short, **24/11/2026 20h00**, título "PAULO E SILAS NA PRISÃO: o louvor que abriu as portas 🔥", público, IA = sim, Educação. Lembrete 20h15 para conferir a visibilidade (erro de fuso do Metricool no Elias).
 
 ### 24/11/2026: retorno do usuário sobre o mini documentário
 - ★ O usuário disse que o Short do Elias (mini documentário) **"deu super certo, foi muito bom"** e que vão **produzir mais vídeos como aquele logo**. Formato aprovado: seguir a receita da seção 12 do guia. Ideia: usar os comentários ("qual história você quer ver?") para escolher a próxima.
