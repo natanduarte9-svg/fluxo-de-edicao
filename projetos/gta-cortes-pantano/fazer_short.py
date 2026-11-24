@@ -33,5 +33,5 @@ subprocess.run(["ffmpeg", "-v", "error", "-y", *inputs, "-filter_complex", fc, "
                 "-c:v", "libx264", "-preset", "slow", "-crf", "18", "-r", "30", "-c:a", "aac", "-b:a", "192k",
                 "-movflags", "+faststart", "-t", str(D), out], check=True)
 dur = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", out]))
-assert dur <= 30.0, f"{out} passou de 30 s: {dur}"
+LIM = float(__import__("os").environ.get("LIMITE", "30")); assert dur <= LIM, f"{out} passou de {LIM} s: {dur}"
 print(f"ok {out} {dur:.2f} s")

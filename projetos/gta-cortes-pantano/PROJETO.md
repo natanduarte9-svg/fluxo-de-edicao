@@ -8,10 +8,10 @@ Fonte: gameplay do usuário no Drive (1,6 GB, 1280×720, 2h25), baixada direto (
 | # | Trecho | Dur. | Título (2 linhas) |
 |---|---|---|---|
 | 1 | 0:42:16–0:42:41 | 25 s | TIROTEIO NO / PÂNTANO! |
-| 2 | 0:43:01–0:43:26 | 25 s | ACUADO ATRÁS / DO MURO! |
+| 2 | 0:43:01–0:43:26 | 25 s | ESSE MURO FOI / SALVADOR! (título do usuário; não gostou de "acuado") |
 | 3 | 0:44:09–0:44:34 | 25 s | FUGA DE / HELICÓPTERO! |
 | 4 | 0:46:16–0:46:42 | 26 s | QUE EXPLOSÃO / FOI ESSA?! |
-| 5 | 0:48:00–0:48:26 | 26 s | BRIGA NO BARCO / ACABOU NA HÉLICE! (trocado a pedido: briga corpo a corpo no aerobarco, cabeça na hélice) |
+| 5 | 0:47:56–0:48:31 | **35 s** (a pedido: mostrar mais do jogo; `LIMITE=36`) | BRIGA NO BARCO / ACABOU NA HÉLICE! (trocado a pedido: briga corpo a corpo no aerobarco, cabeça na hélice) |
 Reservas: 0:03:56 pasto pegando fogo; 0:48:27 pouso do helicóptero.
 
 ## Montagem (`fazer_short.sh`)
