@@ -38,3 +38,6 @@ Canal JOGATINA FACIL, público, categoria Jogos (20), um por dia às 20h (Brasí
 Montagem de 5 trechos com transição suave de 0,3 s (xfade + acrossfade), 37,8 s, sem falas do jogo:
 0:03:47–0:03:54 (dirige até a fumaça) · 0:03:57–0:04:03 (pasto pegando fogo) · 0:04:22–0:04:27 (pega a carga e põe na caminhonete) · 0:04:47–0:05:03 (o pessoal chega na caminhonete preta e ele derruba todos) · 0:05:20–0:05:25 (explosão).
 O jogo não mostra o avião caindo, só a coluna de fumaça (desde 0:02:52). Montagem: `SRC=tmp/aviao_16x9.mp4 LIMITE=40 python fazer_short.py ...`.
+
+### Short 6 refeito a pedido (24/11): "ELES CHEGARAM / NA HORA ERRADA!" — 37,7 s
+Trecho contínuo 0:04:30–0:05:04 (inimigos Kingfishers chegam enquanto ele carrega a carga → mira em câmera lenta no carro deles → troca de tiros → **tiro de espingarda na cabeça** em 0:05:02) + 0:05:21–0:05:25 (**o avião explode** ao fundo), transição de 0,3 s. Falas dos Kingfishers em legenda grande.
