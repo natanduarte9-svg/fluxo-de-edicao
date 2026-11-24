@@ -295,4 +295,4 @@ O usuário pediu trilha **"mais envolvente, acolhedora, emocional, um pouco mais
 - Progressão emocional **Bm–G–D–A** (vi–IV–I–V), com Em/A de passagem; resolve em ré maior no fim.
 - **Crescendo por cena** (intensidade 0,3 → 0,8): só piano e cordas graves no começo; violoncelo no louvor; violinos a partir do clímax; melodia nos violinos no final; harpa e sino na última nota.
 - Clímax (ex.: terremoto) **numa troca de acorde** (grade alinhada), com subida de tímpano e trêmulo; impacto quente, sem metais estridentes.
-- **Volume:** trilha a ~18% da voz durante a fala (−15 dB) e −6,5 dB nos intervalos (antes: 13% e −8,5 dB). Fade de 1,2 s na entrada e 2 s na saída.
+- **Volume aprovado pelo usuário (2º ajuste, "mais alta um pouco"):** trilha a ~24% da voz na fala (−12,5 dB) e −4,5 dB nos intervalos, **com a faixa 1,5–4 kHz da trilha reduzida pela metade só enquanto há fala** (abre espaço para a voz ser entendida mesmo com a música mais alta). Fade de 1,2 s na entrada e 2 s na saída. Histórico: 13% → 18% → 24%.

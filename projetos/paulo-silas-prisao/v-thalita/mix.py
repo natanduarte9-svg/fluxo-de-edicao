@@ -38,13 +38,17 @@ def env(x):
     return uniform_filter1d(e, int(0.25 * SR))
 me = env(mus); med = np.median(me[me > 1e-4])
 # sob a fala: trilha a ~ -18 dB da voz (≈12%), dinâmica comprimida; nos intervalos: ~ -8 dB, dinâmica quase livre
-g_speech = v_rms * db(-15) / med * (me / med) ** (0.35 - 1)   # trilha 2: um pouco mais alta (≈18% da voz)
-g_gap = v_rms * db(-6.5) / med * (me / med) ** (0.75 - 1)
+g_speech = v_rms * db(-12.5) / med * (me / med) ** (0.35 - 1)   # trilha 2: um pouco mais alta (≈18% da voz)
+g_gap = v_rms * db(-4.5) / med * (me / med) ** (0.75 - 1)
 g = np.minimum(g_speech, 4) * sp + np.minimum(g_gap, 6) * (1 - sp)
 g = uniform_filter1d(g, int(0.12 * SR))
 ae = env(amb); amed = np.median(ae[ae > 1e-5]) if (ae > 1e-5).any() else 1
 ga = (v_rms * db(-26) / amed) * sp + (v_rms * db(-15) / amed) * (1 - sp)
 
+# abre espaço para a voz: durante a fala, tira um pouco da faixa 1,5–4 kHz da trilha (onde a voz é entendida)
+from scipy.signal import butter, sosfiltfilt
+bandm = np.stack([sosfiltfilt(butter(2, [1500, 4000], "band", fs=SR, output="sos"), mus[:, c]) for c in range(2)], 1).astype(np.float32)
+mus = mus - bandm * (0.5 * sp)[:, None]
 out = voz[:, None] * np.array([1, 1], np.float32) + mus * g[:, None] + amb * ga[:, None]
 # fade final junto com a imagem
 nf = int(0.9 * SR); e = int(L.DUR * SR); out[e - nf:e] *= np.linspace(1, 0, nf)[:, None]; out[e:] = 0
