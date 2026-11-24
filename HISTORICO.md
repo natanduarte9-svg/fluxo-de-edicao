@@ -100,6 +100,12 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - **Versão com voz feminina (Thalita)**, a pedido do usuário (preferiu a Thalita à Francisca). As duas versões ficam guardadas: `/home/user/projeto_elias/exportacao/documentario_historia_de_elias.mp4` (Antonio) e `/home/user/projeto_elias_thalita/exportacao/documentario_historia_de_elias_thalita.mp4` (Thalita, ritmo +3%, cada cena termina no mesmo instante da versão Antonio → reaproveitou as câmeras lentas). Scripts em `projetos/elias-documentario/v2-thalita/`.
 - ★ **Publicado (agendado) com a voz da Thalita:** Metricool post 439175771, YouTube Short, **23/11/2026 20h00** (Brasília), público, IA = sim, não infantil, categoria Educação, título "A HISTÓRIA DE ELIAS: o profeta que viu o fogo cair do céu 🔥". Arquivo enviado pelo `vidiq_video_upload` (localFile, grátis; o Metricool copiou para o servidor dele). Conferido às 20h15: **PUBLICADO** sem erro → https://www.youtube.com/shorts/AzTanu9SXWw Usuário vai criar a playlist pública **"Mini Documentários"** pelo app (não há ferramenta para isso). (Metricool precisa de link público do arquivo; mostrar tudo e esperar o "sim").
 
+### 24/11/2026: resumo do dia (o que aprendemos)
+- **GTA:** achar os melhores momentos de uma gameplay longa (som + movimento), falas do jogo em legenda grande, títulos com palavras simples, limite de 3 envios/dia do vidIQ, conferir a agenda do canal antes de programar.
+- **FIRE & GRACE:** 2º mini documentário (Paulo e Silas) com pausas dramáticas, voz limpa (sem chiado), convite final narrado, trilha emocional contínua e, por fim, a **música do usuário (Suno)** como trilha; aprovado ("ficou excelente") e agendado.
+- **Atendimento:** sempre em português; só mandar vídeo depois que a exportação terminar; conferir a visibilidade no Studio depois de publicar pelo Metricool.
+- O lembrete do Elias no altar (27/11) foi cancelado pelo usuário.
+
 ### 24/11/2026: 2º mini documentário — Paulo e Silas na prisão (FIRE & GRACE)
 - Prompt mestre + 6 clipes do YouTube Create. Montado pela receita da seção 12 (voz Antonio, câmera lenta, trilha real, legenda, referências, cartão final ATOS 16:25–34). 88,8 s. Projeto: `projetos/paulo-silas-prisao/`.
 - ★ Novo: **pausas dramáticas dentro da fala** (`voz.py` com partes por cena) e checagem automática de fala cortada.
