@@ -16,7 +16,9 @@ Construído por engenharia reversa dos Shorts de 21–22/11/2026 (`projetos/gta-
 ## Texto na tela
 - **Legendas do CapCut** (já vêm no vídeo): caixa alta, fonte condensada pesada, branco com a palavra-chave em **amarelo**, contorno preto, na faixa desfocada de baixo, em português. Manter.
 - As legendas do próprio jogo também ficam.
-- **Título (gancho):** 2 linhas na faixa desfocada de cima: linha 1 branca, linha 2 **amarela** (#FFD21F), Inter Display Black 90 px, contorno preto de 8 px, entrando com um "pulo" nos primeiros 0,25 s. Posição y=410 e y=515 (1080×1920). Frases curtas e curiosas: "OS CARROS VOARAM / DA PONTE!", "ELE NÃO ESPERAVA / POR ISSO...".
+- **Título (gancho):** 2 linhas na faixa desfocada de cima: linha 1 branca, linha 2 **amarela** (#FFD21F), Inter Display Black 90 px, contorno preto de 8 px, entrando com um "pulo" nos primeiros 0,25 s. Posição y=410 e y=515 (1080×1920). Frases curtas e curiosas: "OS CARROS VOARAM / DA PONTE!", "ELE NÃO ESPERAVA / POR ISSO...", "ESSE MURO FOI / SALVADOR!". ★ O usuário **não gosta de palavras difíceis** no título (ex.: "acuado"): usar linguagem simples, do dia a dia. Linha 2 com até ~17 letras para não encostar nas bordas.
+
+- ★ **Falas do jogo em legenda GRANDE na faixa de baixo** (pedido do usuário em 24/11/2026), logo abaixo do gameplay: nome do personagem em amarelo, fala em branco, contorno preto, sincronizada com a legenda do jogo. Em todo Short com diálogo. Palavrões com asterisco na legenda (monetização). Ferramentas em `projetos/gta-cortes-pantano/`.
 
 ## Sticker "Inscreva-se"
 - ★ **O sticker de se inscrever nunca pode ser coberto** por título, efeito ou qualquer outra coisa. O do CapCut aparece na faixa de cima (y≈180–375) no começo e em outros momentos: olhar os quadros antes de pôr texto.
@@ -78,6 +80,7 @@ Vídeo `minhaproducao.mp4` (30 s, 9:16), feito por ele no **YouTube Create + Cap
   | Dia 3 | **20h00** | **Short 3** |
 - ★ **Todo Short leva ao vídeo longo do Dia 1:** "Vídeo relacionado" do YouTube apontando para o longo + link do longo na descrição. Agendar o longo primeiro.
 - Quando houver só Shorts soltos (sem vídeo longo), postar às **20h**, um por dia.
+- ★ **Antes de programar, ver o que o usuário já deixou programado no canal** (`vidiq_user_videos` com private): ele também agenda Shorts pelo Studio. Não colocar mais de um Short nosso no mesmo dia dos dele (pedido em 24/11/2026).
 
 ## ★ Checklist de publicação no YouTube (pedido do usuário em 22/11/2026, vale para os dois canais)
 1. **Título chamativo** (até 100 caracteres).

@@ -161,5 +161,7 @@ Short 9:16, 2160×3840, 60 fps, 46,2 s, −13,8 LUFS. Folha de quadros a cada 0,
 
 ## ★ Mini documentários bíblicos (formato novo, 23/11/2026)
 - Short 9:16 narrado (voz escolhida pelo usuário: Antonio ou Thalita), cenas do YouTube Create, trilha orquestral, títulos com referência bíblica. Modelo: `projetos/elias-documentario/`.
-- ★ **Playlist "Mini Documentários"** (pública) no FIRE & GRACE: todo mini documentário entra nela. **Não há ferramenta para isso** (Metricool não cria/adiciona playlist; vidIQ grátis só tem o Jogatina) → **lembrar o usuário em toda postagem**: app do YouTube, conta FIRE & GRACE → abrir o Short → ⋮ → Salvar → marcar "Mini Documentários" (no 1º: "+ Nova playlist", pública).
+- ★ **Playlist "MINI DOCUMENTÁRIO"** (criada pelo usuário em 23/11, pública) no FIRE & GRACE: todo mini documentário entra nela. **Não há ferramenta para isso** (Metricool não cria/adiciona playlist; vidIQ grátis só tem o Jogatina) → **lembrar o usuário em toda postagem**: app do YouTube, conta FIRE & GRACE → abrir o Short → ⋮ → Salvar → marcar "Mini Documentários" (no 1º: "+ Nova playlist", pública).
 - Publicação: link público do arquivo via `vidiq_video_upload` (localFile, grátis) → Metricool `createScheduledPost` (youtube, type short, isAiGeneratedContent true, madeForKids false). Horário: Short avulso 20h.
+
+- ⚠️ Depois de publicar pelo Metricool, **conferir a Visibilidade no Studio** (em 23/11 ficou "Programado 00:00" em vez de público às 20h). Vídeo relacionado do Short do Elias: "DEUS AINDA RESPONDE COM FOGO" (boa prática: apontar para um vídeo do mesmo tema).

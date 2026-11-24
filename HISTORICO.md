@@ -98,7 +98,18 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - Entregue: cópia leve no chat; mestre (278 MB), `.srt` e pacote de publicação em `/home/user/projeto_elias/exportacao/`. Detalhes: `projetos/elias-documentario/v2/RELATORIO.md`.
 - Correção pedida pelo usuário: "seca" saiu com "e" aberto (séca). Voz refeita só na cena 2 com "sêca" no texto da voz (legenda inalterada), mesmo tempo de cena; só os quadros da cena 2 renderizados de novo.
 - **Versão com voz feminina (Thalita)**, a pedido do usuário (preferiu a Thalita à Francisca). As duas versões ficam guardadas: `/home/user/projeto_elias/exportacao/documentario_historia_de_elias.mp4` (Antonio) e `/home/user/projeto_elias_thalita/exportacao/documentario_historia_de_elias_thalita.mp4` (Thalita, ritmo +3%, cada cena termina no mesmo instante da versão Antonio → reaproveitou as câmeras lentas). Scripts em `projetos/elias-documentario/v2-thalita/`.
-- ★ **Publicado (agendado) com a voz da Thalita:** Metricool post 439175771, YouTube Short, **23/11/2026 20h00** (Brasília), público, IA = sim, não infantil, categoria Educação, título "A HISTÓRIA DE ELIAS: o profeta que viu o fogo cair do céu 🔥". Arquivo enviado pelo `vidiq_video_upload` (localFile, grátis; o Metricool copiou para o servidor dele). Lembrete às 20h15 para conferir. Usuário vai criar a playlist pública **"Mini Documentários"** pelo app (não há ferramenta para isso). (Metricool precisa de link público do arquivo; mostrar tudo e esperar o "sim").
+- ★ **Publicado (agendado) com a voz da Thalita:** Metricool post 439175771, YouTube Short, **23/11/2026 20h00** (Brasília), público, IA = sim, não infantil, categoria Educação, título "A HISTÓRIA DE ELIAS: o profeta que viu o fogo cair do céu 🔥". Arquivo enviado pelo `vidiq_video_upload` (localFile, grátis; o Metricool copiou para o servidor dele). Conferido às 20h15: **PUBLICADO** sem erro → https://www.youtube.com/shorts/AzTanu9SXWw Usuário vai criar a playlist pública **"Mini Documentários"** pelo app (não há ferramenta para isso). (Metricool precisa de link público do arquivo; mostrar tudo e esperar o "sim").
+
+### 24/11/2026: retorno do usuário sobre o mini documentário
+- ★ O usuário disse que o Short do Elias (mini documentário) **"deu super certo, foi muito bom"** e que vão **produzir mais vídeos como aquele logo**. Formato aprovado: seguir a receita da seção 12 do guia. Ideia: usar os comentários ("qual história você quer ver?") para escolher a próxima.
+
+### 24/11/2026: 5 Shorts do Jogatina Fácil a partir da gameplay de 2h25
+- Pedido: exatamente 5 Shorts de 20–28 s (máx. 30). Baixada a gameplay inteira do Drive (1,6 GB) — **o Drive liberado no ambiente resolve arquivos grandes, sem precisar cortar no CapCut**.
+- ★ Técnica nova: **achar os melhores momentos por análise de som + movimento** (`projetos/gta-cortes-pantano/analisar.py`), depois folhas de contato para escolher. Mostrada ao usuário uma imagem com 5 escolhidos + 2 reservas; aprovou os 5.
+- Entregues 5 Shorts (25–26 s, −14 LUFS, 1080×1920, som do jogo, sticker 5,6 s). Detalhes em `projetos/gta-cortes-pantano/PROJETO.md`.
+- Correções do usuário: **falas do jogo em legenda grande na faixa de baixo** (lidas quadro a quadro da legenda do jogo, palavrões com asterisco) e **Short 5 trocado** pela briga no aerobarco (0:48:00–0:48:26, cabeça na hélice). Regra nova no manifesto do GTA.
+- Short 6 a pedido: "ELES CHEGARAM NA HORA ERRADA!" (0:04:30–0:05:04 + explosão do avião, 37,7 s).
+- Publicação aprovada: 6 Shorts, um por dia às 20h (24 a 29/11), vídeo relacionado = live "Primeiras horas de gta6 parte 4". Shorts 1–3 programados e conferidos (20h certinho); 4–6 esperam o limite diário do vidIQ (lembrete 25/11 6h). Short 1 (Tiroteio) movido para 30/11 20h a pedido (não lotar o dia 24). vidIQ: 7 créditos (150 renovam 27/11).
 
 ### Contas e saldos (21/11/2026)
 - **OpusClip:** plano de teste, **90 minutos** de processamento (~1 min de saldo por minuto de vídeo). Aceita link do Google Drive e pode limitar o trecho (`rangeStart`/`rangeEnd`). No teste, os cortes podem sair com marca d'água.
@@ -107,7 +118,7 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 
 ### Pendências
 - [ ] **27/11, 19h:** gerar o vídeo do Elias (reanexar a imagem e confirmar o custo).
-- [ ] Conferir o Short do Elias no YouTube Studio (100%, sem bloqueio) e colocar na playlist "Mini Documentários".
+- [x] Short do Elias: o usuário pôs na playlist "MINI DOCUMENTÁRIO" e o relacionado "DEUS AINDA RESPONDE COM FOGO". ⚠️ Estava "Programado 24/11 00:00" (erro de fuso do Metricool) → orientado a mudar para Público.
 - [x] **Documentário de Elias, versão 2 (entregue 23/11):** clipes do YouTube Create do usuário (ou vidIQ em 27/11, cenas 3 e 6) → trocar as fotos e reexportar. Depois: título, descrição (com crédito do piano) e agendamento.
 - [x] **Shorts de GTA, parte 1:** 3 Shorts entregues (ver `projetos/gta-shorts-01/`). Mandar as próximas partes quando houver.
 - [ ] Completar o `manifestos/fire-grace.md` com o usuário (8 perguntas no fim do arquivo).
