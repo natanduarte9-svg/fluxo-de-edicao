@@ -1,4 +1,4 @@
-# Pacote de publicação — FIRE & GRACE (Short / mini documentário)
+# Pacote de publicação — FIRE & GRACE (Short / mini documentário) — versão final: voz Thalita + música do usuário
 
 ## Título (sugestão: o 1º)
 1. PAULO E SILAS NA PRISÃO: o louvor que abriu as portas 🔥
@@ -14,7 +14,7 @@ Paulo e Silas foram presos injustamente por anunciarem o Evangelho. Mesmo ferido
 👍 Deixe seu like e inscreva-se no FIRE & GRACE para acompanhar mais histórias bíblicas.
 
 Imagens criadas com IA. Narração com voz sintética.
-Trilha original. Piano: "Salamander Grand Piano V3" by Alexander Holm, licensed under CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/).
+Trilha: "Prayer at Midnight" — FIRE & GRACE.
 
 #PauloESilas #HistóriasBíblicas #Bíblia #Fé #Gospel #Shorts
 
