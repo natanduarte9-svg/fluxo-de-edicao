@@ -23,3 +23,6 @@ paulo e silas, paulo e silas na prisão, atos 16, louvor à meia-noite, terremot
 
 ## Configurações
 Short · Público · IA = SIM · Não é para crianças · Categoria Educação · Playlist "MINI DOCUMENTÁRIO" (usuário) · 20h (conferir a agenda do canal e, depois de publicar, a Visibilidade no Studio).
+
+## Arquivo para o Metricool (24/11/2026)
+Upload vidIQ `fdb67cae-ff6b-42e7-b847-6cd7a6d01064` (link público válido ~7 dias). Agenda do FIRE & GRACE no Metricool: vazia de 24/11 a 01/12.
