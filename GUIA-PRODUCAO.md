@@ -302,3 +302,18 @@ O usuário pediu trilha **"mais envolvente, acolhedora, emocional, um pouco mais
 - **Volume aprovado pelo usuário (2º ajuste, "mais alta um pouco"):** trilha a ~24% da voz na fala (−12,5 dB) e −4,5 dB nos intervalos, **com a faixa 1,5–4 kHz da trilha reduzida pela metade só enquanto há fala** (abre espaço para a voz ser entendida mesmo com a música mais alta). Fade de 1,2 s na entrada e 2 s na saída. Histórico: 13% → 18% → 24%.
 - ★ **Quando o usuário manda uma música dele (Suno), ela vira a trilha** (24/11/2026: "Prayer at Midnight" no Paulo e Silas). Analisar a curva de energia (início calmo, crescimento, parte cheia, respiro, clímax final) e **montar dois trechos**: do início da música até perto da frase final, e o **clímax final da música** encaixado para terminar junto com o vídeo (`acrossfade` de 1,5 s). Mesmo ducking (≈24% + corte 1,5–4 kHz na fala). Crédito na descrição: nome da música + FIRE & GRACE.
 - ⚠️ **Só mandar o vídeo depois que o ffmpeg terminar** (comando longo vai para segundo plano; esperar o aviso de conclusão). Em 24/11 um arquivo foi enviado antes de terminar e precisou ser reenviado.
+
+## 14. Estilo "Painel de controle" (referência do usuário, 25/11/2026)
+Vídeo de referência (story patrocinado de um criador de cortes de GTA, 18 s, gravação de tela): quadros em `manifestos/assets/estilo-painel-referencia.jpg`. **Aprender a técnica; usar a identidade dos nossos canais** (não copiar nome, textos nem o widget dele).
+**Fundo:** azul-marinho escuro (≈ #0A1729 → #10243A) com **grade fina de planta técnica** (linhas azul-claras, bem transparentes, ~40 px).
+**Janela do vídeo:** a cena fica numa "tela" retangular grande no meio, com **borda azul fina** e **cantoneiras douradas em L** nos 4 cantos (visor de câmera). Embaixo da janela, um rótulo pequeno espaçado: "FEED 01 · GTA VI · AO VIVO".
+**Widget no topo esquerdo:** caixinha com borda azul, rótulo pequeno espaçado em azul-claro ("SENSOR DE ATENÇÃO") e uma **onda dourada animada** (senoide que se mexe).
+**Títulos:**
+- Legenda de figura pequena acima: "FIG. 01 — O QUE NINGUÉM PERCEBEU" (azul-claro, caixa alta, espaçada).
+- **Título gigante** em 2 linhas, fonte pesada (tipo Montserrat Black): linha 1 branca, linha 2 **laranja-dourada**, com um **traço laranja** embaixo; fica **por cima da borda de cima da janela**.
+- **Etiquetas de etapa** acima da janela: caixa escura com borda colorida, rótulo pequeno ("A MAIORIA FAZ", "ETAPA", "RECEITA") e texto grande ("📺 ASSISTIR LIVE" em vermelho, "PASSO A PASSO ↓" em branco, "$ FAZER DINHEIRO" em dourado, "1 · CONTA DE CORTES").
+- **Número de impacto**: "90%" enorme em degradê dourado + "DO TRABALHO" branco, sobre a janela escurecida.
+- **Painéis de interface** dentro da janela: barra de título ("FÁBRICA DE CORTES") com rótulo à direita ("ESTÚDIO DE VÍDEOS") e linha dourada embaixo.
+**Rótulo de câmera (estilo CFTV)** no canto de baixo do vídeo: "CAM 04" dourado + nome em branco + pílula vermelha "AO VIVO".
+**Legenda:** embaixo da janela, 1–3 palavras por vez, branco pesado, palavra-chave em laranja, sem caixa.
+**Ritmo:** troca de cena a cada 1–2 s, narração falada do começo ao fim.
