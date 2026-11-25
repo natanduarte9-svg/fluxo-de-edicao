@@ -106,7 +106,7 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - Voz do GTA confirmada: **Will Brian (ElevenLabs)**. Narração do teste gerada (269 caracteres; sobram ~7.775). O download do ElevenLabs é bloqueado aqui → o usuário baixou e mandou pelo Drive. Teste com narração: `entregas/gta-cortes/teste-painel-will.mp4` (27 s).
 - ★★ O usuário aprovou o teste com narração: **todos os Shorts de GTA agora no estilo Painel** (manifesto do GTA atualizado).
 - Pergunta do usuário sobre vozes grátis para monetizar: pesquisado (guia, seção 15). Resposta: só a voz dele e o Kokoro são 100% liberados; Microsoft pelo edge-tts não é liberado oficialmente (risco baixo); ElevenLabs grátis não.
-- Kokoro melhorado testado (Alex e Santa, com tratamento): **o usuário achou ruim**. Decisão: **ele vai gravar a própria voz** para os vídeos monetizados. Gravação recebida pelo Drive (29 s, boa qualidade) → tratamento de rádio + encaixe na cena: `entregas/gta-cortes/teste-painel-natan.mp4` (28 s).
+- Kokoro melhorado testado (Alex e Santa, com tratamento): **o usuário achou ruim**. Decisão: **ele vai gravar a própria voz** para os vídeos monetizados. Gravação recebida pelo Drive (29 s, boa qualidade) → tratamento de rádio + encaixe na cena: `entregas/gta-cortes/teste-painel-natan.mp4` (28 s). **O usuário não gostou da própria voz.** Não insistir nessa opção.
 - Shorts 4, 5 e 6 de GTA programados (25/11 6h).
 
 ### 24/11/2026: resumo do dia (o que aprendemos)
