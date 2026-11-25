@@ -2,7 +2,24 @@
 
 Construído por engenharia reversa dos Shorts de 21–22/11/2026 (`projetos/gta-shorts-01/`) e dos pedidos do usuário. **Regras marcadas com ★ vieram de correções do usuário: não quebrar.**
 
-## Formato
+## ★★ FORMATO PADRÃO DOS SHORTS (decisão do usuário, 25/11/2026): estilo "PAINEL"
+"O vídeo ficou excelente. **Todos os nossos Shorts agora vão ser desse jeito.**" Referência aprovada: `entregas/gta-cortes/teste-painel-will.mp4`.
+- ★★★ **MODELO DEFINITIVO (aprovado em 25/11/2026: "Ficou excelente, esse vai ser nosso modelo de vídeo de gameplay de GTA agora, sempre esse modelo"):** `entregas/gta-cortes/teste-painel-suno.mp4` = estilo Painel + **narração criada pelo usuário no SUNO** (plano pago → monetizável).
+  **Passo a passo de cada Short:**
+  1. Escolher o trecho da gameplay (análise de som + movimento) e confirmar com o usuário.
+  2. Escrever o **texto da narração** coloquial de streamer ("Mano…", "cara…", "do nada…"), uma frase por momento da cena, e mandar ao usuário os **3 blocos para o Suno** (Letra, Estilo, Excluir estilos — modelo no guia, seção 15), "GTA seis" por extenso.
+  3. O usuário gera no Suno (se vier música: Get Stems → Vocals) e manda pelo Drive.
+  4. Transcrever com o ElevenLabs Scribe (tempo exato das palavras) e encaixar cada frase no momento da cena; jogo −13 dB na fala.
+  5. Montar no Painel: título "FIG. 01 — …" + 2 linhas, etiquetas de etapa, CAM 01 · JASON · AO VIVO, legenda da narração, sticker.
+  6. Revisar, mandar, e programar (vidIQ, 20h, um por dia; conferir a agenda do canal; máx. 3 envios/dia).
+- Fundo azul-marinho com grade técnica; widget **"RADAR JOGATINA"** com onda que reage ao som do jogo.
+- Título "FIG. 01 — …" + 2 linhas gigantes (branco / laranja) por cima da janela do jogo; **etiquetas de etapa** que mudam com a cena; títulos **baseados no que acontece no nosso vídeo**.
+- Janela do jogo 1000×760 com cantoneiras douradas e rótulo **"CAM 01 · JASON · AO VIVO"**; **sem "FEED" embaixo**.
+- **Narração do Will Brian** encaixada frase a frase nos momentos da cena; som do jogo −13 dB enquanto ele fala; legenda da narração embaixo (palavras-chave em laranja). Sem narração: só o som do jogo + falas do jogo em legenda grande.
+- Sticker "Inscreva-se" embaixo da janela.
+- Ferramentas: `ferramentas/painel/` (guia, seção 14). ⚠️ Voz Will (ElevenLabs grátis) não tem licença comercial — avisado ao usuário (guia, seção 15); para vídeos monetizados, sugerir a voz dele.
+
+## Formato (antigo, antes de 25/11/2026)
 - **Shorts verticais 9:16, 1080×1920, 30 fps.**
 - **Até 30 s** cada. Se o usuário pedir para juntar dois momentos, pode passar disso (já foi feito um de 1:06); o ideal é até 60 s.
 - O usuário edita a base no **CapCut**: gameplay 16:9 no centro, com uma cópia **desfocada** ocupando a faixa de cima e a de baixo.
@@ -26,7 +43,7 @@ Construído por engenharia reversa dos Shorts de 21–22/11/2026 (`projetos/gta-
 
 ## Som
 - ★ **Narração só quando o usuário pedir** (vídeos didáticos/explicativos). No dia a dia: **vozes e som do próprio jogo**.
-- ★ **Voz escolhida para narrar: Microsoft `pt-BR-AntonioNeural`** (edge-tts, grátis; ElevenLabs só se o usuário pedir e houver crédito).
+- ★ **Voz de narração do GTA: "Will Brian – Conversational & Expressive" do ElevenLabs** (voice_id `6TTixGON25Rq6y6JrW7V`, pt-BR, modelo eleven_v4), confirmada pelo usuário em 25/11/2026. Narração só quando ele pedir. ⚠️ O link de download do ElevenLabs (`elevenlabsusercontent.com`) é bloqueado pela rede daqui: o usuário baixa no celular e anexa, ou liberar o host pelo computador. ⚠️ Plano grátis do ElevenLabs: confirmar uso comercial antes de publicar. (Antes: Antonio/edge-tts.)
 - ★ **Só o som do jogo, sem música** (pedido do usuário).
 - Volume padrão do YouTube: **−14 LUFS**, pico −1,5 dB. Fade curto na entrada (0,1 s) e na saída (0,5 s).
 
@@ -87,7 +104,7 @@ Vídeo `minhaproducao.mp4` (30 s, 9:16), feito por ele no **YouTube Create + Cap
 2. **Descrição:** convite para **se inscrever**; contar um pouco do que acontece no vídeo; **uma pergunta para as pessoas comentarem**; **hashtags** no fim (as 3 primeiras aparecem acima do título). Nos Shorts, também o link do vídeo longo.
 3. **Tags:** campo "Tags" do YouTube, **até 500 caracteres no total** (é esse o limite do YouTube; a descrição é que vai até 5.000).
 4. **"Contém promoção paga": NÃO** (desmarcado).
-5. ★ **"Conteúdo alterado ou sintético" (uso de IA): NÃO** — no Jogatina Fácil é gameplay real, sem IA.
+5. ★ **"Conteúdo alterado ou sintético" (uso de IA):** gameplay **sem** narração = **NÃO**; **com narração do Suno (voz de IA) = SIM** (mudou em 25/11/2026 com o modelo novo).
 6. Público: **"Não é conteúdo para crianças"**.
 7. **Esperar o processamento chegar a 100%** antes de mexer na visibilidade.
 8. Visibilidade: **Público**, com **programação** (data e hora da agenda).
