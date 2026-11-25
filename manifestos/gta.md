@@ -104,7 +104,7 @@ Vídeo `minhaproducao.mp4` (30 s, 9:16), feito por ele no **YouTube Create + Cap
 2. **Descrição:** convite para **se inscrever**; contar um pouco do que acontece no vídeo; **uma pergunta para as pessoas comentarem**; **hashtags** no fim (as 3 primeiras aparecem acima do título). Nos Shorts, também o link do vídeo longo.
 3. **Tags:** campo "Tags" do YouTube, **até 500 caracteres no total** (é esse o limite do YouTube; a descrição é que vai até 5.000).
 4. **"Contém promoção paga": NÃO** (desmarcado).
-5. ★ **"Conteúdo alterado ou sintético" (uso de IA): NÃO** — no Jogatina Fácil é gameplay real, sem IA.
+5. ★ **"Conteúdo alterado ou sintético" (uso de IA):** gameplay **sem** narração = **NÃO**; **com narração do Suno (voz de IA) = SIM** (mudou em 25/11/2026 com o modelo novo).
 6. Público: **"Não é conteúdo para crianças"**.
 7. **Esperar o processamento chegar a 100%** antes de mexer na visibilidade.
 8. Visibilidade: **Público**, com **programação** (data e hora da agenda).
