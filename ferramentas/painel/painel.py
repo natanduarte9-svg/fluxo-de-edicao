@@ -7,6 +7,7 @@ import sys, json, math, subprocess, glob
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 OUT, S, E, NF = sys.argv[1], float(sys.argv[2]), float(sys.argv[3]), sys.argv[4]
+NFAL = sys.argv[5] if len(sys.argv) > 5 else NF; AUDIO = sys.argv[6] if len(sys.argv) > 6 else None
 D = E - S; FPS = 30; W, H = 1080, 1920
 MONT = "/home/user/fonts/Montserrat.ttf"
 def F(size, var="Black"):
@@ -73,8 +74,8 @@ def camera(cam, nome):
 CFG = json.load(open("painel_cfg.json"))[NF]
 TIT = titulo(*CFG["titulo"]); CAM = camera(*CFG["camera"])
 ETQ = [(a, b, etiqueta(*x)) for a, b, x in CFG["etiquetas"]]
-FALAS = json.load(open("falas.json")).get(NF, [])
-CAPS = [(a, b, Image.open(f"tmp/cap_{NF}_{j}.png").convert("RGBA")) for j, (a, b, _) in enumerate(FALAS)]
+FALAS = json.load(open("falas.json")).get(NFAL, [])
+CAPS = [(a, b, Image.open(f"tmp/cap_{NFAL}_{j}.png").convert("RGBA")) for j, (a, b, _) in enumerate(FALAS)]
 STK = sorted(glob.glob("sticker/s*.png")); T_STK = CFG.get("sticker", 1.0)
 def fade(lay, a):
     if a >= 1: return lay
@@ -110,6 +111,12 @@ while True:
     if 0 <= j < len(STK): img.alpha_composite(Image.open(STK[j]).convert("RGBA"), (160, FY + FH + 150))
     enc.stdin.write(img.convert("RGB").tobytes()); i += 1
 enc.stdin.close(); enc.wait(); proc.wait()
+if AUDIO:   # narração já mixada com o jogo
+    m = subprocess.run(["ffmpeg", "-hide_banner", "-i", AUDIO, "-af", "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json", "-f", "null", "-"], capture_output=True, text=True).stderr
+    m = json.loads(m[m.rfind("{"):m.rfind("}") + 1])
+    af = f"loudnorm=I=-14:TP=-1.5:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true,aresample=48000"
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", "tmp/painel_video.mp4", "-i", AUDIO, "-map", "0:v", "-map", "1:a", "-af", af, "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-shortest", OUT], check=True)
+    print("ok", OUT, i, "quadros (com narração)"); sys.exit(0)
 # som do jogo a -14 LUFS
 m = subprocess.run(["ffmpeg", "-hide_banner", "-ss", str(S), "-t", str(D), "-i", "src/gameplay.mp4", "-vn", "-af", "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json", "-f", "null", "-"], capture_output=True, text=True).stderr
 m = json.loads(m[m.rfind("{"):m.rfind("}") + 1])
