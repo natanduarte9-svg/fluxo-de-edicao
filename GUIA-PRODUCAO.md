@@ -319,3 +319,13 @@ Vídeo de referência (story patrocinado de um criador de cortes de GTA, 18 s, g
 **Ritmo:** troca de cena a cada 1–2 s, narração falada do começo ao fim.
 **Nossa versão (teste de 25/11/2026, Jogatina Fácil):** `ferramentas/painel/painel.py` + `painel_cfg.json` (rodar na pasta da gameplay). Widget **"RADAR JOGATINA"** com a onda **reagindo ao som do jogo**; título "FIG. 01 — …" + 2 linhas (branco/laranja) sobre a janela; janela do jogo 1000×760 (corte central) com cantoneiras douradas; rótulo "CAM 01 · JASON · AO VIVO"; etiquetas de etapa trocando conforme a cena; falas do jogo grandes embaixo; sticker embaixo da janela. ★ Pedido do usuário: **sem o "FEED" embaixo**; títulos **baseados no que acontece no nosso vídeo**; por enquanto **sem narração, só o som do jogo**.
 **Com narração (teste de 25/11/2026, voz Will Brian):** `ferramentas/painel/montar_narracao.py` acha as frases do áudio (pausas), **encaixa cada frase no momento da cena** (ex.: "explosão gigante" na explosão, "e acerta!" no tiro), abaixa o jogo **−13 dB** enquanto ele fala (volta nas pausas), e gera a legenda da narração (até 3 palavras, palavras-chave em laranja). Depois `painel.py <saida> <ini> <fim> <cfg> W <mix.wav>`.
+
+## 15. Vozes grátis × monetização (pesquisa de 25/11/2026 — conferir de novo antes de monetizar)
+| Voz | Grátis? | Pode monetizar? |
+|---|---|---|
+| **ElevenLabs plano grátis** (Will Brian) | sim (10 mil caracteres/mês) | **Não**: o próprio ElevenLabs diz que o plano grátis não tem licença comercial; e áudio feito no grátis continua sem licença mesmo depois de assinar. |
+| **Microsoft pelo edge-tts** (Antonio, Thalita) | sim | **Arriscado**: é um acesso não oficial; a Microsoft indica o Azure para uso comercial. |
+| **Azure Speech, faixa grátis F0** (mesmas vozes Antonio/Thalita, oficial) | 500 mil caracteres/mês | **Incerto**: respostas conflitantes no fórum da Microsoft; exige conta Azure (pede cartão). |
+| **Kokoro** (instalado aqui) | sim, sem limite | **Sim** (licença Apache 2.0), mas a voz é pouco natural. |
+| **Voz do próprio usuário** (gravada no celular) | sim | **Sim, 100%**, e conta como conteúdo original para o YouTube. Aqui: limpar ruído, equalizar, cortar respiros, −14 LUFS. |
+Fontes: help center do ElevenLabs ("Can I publish the content I generate"), Microsoft Q&A sobre edge-tts e sobre o F0.
