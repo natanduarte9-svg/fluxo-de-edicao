@@ -4,6 +4,14 @@ Construído por engenharia reversa dos Shorts de 21–22/11/2026 (`projetos/gta-
 
 ## ★★ FORMATO PADRÃO DOS SHORTS (decisão do usuário, 25/11/2026): estilo "PAINEL"
 "O vídeo ficou excelente. **Todos os nossos Shorts agora vão ser desse jeito.**" Referência aprovada: `entregas/gta-cortes/teste-painel-will.mp4`.
+- ★★★ **MODELO DEFINITIVO (aprovado em 25/11/2026: "Ficou excelente, esse vai ser nosso modelo de vídeo de gameplay de GTA agora, sempre esse modelo"):** `entregas/gta-cortes/teste-painel-suno.mp4` = estilo Painel + **narração criada pelo usuário no SUNO** (plano pago → monetizável).
+  **Passo a passo de cada Short:**
+  1. Escolher o trecho da gameplay (análise de som + movimento) e confirmar com o usuário.
+  2. Escrever o **texto da narração** coloquial de streamer ("Mano…", "cara…", "do nada…"), uma frase por momento da cena, e mandar ao usuário os **3 blocos para o Suno** (Letra, Estilo, Excluir estilos — modelo no guia, seção 15), "GTA seis" por extenso.
+  3. O usuário gera no Suno (se vier música: Get Stems → Vocals) e manda pelo Drive.
+  4. Transcrever com o ElevenLabs Scribe (tempo exato das palavras) e encaixar cada frase no momento da cena; jogo −13 dB na fala.
+  5. Montar no Painel: título "FIG. 01 — …" + 2 linhas, etiquetas de etapa, CAM 01 · JASON · AO VIVO, legenda da narração, sticker.
+  6. Revisar, mandar, e programar (vidIQ, 20h, um por dia; conferir a agenda do canal; máx. 3 envios/dia).
 - Fundo azul-marinho com grade técnica; widget **"RADAR JOGATINA"** com onda que reage ao som do jogo.
 - Título "FIG. 01 — …" + 2 linhas gigantes (branco / laranja) por cima da janela do jogo; **etiquetas de etapa** que mudam com a cena; títulos **baseados no que acontece no nosso vídeo**.
 - Janela do jogo 1000×760 com cantoneiras douradas e rótulo **"CAM 01 · JASON · AO VIVO"**; **sem "FEED" embaixo**.

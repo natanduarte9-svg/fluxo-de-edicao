@@ -107,7 +107,7 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - ★★ O usuário aprovou o teste com narração: **todos os Shorts de GTA agora no estilo Painel** (manifesto do GTA atualizado).
 - Pergunta do usuário sobre vozes grátis para monetizar: pesquisado (guia, seção 15). Resposta: só a voz dele e o Kokoro são 100% liberados; Microsoft pelo edge-tts não é liberado oficialmente (risco baixo); ElevenLabs grátis não.
 - Kokoro melhorado testado (Alex e Santa, com tratamento): **o usuário achou ruim**. Decisão: **ele vai gravar a própria voz** para os vídeos monetizados. Gravação recebida pelo Drive (29 s, boa qualidade) → tratamento de rádio + encaixe na cena: `entregas/gta-cortes/teste-painel-natan.mp4` (28 s). **O usuário não gostou da própria voz.** Não insistir nessa opção.
-- **Voz do Suno**: depois de 4 ajustes no prompt (séria → forçada → natural de streamer → "parecida com o Will"), o usuário mandou a narração. Montada com tempo exato das palavras (Scribe): `entregas/gta-cortes/teste-painel-suno.mp4`. Liberada para monetizar (Suno pago).
+- **Voz do Suno**: depois de 4 ajustes no prompt (séria → forçada → natural de streamer → "parecida com o Will"), o usuário mandou a narração. Montada com tempo exato das palavras (Scribe): `entregas/gta-cortes/teste-painel-suno.mp4`. Liberada para monetizar (Suno pago). ★★★ **Aprovado como MODELO DEFINITIVO dos vídeos de gameplay de GTA** (manifesto atualizado).
 - Shorts 4, 5 e 6 de GTA programados (25/11 6h).
 
 ### 24/11/2026: resumo do dia (o que aprendemos)
