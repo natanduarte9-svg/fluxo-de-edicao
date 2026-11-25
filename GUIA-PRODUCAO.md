@@ -329,3 +329,4 @@ Vídeo de referência (story patrocinado de um criador de cortes de GTA, 18 s, g
 | **Kokoro** (instalado aqui) | sim, sem limite | **Sim** (licença Apache 2.0), mas a voz é pouco natural. |
 | **Voz do próprio usuário** (gravada no celular) | sim | **Sim, 100%**, e conta como conteúdo original para o YouTube. Aqui: limpar ruído, equalizar, cortar respiros, −14 LUFS. |
 Fontes: help center do ElevenLabs ("Can I publish the content I generate"), Microsoft Q&A sobre edge-tts e sobre o F0.
+- **Kokoro "melhorado" (teste 25/11/2026):** gerar frase por frase (`pm_alex`/`pm_santa`, `lang pt-br`, speed 1.05, "GTA seis" por extenso) e tratar com ffmpeg: 1 semitom mais grave (`asetrate=45306,aresample=48000,atempo=1.0595`), EQ de locutor (+3 dB 140 Hz, −2,5 dB 350 Hz, +2,5 dB 3,5 kHz, +1,5 dB 9 kHz), compressor 3:1 e eco curtinho de sala. Comparação: `entregas/comparacao-kokoro.mp3`. É a única voz de IA grátis liberada para monetizar.
