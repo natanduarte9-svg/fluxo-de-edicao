@@ -100,6 +100,11 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - **Versão com voz feminina (Thalita)**, a pedido do usuário (preferiu a Thalita à Francisca). As duas versões ficam guardadas: `/home/user/projeto_elias/exportacao/documentario_historia_de_elias.mp4` (Antonio) e `/home/user/projeto_elias_thalita/exportacao/documentario_historia_de_elias_thalita.mp4` (Thalita, ritmo +3%, cada cena termina no mesmo instante da versão Antonio → reaproveitou as câmeras lentas). Scripts em `projetos/elias-documentario/v2-thalita/`.
 - ★ **Publicado (agendado) com a voz da Thalita:** Metricool post 439175771, YouTube Short, **23/11/2026 20h00** (Brasília), público, IA = sim, não infantil, categoria Educação, título "A HISTÓRIA DE ELIAS: o profeta que viu o fogo cair do céu 🔥". Arquivo enviado pelo `vidiq_video_upload` (localFile, grátis; o Metricool copiou para o servidor dele). Conferido às 20h15: **PUBLICADO** sem erro → https://www.youtube.com/shorts/AzTanu9SXWw Usuário vai criar a playlist pública **"Mini Documentários"** pelo app (não há ferramenta para isso). (Metricool precisa de link público do arquivo; mostrar tudo e esperar o "sim").
 
+### 25/11/2026: estilo "Painel de controle" (referência do usuário)
+- O usuário mandou a gravação de um story (criador de cortes de GTA) para aprender o estilo. Analisado quadro a quadro (guia, seção 14) e feito um **teste** com o trecho da explosão no pântano: `entregas/gta-cortes/teste-estilo-painel.mp4` (26 s, só som do jogo).
+- O usuário citou "a voz do Will" para o GTA — **não havia registro** disso (o combinado era vozes do jogo; narração Antonio/Thalita). Provável: voz "Will" do ElevenLabs. **Perguntar e confirmar** antes de usar.
+- Shorts 4, 5 e 6 de GTA programados (25/11 6h).
+
 ### 24/11/2026: resumo do dia (o que aprendemos)
 - **GTA:** achar os melhores momentos de uma gameplay longa (som + movimento), falas do jogo em legenda grande, títulos com palavras simples, limite de 3 envios/dia do vidIQ, conferir a agenda do canal antes de programar.
 - **FIRE & GRACE:** 2º mini documentário (Paulo e Silas) com pausas dramáticas, voz limpa (sem chiado), convite final narrado, trilha emocional contínua e, por fim, a **música do usuário (Suno)** como trilha; aprovado ("ficou excelente") e agendado.
