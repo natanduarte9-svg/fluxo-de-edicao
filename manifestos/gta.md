@@ -26,7 +26,7 @@ Construído por engenharia reversa dos Shorts de 21–22/11/2026 (`projetos/gta-
 
 ## Som
 - ★ **Narração só quando o usuário pedir** (vídeos didáticos/explicativos). No dia a dia: **vozes e som do próprio jogo**.
-- ★ **Voz escolhida para narrar: Microsoft `pt-BR-AntonioNeural`** (edge-tts, grátis; ElevenLabs só se o usuário pedir e houver crédito).
+- ★ **Voz de narração do GTA: "Will Brian – Conversational & Expressive" do ElevenLabs** (voice_id `6TTixGON25Rq6y6JrW7V`, pt-BR, modelo eleven_v4), confirmada pelo usuário em 25/11/2026. Narração só quando ele pedir. ⚠️ O link de download do ElevenLabs (`elevenlabsusercontent.com`) é bloqueado pela rede daqui: o usuário baixa no celular e anexa, ou liberar o host pelo computador. ⚠️ Plano grátis do ElevenLabs: confirmar uso comercial antes de publicar. (Antes: Antonio/edge-tts.)
 - ★ **Só o som do jogo, sem música** (pedido do usuário).
 - Volume padrão do YouTube: **−14 LUFS**, pico −1,5 dB. Fade curto na entrada (0,1 s) e na saída (0,5 s).
 
