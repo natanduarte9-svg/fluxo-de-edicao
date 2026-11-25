@@ -104,6 +104,8 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - O usuário mandou a gravação de um story (criador de cortes de GTA) para aprender o estilo. Analisado quadro a quadro (guia, seção 14) e feito um **teste** com o trecho da explosão no pântano: `entregas/gta-cortes/teste-estilo-painel.mp4` (26 s, só som do jogo).
 - O usuário citou "a voz do Will" para o GTA — **não havia registro** disso (o combinado era vozes do jogo; narração Antonio/Thalita). Provável: voz "Will" do ElevenLabs. **Perguntar e confirmar** antes de usar.
 - Voz do GTA confirmada: **Will Brian (ElevenLabs)**. Narração do teste gerada (269 caracteres; sobram ~7.775). O download do ElevenLabs é bloqueado aqui → o usuário baixou e mandou pelo Drive. Teste com narração: `entregas/gta-cortes/teste-painel-will.mp4` (27 s).
+- ★★ O usuário aprovou o teste com narração: **todos os Shorts de GTA agora no estilo Painel** (manifesto do GTA atualizado).
+- Pergunta do usuário sobre vozes grátis para monetizar: pesquisado (guia, seção 15). Resposta: só a voz dele e o Kokoro são 100% liberados; Microsoft pelo edge-tts não é liberado oficialmente (risco baixo); ElevenLabs grátis não.
 - Shorts 4, 5 e 6 de GTA programados (25/11 6h).
 
 ### 24/11/2026: resumo do dia (o que aprendemos)

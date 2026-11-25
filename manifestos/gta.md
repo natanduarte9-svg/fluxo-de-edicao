@@ -2,7 +2,16 @@
 
 Construído por engenharia reversa dos Shorts de 21–22/11/2026 (`projetos/gta-shorts-01/`) e dos pedidos do usuário. **Regras marcadas com ★ vieram de correções do usuário: não quebrar.**
 
-## Formato
+## ★★ FORMATO PADRÃO DOS SHORTS (decisão do usuário, 25/11/2026): estilo "PAINEL"
+"O vídeo ficou excelente. **Todos os nossos Shorts agora vão ser desse jeito.**" Referência aprovada: `entregas/gta-cortes/teste-painel-will.mp4`.
+- Fundo azul-marinho com grade técnica; widget **"RADAR JOGATINA"** com onda que reage ao som do jogo.
+- Título "FIG. 01 — …" + 2 linhas gigantes (branco / laranja) por cima da janela do jogo; **etiquetas de etapa** que mudam com a cena; títulos **baseados no que acontece no nosso vídeo**.
+- Janela do jogo 1000×760 com cantoneiras douradas e rótulo **"CAM 01 · JASON · AO VIVO"**; **sem "FEED" embaixo**.
+- **Narração do Will Brian** encaixada frase a frase nos momentos da cena; som do jogo −13 dB enquanto ele fala; legenda da narração embaixo (palavras-chave em laranja). Sem narração: só o som do jogo + falas do jogo em legenda grande.
+- Sticker "Inscreva-se" embaixo da janela.
+- Ferramentas: `ferramentas/painel/` (guia, seção 14). ⚠️ Voz Will (ElevenLabs grátis) não tem licença comercial — avisado ao usuário (guia, seção 15); para vídeos monetizados, sugerir a voz dele.
+
+## Formato (antigo, antes de 25/11/2026)
 - **Shorts verticais 9:16, 1080×1920, 30 fps.**
 - **Até 30 s** cada. Se o usuário pedir para juntar dois momentos, pode passar disso (já foi feito um de 1:06); o ideal é até 60 s.
 - O usuário edita a base no **CapCut**: gameplay 16:9 no centro, com uma cópia **desfocada** ocupando a faixa de cima e a de baixo.
