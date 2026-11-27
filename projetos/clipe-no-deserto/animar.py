@@ -147,7 +147,7 @@ if __name__ == "__main__":
                f";[{cur}][s{j}]overlay={ST_XY[0]}:{ST_XY[1]}:eof_action=pass[o{j}]"); cur = f"o{j}"
     fc += f";[{cur}]format=yuv420p[v]"
     ff = subprocess.Popen(["ffmpeg", "-v", "error", "-y", *inp, "-filter_complex", fc, "-map", "[v]", "-map", "1:a", "-af", af,
-                           "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-tune", "film", "-r", str(FPS),
+                           "-c:v", "libx264", "-preset", os.environ.get("PRESET", "medium"), "-crf", os.environ.get("CRF", "17"), "-tune", "film", "-r", str(FPS),
                            "-c:a", "aac", "-b:a", "256k", "-movflags", "+faststart", "-t", str(D), OUT], stdin=subprocess.PIPE)
     n = int(round(D * FPS))
     for i in range(n):
