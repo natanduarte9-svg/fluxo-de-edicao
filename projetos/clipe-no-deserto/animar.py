@@ -3,7 +3,7 @@ Uso: python animar.py <pasta> [inicio_s fim_s]   (trecho opcional = prévia ráp
 Camadas: câmera de cinema lenta (push-in nos versos, abre nos refrões, nunca corta o título),
 sol que "respira", raios de luz animados, poeira dourada em 2 profundidades (com bokeh),
 pulso de luz na batida só nos refrões, vinheta, grão de filme, fade de entrada/saída.
-Por cima (ffmpeg): karaokê (karaoke.ass) e o sticker Inscreva-se/Like 3 vezes (10 s cada).
+Por cima (ffmpeg): karaokê (karaoke.ass) e o sticker do canal (Inscreva-se/Like) 3 vezes.
 Áudio: a música do Suno, -14 LUFS em dois passes."""
 import sys, os, json, subprocess, math
 import numpy as np, cv2
@@ -13,7 +13,10 @@ DUR = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", 
 T0, T1 = (float(sys.argv[2]), float(sys.argv[3])) if len(sys.argv) > 3 else (0.0, DUR)
 OUT = f"{P}/clipe.mp4" if len(sys.argv) <= 3 else f"{P}/previa_{int(T0)}.mp4"
 REFROES = [(83.3, 111.0), (168.5, 196.2), (227.7, 254.3)]
-STICKERS = [2.0, DUR / 2 - 5, DUR - 10.6]           # começo, meio, fim (10 s cada)
+STICKERS = [2.0, DUR / 2 - 4, DUR - 10.0]           # começo, meio, fim
+# sticker do canal (feito pelo usuário no CapCut, fundo verde recortado: sticker_fg/, 8,2 s);
+# sem ele, usa o sticker genérico (ferramentas/sticker-inscreva.py, 10 s)
+ST_DIR, ST_ESC, ST_XY = (("sticker_fg", 0.55, (16, 150)) if os.path.isdir(f"{P}/sticker_fg") else ("sticker", 0.66, (36, 150)))
 BEATS = np.load(f"{P}/batidas.npy")
 
 # ---------- base: imagem em resolução maior para a câmera andar sem perder nitidez ----------
@@ -129,9 +132,9 @@ if __name__ == "__main__":
     fc = f"[0:v]setpts=PTS+{T0}/TB,ass={P}/karaoke.ass:fontsdir={P}/fontes,setpts=PTS-{T0}/TB[v0]"
     cur = "v0"
     for j, ts in enumerate(STICKERS):
-        inp += ["-framerate", "30", "-i", f"{P}/sticker/s%03d.png"]
-        fc += (f";[{j + 2}:v]scale=iw*0.66:-1,setpts=PTS+{ts - T0}/TB[s{j}]"
-               f";[{cur}][s{j}]overlay=36:150:eof_action=pass[o{j}]"); cur = f"o{j}"
+        inp += ["-framerate", "30", "-i", f"{P}/{ST_DIR}/s%03d.png"]
+        fc += (f";[{j + 2}:v]scale=iw*{ST_ESC}:-1,setpts=PTS+{ts - T0}/TB[s{j}]"
+               f";[{cur}][s{j}]overlay={ST_XY[0]}:{ST_XY[1]}:eof_action=pass[o{j}]"); cur = f"o{j}"
     fc += f";[{cur}]format=yuv420p[v]"
     ff = subprocess.Popen(["ffmpeg", "-v", "error", "-y", *inp, "-filter_complex", fc, "-map", "[v]", "-map", "1:a", "-af", af,
                            "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-tune", "film", "-r", str(FPS),
