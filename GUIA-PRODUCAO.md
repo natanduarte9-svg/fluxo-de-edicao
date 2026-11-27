@@ -334,3 +334,32 @@ Fontes: help center do ElevenLabs ("Can I publish the content I generate"), Micr
 - ★ **Voz do usuário (gravada no celular) — tratamento de rádio (25/11/2026):** a gravação dele veio boa (ruído −55 dB, fala −22 dB). Cadeia: `noisereduce` com o ruído das pontas da gravação (prop 0,8) → ffmpeg `highpass=80, +2,5 dB 120 Hz, −3 dB 300 Hz, +3 dB 3,5 kHz, +2 dB 10 kHz, deesser, compressor 4:1 (−22 dB), limiter`. Frases achadas pelas pausas e encaixadas na cena (`ferramentas/painel/montar_natan.py`). Antes/depois: `entregas/sua-voz-antes-depois.mp3`. Ele grava pelo gravador do celular e manda pelo **Drive** (o ditado do teclado vira texto, não áudio).
 - ★ **Narração criada no SUNO (plano pago do usuário = liberada para monetizar), 25/11/2026.** Prompts que funcionaram (o usuário aprovou a voz "quase do jeito", parecida com o Will): estilo "a cappella, vocals only, spoken word, young adult Brazilian male voice, warm medium-deep tone, rich and smooth, confident and friendly, authentic conversational delivery, casual gamer talking to chat, relaxed natural pacing…, no music, no instruments…"; excluir "music, singing, … announcer, radio voice, theatrical, exaggerated, forced, high-pitched, very deep, documentary, monotone"; letra coloquial ("Mano…", "cara…", "do nada") com `[A cappella]` `[Spoken Word - … no music]`. Evitar marcações de emoção frase a frase e MAIÚSCULAS (fica forçado). Se vier música: "Get Stems" → Vocals.
 - **Tempo exato das palavras** de qualquer narração: transcrição do **ElevenLabs Scribe** (`creative_attach_reference_file` com o link direto do Drive → `creative_transcribe_audio`; ~200 créditos grátis por 20 s). Depois `ferramentas/painel/montar_narracao_suno.py` encaixa as frases na cena e faz a legenda palavra por palavra (encolhe a fonte se passar de 1000 px, mantendo o Black).
+
+## 16. Três referências do usuário (27/11/2026): o que aprender (sem copiar)
+Vídeos verticais de anúncio/Reels mandados pelo Drive (gravação de tela). Aprender a **técnica**, usar com a **nossa identidade**.
+
+**Ref. 1 — explicativo claro (fundo bege, laranja de destaque, 55 s)**
+- Gancho em letras enormes, 3 linhas, **uma palavra na cor de destaque** ("VÍDEO DE 10 MINUTOS DE UMA **IDEIA**").
+- **Legenda de 2 a 4 palavras numa "pílula" branca**, com a palavra-chave colorida. Muda a cada fala.
+- Telas de app "falsas" que se escrevem sozinhas: terminal digitando, campo de texto sendo preenchido, lista com ✓ verde aparecendo um por um, barra de progresso até 100%.
+- Transição: o quadro novo entra **desfocado e foca** (blur → nítido), com elementos que "pulam" (mola).
+- Uma cor só de destaque no vídeo inteiro. Fim com cartão escuro "CLICA NO BOTÃO AQUI EMBAIXO" e seta animada.
+
+**Ref. 2 — tecnológico escuro (preto + brilho laranja, 61 s)**
+- Objetos 3D brilhando no centro (claquete com cadeado, placa de vídeo, uma "máquina diretora" que monta o filme).
+- **Contadores animados** (0 → 37, 110/600) e **cartões que acendem um por um**.
+- Legenda: texto branco simples + **palavra-chave em serifa itálica laranja** (mistura de 2 fontes).
+- Lista de etapas com a etapa atual acesa e as outras apagadas (ROTEIRO ✓ → IMAGENS 2 → ...).
+- Fim: cartão do perfil com **mãozinha clicando "Seguir" → "Seguindo ✓"** (igual ao nosso sticker).
+
+**Ref. 3 — GTA 6 "17 coisas escondidas" (98 s, 84 mil curtidas)**
+- **Formato lista com contador**: selo amarelo grande "8/17" + categoria pequena (VEÍCULOS) + nome do item. Um item a cada 3-5 s.
+- **Controle animado** na tela mostrando o botão a apertar (PS e Xbox lado a lado).
+- **Chips que pulam** com ícone resumindo o momento ("TEM SETA!", "FUGA RÁPIDA", "NINGUÉM TE VÊ", "CENSURADO", "%$#@!").
+- Menus de rádio/atalhos desenhados por cima da cena.
+- Fecha com pergunta para comentar: "**QUAL FICOU DE FORA?**" (puxa comentários = algoritmo).
+
+**Como vamos usar**
+- **Jogatina Fácil:** série "X coisas que você não sabia no GTA 6" no estilo Painel (azul-marinho + amarelo), com contador N/X, chips que pulam, controle com o botão e pergunta no fim. A narração do Suno continua.
+- **FIRE & GRACE:** legenda em pílula com a palavra-chave dourada; entrada com desfoque → foco; contador ou lista de etapas quando o tema pedir ("7 vezes que Deus respondeu com fogo"); pergunta no fim ("Qual história você quer na próxima?").
+- **Todos:** uma única cor de destaque por vídeo; algo muda na tela a cada 2-4 s; pergunta no fim para comentar.
