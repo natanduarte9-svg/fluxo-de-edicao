@@ -4,52 +4,56 @@ Cada evento = um trecho da letra (frase, ou metade dela se for longa), em até 2
 A palavra se preenche de dourado no tempo em que é cantada."""
 import json, sys, os
 P = sys.argv[1]
-W = json.load(open(os.path.join(P, "palavras.json")))
-FIX = {"benção,": "bênção,"}                      # acentos que a transcrição errou
-W = [[FIX.get(w, w), a, b] for w, a, b in W]
+# palavras_letra.json = texto da letra oficial + tempos da transcrição + marca de fim de linha da letra
+LET = os.path.join(P, "palavras_letra.json")
+W = json.load(open(LET)) if os.path.exists(LET) else [x + [False] for x in json.load(open(os.path.join(P, "palavras.json")))]
 
-# 1) quebra em pedaços nas vírgulas/pontos; 2) junta pedaços até ~60 caracteres (sem passar do ponto final)
-chunks, cur = [], []
+# trechos = versos da letra: dois versos curtos juntos (um em cada linha); verso longo sozinho
+versos, cur = [], []
 for w in W:
     cur.append(w)
-    if w[0][-1] in ",.:;!?":
-        chunks.append((cur, w[0][-1] in ".!?")); cur = []
-if cur: chunks.append((cur, True))
-evs, cur = [], []
-for ws, fim in chunks:
-    txt = " ".join(x[0] for x in cur + ws)
-    if cur and len(txt) > 60: evs.append(cur); cur = []
-    cur = cur + ws
-    if fim: evs.append(cur); cur = []
-if cur: evs.append(cur)
+    if w[3]: versos.append(cur); cur = []
+if cur: versos.append(cur)
+tam = lambda ws: len(" ".join(x[0] for x in ws))
+evs, i = [], 0
+while i < len(versos):
+    v = versos[i]
+    if (i + 1 < len(versos) and tam(v) <= 40 and tam(versos[i + 1]) <= 40 and tam(v) + tam(versos[i + 1]) <= 64
+            and versos[i + 1][0][1] - v[-1][2] < 2.5):
+        evs.append((v, versos[i + 1])); i += 2
+    else:
+        evs.append((v,)); i += 1
 
 def ts(t):
     t = max(0, t); h = int(t // 3600); m = int(t % 3600 // 60); s = t % 60
     return f"{h}:{m:02d}:{s:05.2f}"
 
-def linhas(ws):
-    """divide em 2 linhas equilibradas se passar de 30 caracteres"""
+def linhas(grupo):
+    """um verso por linha; um verso longo (>36) sozinho vira 2 linhas equilibradas"""
+    if len(grupo) == 2: return list(grupo)
+    ws = grupo[0]
     n = len(" ".join(x[0] for x in ws))
-    if n <= 30: return [ws]
+    if n <= 36: return [ws]
     best, k = 1e9, 1
     for i in range(1, len(ws)):
-        a = len(" ".join(x[0] for x in ws[:i])); d = abs(a - n / 2) - (4 if ws[i - 1][0][-1] in ",:" else 0)
+        a = len(" ".join(x[0] for x in ws[:i])); d = abs(a - n * 0.55) - (12 if ws[i - 1][3] else 4 if ws[i - 1][0][-1] in ",:" else 0)
         if d < best: best, k = d, i
     return [ws[:k], ws[k:]]
 
 out = []
-for i, ws in enumerate(evs):
+evs_w = [sum(g, []) for g in evs]
+for i, (grupo, ws) in enumerate(zip(evs, evs_w)):
     ini = ws[0][1] - 0.45
-    if i: ini = max(ini, evs[i - 1][-1][2] + 0.15)
+    if i: ini = max(ini, evs_w[i - 1][-1][2] + 0.15)
     fim = ws[-1][2] + 0.9
-    if i + 1 < len(evs): fim = min(fim, evs[i + 1][0][1] - 0.45)
+    if i + 1 < len(evs): fim = min(fim, evs_w[i + 1][0][1] - 0.45)
     fim = max(fim, ws[-1][2] + 0.2)
     parts, t = [], ini
     lead = round((ws[0][1] - ini) * 100)
     if lead > 0: parts.append(f"{{\\k{lead}}}")
-    rows = linhas(ws)
+    rows = linhas(grupo)
     for r, row in enumerate(rows):
-        for j, (w, a, b) in enumerate(row):
+        for j, (w, a, b, _) in enumerate(row):
             k = rows[r][j + 1][1] if j + 1 < len(row) else (rows[r + 1][0][1] if r + 1 < len(rows) else b)
             dur = max(1, round((min(b, k) - a) * 100)); gap = round((k - a) * 100) - dur
             parts.append(f"{{\\kf{dur}}}{w}" + (f"{{\\k{gap}}}" if gap > 0 else "") + (" " if j + 1 < len(row) else ""))
@@ -72,4 +76,4 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
 open(os.path.join(P, "karaoke.ass"), "w").write(HDR + "\n".join(out) + "\n")
 print(len(out), "trechos")
-for ws in evs[:6]: print(" | ".join(" ".join(x[0] for x in r) for r in linhas(ws)))
+for g in evs: print(" | ".join(" ".join(x[0] for x in r) for r in linhas(g)))
