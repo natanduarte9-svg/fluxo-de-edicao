@@ -4,7 +4,7 @@ Mesmo acabamento do clipe 16:9: câmera lenta (push-in), sol que respira (posiç
 raios, poeira dourada, pulso de luz na batida no refrão, vinheta, grão;
 título animado (cursiva + palavra amarela) que aparece no meio, SOBE e fica fixo no alto;
 karaokê do mesmo karaoke.ass (recortado e deslocado, letras maiores, acima da área dos botões do Shorts);
-sticker do canal 1 vez; áudio do trecho com -14 LUFS (2 passes), entrada/saída suaves. Limite 35 s."""
+sticker do canal 1 vez; encerramento oficial (logo, CURTIR/INSCREVA-SE, "assista o vídeo completo") nos últimos 6 s; áudio do trecho com -14 LUFS (2 passes), entrada/saída suaves. Limite 35 s."""
 import sys, os, re, json, math, subprocess
 import numpy as np, cv2
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "ferramentas"))
@@ -18,6 +18,9 @@ BEATS = np.load(f"{P}/batidas.npy")
 CFG = json.loads(os.environ.get("CFG", "{}"))           # ajustes por imagem (posições)
 TIT_Y = CFG.get("tit_y", 0.085); TIT_X = CFG.get("tit_x", 0.5); TIT_ESC = CFG.get("tit_esc", 0.8)
 ST_Y = CFG.get("st_y", 0.60); LEG_MV = CFG.get("leg_mv", 380)
+# encerramento oficial do canal (6 s, sem som; a música continua) nos últimos 6 s do Short
+ENC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "manifestos", "assets", "encerramento-pt-9x16.mp4")
+CT = D - 5.97                                            # quando o cartão entra (tempo do Short)
 
 # ---------- base ----------
 src = cv2.imread(IMG)
@@ -75,7 +78,7 @@ TIT.claroes = [(TIT.tc + 0.2, 0.7, 0.0), (TIT.tf + 0.15, 0.8, 1.7), (2.9 + 0.7, 
 
 def quadro(t):
     ta = A + t; rf = refrao(ta)
-    z = 1.0 + 0.09 * ease(t / D); ax = 0.5 + 0.12 * math.sin(t / D * math.pi - math.pi / 2) * 0.5; ay = 0.35
+    z = 1.0 + 0.09 * ease(t / D); ax = 0.5 + 0.12 * math.sin(t / D * math.pi - math.pi / 2) * 0.5; ay = 0.10
     kg = 0.38 + 0.14 * math.sin(2 * math.pi * t / 6.4) + 0.16 * rf
     img = cv2.addWeighted(base, 1.0, GLOW, kg, 0)
     w = 0.5 + 0.5 * math.sin(2 * math.pi * t / 11.0)
@@ -90,7 +93,7 @@ def quadro(t):
     if rf > 0:
         k = np.searchsorted(BEATS, ta) - 1
         if k >= 0: pul = 0.045 * rf * math.exp(-(ta - BEATS[k]) / 0.22) * (1.0 if k % 2 == 0 else 0.5)
-    fade = min(1.0, ease(t / 0.35), ease((D - t) / 1.2))
+    fade = min(1.0, ease(t / 0.35), ease((CT - t) / 0.7))          # escurece até o preto e entra o cartão
     fr = np.clip(fr.astype(np.float32) * (VIG * ((1 + pul) * fade))[..., None], 0, 255).astype(np.uint8)
     lz = TIT.clarao(t)
     if lz is not None: fr = cv2.add(fr, lz)
@@ -110,8 +113,8 @@ def ass_vertical():
             f = ln.split(","); f[2] = "62"; f[16] = "5"; f[17] = "3"; f[19] = "50"; f[20] = "50"; f[21] = str(LEG_MV); ln = ",".join(f)
         elif ln.startswith("Dialogue"):
             f = ln.split(",", 9); a, b = sec(f[1]), sec(f[2])
-            if b <= A or a >= B: continue
-            na, nb = a - A, min(b, B) - A
+            if b <= A or a >= A + CT: continue                 # legenda para quando entra o cartão
+            na, nb = a - A, min(b, A + CT) - A
             txt = f[9]
             if na < 0:                                    # trecho começou antes: tira o atraso do karaokê
                 cut = int(round(-na * 100)); parts = re.split(r"(\{\\k[f]?\d+\})", txt); nt = ""
@@ -138,9 +141,10 @@ if __name__ == "__main__":
     st_t = CFG.get("st_t", 4.2); st_dir = f"{P}/sticker_fg"
     stw = cv2.imread(f"{st_dir}/s100.png", cv2.IMREAD_UNCHANGED).shape[1]; st_sc = 0.78; st_x = int((OW - stw * st_sc) / 2 + 20)
     fc = (f"[0:v]ass={ass}:fontsdir={P}/fontes[v0];[2:v]scale=iw*{st_sc}:-1,setpts=PTS+{st_t}/TB[st];"
-          f"[v0][st]overlay={st_x}:{int(OH * ST_Y)}:eof_action=pass,format=yuv420p[v]")
+          f"[v0][st]overlay={st_x}:{int(OH * ST_Y)}:eof_action=pass[v1];[3:v]setpts=PTS+{CT:.3f}/TB[enc];"
+          f"[v1][enc]overlay=0:0:eof_action=pass,format=yuv420p[v]")
     ff = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "bgr24", "-s", f"{OW}x{OH}", "-r", str(FPS), "-i", "-",
-                           "-ss", str(A), "-t", str(D), "-i", f"{P}/musica.mp3", "-framerate", "30", "-i", f"{st_dir}/s%03d.png",
+                           "-ss", str(A), "-t", str(D), "-i", f"{P}/musica.mp3", "-framerate", "30", "-i", f"{st_dir}/s%03d.png", "-i", ENC,
                            "-filter_complex", fc, "-map", "[v]", "-map", "1:a", "-af", af,
                            "-c:v", "libx264", "-preset", "slow", "-crf", "16", "-tune", "film", "-r", str(FPS),
                            "-c:a", "aac", "-b:a", "256k", "-movflags", "+faststart", "-t", str(D), OUT], stdin=subprocess.PIPE)

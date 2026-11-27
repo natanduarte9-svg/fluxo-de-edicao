@@ -21,7 +21,7 @@ TIT = Titulo(OW, OH, cursiva="No deserto,", forte="ELE VENCEU", linha="FIRE & GR
              fixar=dict(t=7.2, dur=1.4, escala=0.55, y=0.105, x=0.2))   # aparece no meio, sobe e fica fixo no alto
 # sticker do canal (feito pelo usuário no CapCut, fundo verde recortado: sticker_fg/, 8,2 s);
 # sem ele, usa o sticker genérico (ferramentas/sticker-inscreva.py, 10 s)
-ST_DIR, ST_ESC, ST_XY = (("sticker_fg", 0.55, (16, 690)) if os.path.isdir(f"{P}/sticker_fg") else ("sticker", 0.66, (36, 150)))
+ST_DIR, ST_ESC, ST_XY = (("sticker_fg", 0.47, (16, 470)) if os.path.isdir(f"{P}/sticker_fg") else ("sticker", 0.66, (36, 150)))
 BEATS = np.load(f"{P}/batidas.npy")
 
 # ---------- base: imagem em resolução maior para a câmera andar sem perder nitidez ----------
