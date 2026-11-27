@@ -376,3 +376,18 @@ terço de baixo, sem cobrir rostos; o 1º sticker passou para 13 s para não bri
   aparece no meio, depois **sobe, diminui e fica fixo no alto** até o fim (a linha pequena some na subida; clarão
   suave quando ele "gruda"). Para isso a imagem precisa vir **sem** o título pintado (apagar por IA de imagem, só a
   faixa de cima; apagar por código deixa mancha).
+
+### 17.1 Modelo aprovado de videoclipe com imagem estática (27/11/2026 — "ficou muito bom, excelente trabalho")
+Receita do clipe "No deserto, Ele venceu" (`projetos/clipe-no-deserto/`), usar em todo clipe do Suno:
+1. **Imagem SEM título** (pedir ao usuário a versão limpa; apagar título por código deixa mancha).
+2. **Câmera de cinema lenta** sobre a imagem (push-in nos versos, abre nos refrões), **âncora vertical no topo**
+   (zoom cresce para baixo, para os personagens não subirem para o título fixo).
+3. **Abertura sem título** → aos ~1 s o **título animado** no meio (cursiva escrita letra por letra + palavra
+   amarela pulando + linha pequena) → aos ~7 s ele **sobe, diminui e fica fixo no céu** até o fim, num canto
+   sem rostos (aqui: céu à esquerda, `x=0.2, y=0.105, escala=0.55`).
+4. Sol que respira, raios, poeira dourada, pulso de luz na batida só no refrão, clarões suaves (0,42).
+5. **Karaokê** com a letra oficial (tempos da transcrição Scribe; conferir palavra por palavra), um verso por linha.
+6. **Sticker do canal** (logo do leão, nome FIRE & GRACE inteiro) 3 vezes: depois do título, no meio e no fim,
+   num canto livre (aqui: embaixo à esquerda, sobre as pedras).
+7. Conferir quadros nos momentos de **zoom máximo** para ver se título/sticker/legenda não encostam em rostos.
+8. -14 LUFS; arquivo acima de 400 MB → cópia CRF 20 para enviar.

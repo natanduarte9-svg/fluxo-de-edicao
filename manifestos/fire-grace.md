@@ -168,3 +168,8 @@ Short 9:16, 2160×3840, 60 fps, 46,2 s, −13,8 LUFS. Folha de quadros a cada 0,
 - ⚠️ Depois de publicar pelo Metricool, **conferir a Visibilidade no Studio** (em 23/11 ficou "Programado 00:00" em vez de público às 20h). Vídeo relacionado do Short do Elias: "DEUS AINDA RESPONDE COM FOGO" (boa prática: apontar para um vídeo do mesmo tema).
 - ★ **Todo mini documentário termina com o convite narrado** (pedido em 24/11/2026): "Se você gostou desse conteúdo, se inscreva no canal, deixe o like e comente aqui qual outra história você gostaria que eu contasse." + pergunta "QUAL HISTÓRIA VOCÊ QUER VER AQUI?" + botões (INSCREVA-SE / DEIXE SEU LIKE / COMENTE) no tempo das palavras + sticker "Inscreva-se" no "se inscreva". Vem depois do cartão com a referência bíblica.
 - ★ **Direitos das músicas:** o usuário tem **plano pago do Suno** (25/11/2026) → músicas feitas durante a assinatura têm direito comercial (monetizáveis). Músicas feitas antes de assinar continuam sem licença.
+
+## ★ Videoclipe de música do Suno (modelo aprovado em 27/11/2026)
+Imagem estática **sem título** + câmera de cinema + título animado que aparece no meio, **sobe e fica fixo** no céu
++ karaokê com a letra oficial + sticker do canal (leão) 3 vezes. Receita completa: `GUIA-PRODUCAO.md` seção 17.1.
+

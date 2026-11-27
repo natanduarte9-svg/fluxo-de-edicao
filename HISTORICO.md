@@ -162,3 +162,10 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - **Sticker** Inscreva-se/Like 3x de 10 s (começo, meio, fim), no céu à esquerda. -14 LUFS.
 - Vídeo de 410 MB passou do limite de envio (400 MB) → cópia CRF 20 para mandar.
 - Próximo: o usuário aprova → 3 Shorts 9:16 de até 35 s (refrão, verso 2, ponte) e publicação pelo manifesto (título com **VENCEU**, a tag do Suno diz "VENDEU").
+- **27/11 (tarde):** o usuário mandou o **sticker do canal** (CapCut, fundo verde, logo do leão) → recortado e com o nome
+  "FIRE & GRACE" reescrito inteiro (`ferramentas/sticker-fire-grace/`). Mandou um modelo do CapCut ("Back to HOME") para
+  aprender **só a animação do título** → `ferramentas/titulo_animado.py`. Mandou a **imagem sem título** → título agora
+  aparece no meio, sobe e fica fixo no céu. Prévia aprovada: **"Ficou muito bom, excelente trabalho"**. Clipe completo:
+  aguardando o usuário liberar a geração.
+- 3 vídeos de referência (Reels) analisados → técnicas guardadas como **opção** (guia seção 16), não viram padrão.
+
