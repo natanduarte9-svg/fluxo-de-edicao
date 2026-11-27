@@ -17,14 +17,15 @@ OUT = f"{P}/clipe.mp4" if len(sys.argv) <= 3 else f"{P}/previa_{int(T0)}.mp4"
 REFROES = [(83.3, 111.0), (168.5, 196.2), (227.7, 254.3)]
 STICKERS = [13.0, DUR / 2 - 4, DUR - 10.0]          # começo (depois do título), meio, fim
 # título animado na introdução (antes da voz, que entra em 12,7 s)
-TIT = Titulo(OW, OH, cursiva="No deserto,", forte="ELE VENCEU", linha="FIRE & GRACE", t0=1.2, t_saida=10.4, cy=0.70)
+TIT = Titulo(OW, OH, cursiva="No deserto,", forte="ELE VENCEU", linha="FIRE & GRACE", t0=1.2, cy=0.70,
+             fixar=dict(t=7.2, dur=1.4, escala=0.62, y=0.105))   # aparece no meio, sobe e fica fixo no alto
 # sticker do canal (feito pelo usuário no CapCut, fundo verde recortado: sticker_fg/, 8,2 s);
 # sem ele, usa o sticker genérico (ferramentas/sticker-inscreva.py, 10 s)
 ST_DIR, ST_ESC, ST_XY = (("sticker_fg", 0.55, (16, 150)) if os.path.isdir(f"{P}/sticker_fg") else ("sticker", 0.66, (36, 150)))
 BEATS = np.load(f"{P}/batidas.npy")
 
 # ---------- base: imagem em resolução maior para a câmera andar sem perder nitidez ----------
-src = cv2.imread(f"{P}/capa.png")
+src = cv2.imread(f"{P}/capa_sem_titulo.png" if os.path.exists(f"{P}/capa_sem_titulo.png") else f"{P}/capa.png")   # imagem sem o título pintado
 BW, BH = 2112, 1188
 base = cv2.resize(src, (BW, BH), interpolation=cv2.INTER_LANCZOS4)
 sx, sy = BW / src.shape[1], BH / src.shape[0]

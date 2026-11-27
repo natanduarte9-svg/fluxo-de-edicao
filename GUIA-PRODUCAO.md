@@ -372,3 +372,7 @@ Referência: modelo do CapCut "Back to HOME" (usar só a **animação do título
 (filme queimado) na entrada de cada parte e na saída, **fracos** (0,42: forte deixa a tela toda amarela).
 Clipe "No deserto": "No deserto," + "ELE VENCEU" + "FIRE & GRACE" de 1,2 s a 11,4 s (antes da voz), no
 terço de baixo, sem cobrir rostos; o 1º sticker passou para 13 s para não brigar com o título.
+- **Modo "sobe e fixa"** (pedido em 27/11): `Titulo(..., fixar=dict(t=7.2, dur=1.4, escala=0.62, y=0.105))` — o título
+  aparece no meio, depois **sobe, diminui e fica fixo no alto** até o fim (a linha pequena some na subida; clarão
+  suave quando ele "gruda"). Para isso a imagem precisa vir **sem** o título pintado (apagar por IA de imagem, só a
+  faixa de cima; apagar por código deixa mancha).
