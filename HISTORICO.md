@@ -152,3 +152,13 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - [ ] Testar o react-three-rapier, o react-postprocessing e o video-shotcraft num projeto real.
 - [x] Ambiente da nuvem **fluxo-de-edicao** criado com o script de instalação e o Google Drive liberado (aprovado pelo notebook em 21/11). Confirmar na próxima sessão nova que o script rodou sozinho.
 - [x] Levar tudo para o `main` (PR #1, mesclado em 21/11).
+- [ ] Clipe "NO DESERTO, ELE VENCEU": aprovação do usuário → 3 Shorts e publicação.
+
+## 27/11/2026: clipe "NO DESERTO, ELE VENCEU" (FIRE & GRACE)
+- Música do Natan no Suno (plano pago, monetizável), 4min42. Imagem estática 16:9 dele com o título na arte. Projeto: `projetos/clipe-no-deserto/`.
+- **Tempo de cada palavra:** transcrição ElevenLabs Scribe (2.585 créditos grátis; sobram ~4.800). A letra oficial que ele colou bateu 369/369 palavras com a transcrição → texto da letra + tempos da transcrição (`palavras_letra.json`).
+- **Movimento:** câmera de cinema lenta (aproxima nos versos, abre nos refrões, nunca corta o título), sol que respira, raios no céu, poeira dourada com bokeh, pulso de luz na batida só no refrão, vinheta e grão.
+- **Karaokê** em ASS (`\kf`), Cinzel peso 800 ("Cinzel Deserto"): a palavra enche de dourado só enquanto é cantada; um verso por linha, dois versos por vez, como na letra.
+- **Sticker** Inscreva-se/Like 3x de 10 s (começo, meio, fim), no céu à esquerda. -14 LUFS.
+- Vídeo de 410 MB passou do limite de envio (400 MB) → cópia CRF 20 para mandar.
+- Próximo: o usuário aprova → 3 Shorts 9:16 de até 35 s (refrão, verso 2, ponte) e publicação pelo manifesto (título com **VENCEU**, a tag do Suno diz "VENDEU").
