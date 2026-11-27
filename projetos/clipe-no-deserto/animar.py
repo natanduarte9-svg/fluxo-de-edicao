@@ -18,10 +18,10 @@ REFROES = [(83.3, 111.0), (168.5, 196.2), (227.7, 254.3)]
 STICKERS = [13.0, DUR / 2 - 4, DUR - 10.0]          # começo (depois do título), meio, fim
 # título animado na introdução (antes da voz, que entra em 12,7 s)
 TIT = Titulo(OW, OH, cursiva="No deserto,", forte="ELE VENCEU", linha="FIRE & GRACE", t0=1.2, cy=0.70,
-             fixar=dict(t=7.2, dur=1.4, escala=0.62, y=0.105))   # aparece no meio, sobe e fica fixo no alto
+             fixar=dict(t=7.2, dur=1.4, escala=0.55, y=0.105, x=0.2))   # aparece no meio, sobe e fica fixo no alto
 # sticker do canal (feito pelo usuário no CapCut, fundo verde recortado: sticker_fg/, 8,2 s);
 # sem ele, usa o sticker genérico (ferramentas/sticker-inscreva.py, 10 s)
-ST_DIR, ST_ESC, ST_XY = (("sticker_fg", 0.55, (16, 150)) if os.path.isdir(f"{P}/sticker_fg") else ("sticker", 0.66, (36, 150)))
+ST_DIR, ST_ESC, ST_XY = (("sticker_fg", 0.55, (16, 690)) if os.path.isdir(f"{P}/sticker_fg") else ("sticker", 0.66, (36, 150)))
 BEATS = np.load(f"{P}/batidas.npy")
 
 # ---------- base: imagem em resolução maior para a câmera andar sem perder nitidez ----------
@@ -55,10 +55,11 @@ GRAO = [cv2.GaussianBlur(rng.randint(0, 255, (OH, OW), np.uint8), (0, 0), 0.6) f
 GRAO = [cv2.merge([g, g, g]) for g in GRAO]
 
 # ---------- câmera: (tempo, zoom, âncora x, âncora y) com transição suave ----------
-K = [(0, 1.00, .50, .00), (12.7, 1.05, .32, .15), (40, 1.10, .42, .20), (69, 1.07, .72, .18),
-     (83.3, 1.02, .50, .00), (111, 1.05, .50, .08), (114, 1.05, .78, .15), (141, 1.10, .66, .20),
-     (155, 1.08, .36, .20), (168.5, 1.02, .50, .00), (196.2, 1.05, .42, .10), (199.5, 1.06, .18, .15),
-     (227.7, 1.00, .50, .00), (254.3, 1.04, .48, .06), (258, 1.07, .40, .18), (DUR, 1.11, .42, .20)]
+# âncora y = 0: o zoom cresce para baixo, os personagens não sobem para o título fixo no alto
+K = [(0, 1.00, .50, .00), (12.7, 1.05, .32, .00), (40, 1.10, .42, .00), (69, 1.07, .72, .00),
+     (83.3, 1.02, .50, .00), (111, 1.05, .50, .00), (114, 1.05, .78, .00), (141, 1.10, .66, .00),
+     (155, 1.08, .36, .00), (168.5, 1.02, .50, .00), (196.2, 1.05, .42, .00), (199.5, 1.06, .18, .00),
+     (227.7, 1.00, .50, .00), (254.3, 1.04, .48, .00), (258, 1.07, .40, .00), (DUR, 1.11, .42, .00)]
 def ease(x): x = min(1, max(0, x)); return x * x * x * (x * (6 * x - 15) + 10)
 def cam(t):
     for i in range(len(K) - 1):

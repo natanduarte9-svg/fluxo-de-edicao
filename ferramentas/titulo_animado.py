@@ -21,8 +21,8 @@ def ease_back(x):
 class Titulo:
     def __init__(self, W, H, cursiva, forte, linha, t0=1.0, t_saida=10.6, cy=0.70,
                  amarelo=(250, 200, 30), tam=1.0, fixar=None):
-        """fixar=dict(t=..., dur=1.2, escala=0.55, y=0.09): em vez de sair, o título SOBE e fica
-        fixo no alto até o fim (a linha pequena some na subida). y = centro do bloco (fração da altura)."""
+        """fixar=dict(t=..., dur=1.2, escala=0.55, y=0.09, x=0.5): em vez de sair, o título SOBE e fica
+        fixo no alto até o fim (a linha pequena some na subida). x, y = centro do bloco (frações da largura/altura)."""
         self.fx = fixar; self._fixo = None
         self.W, self.H, self.c, self.f, self.l = W, H, cursiva, forte, linha
         self.t0, self.ts, self.cy, self.am = t0, t_saida, cy, amarelo
@@ -84,10 +84,11 @@ class Titulo:
             cy0, cx0 = self._c0
             sc = 1 + (self.fx.get("escala", 0.55) - 1) * u
             cyt = cy0 + (self.fx.get("y", 0.09) * self.H - cy0) * u
+            cxt = cx0 + (self.fx.get("x", 0.5) * self.W - cx0) * u
             crop = base[y0:y1, x0:x1]
             nw, nh = max(1, int(round((x1 - x0) * sc))), max(1, int(round((y1 - y0) * sc)))
             crop = cv2.resize(crop, (nw, nh), interpolation=cv2.INTER_AREA)
-            px = int(round(cx0 + (x0 - cx0) * sc)); py = int(round(cyt + (y0 - cy0) * sc))
+            px = int(round(cxt + (x0 - cx0) * sc)); py = int(round(cyt + (y0 - cy0) * sc))
             out = np.zeros_like(base)
             ya, xa = max(0, py), max(0, px); yb, xb = min(self.H, py + nh), min(self.W, px + nw)
             out[ya:yb, xa:xb] = crop[ya - py:yb - py, xa - px:xb - px]
