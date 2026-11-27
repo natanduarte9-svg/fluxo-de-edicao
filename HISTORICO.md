@@ -179,4 +179,5 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
   Arquivos pelo `vidiq_video_upload` (localFile, grátis). Tags 500 caracteres + 15 hashtags em cada. Shorts com o
   encerramento oficial (logo agora com o nome inteiro). **Pendente com o usuário:** miniatura do longo (`capa.png`) no Studio,
   "Vídeo relacionado" dos Shorts = o longo, comentário fixado, conferir a Visibilidade depois das 20h.
+- ✅ **Publicados 27/11:** clipe longo https://www.youtube.com/watch?v=_LwvZMhdWgc (19h40) e Short 1 https://www.youtube.com/shorts/q3eh6noTDOM (20h; ficou alguns minutos em "publicando" no Metricool — normal, é o envio ao YouTube). Usuário conferiu.
 
