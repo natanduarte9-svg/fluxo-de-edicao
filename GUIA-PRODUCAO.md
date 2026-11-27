@@ -359,7 +359,7 @@ Vídeos verticais de anúncio/Reels mandados pelo Drive (gravação de tela). Ap
 - Menus de rádio/atalhos desenhados por cima da cena.
 - Fecha com pergunta para comentar: "**QUAL FICOU DE FORA?**" (puxa comentários = algoritmo).
 
-**Como vamos usar**
+**Como vamos usar** (★ só **opção guardada** para quando o usuário pedir algo diferente; o modelo padrão de cada canal continua o mesmo, ex.: GTA = Painel + narração Suno)
 - **Jogatina Fácil:** série "X coisas que você não sabia no GTA 6" no estilo Painel (azul-marinho + amarelo), com contador N/X, chips que pulam, controle com o botão e pergunta no fim. A narração do Suno continua.
 - **FIRE & GRACE:** legenda em pílula com a palavra-chave dourada; entrada com desfoque → foco; contador ou lista de etapas quando o tema pedir ("7 vezes que Deus respondeu com fogo"); pergunta no fim ("Qual história você quer na próxima?").
 - **Todos:** uma única cor de destaque por vídeo; algo muda na tela a cada 2-4 s; pergunta no fim para comentar.
