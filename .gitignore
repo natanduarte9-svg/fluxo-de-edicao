@@ -1,2 +1,3 @@
 entregas/
 *.mp4.tmp
+__pycache__/
