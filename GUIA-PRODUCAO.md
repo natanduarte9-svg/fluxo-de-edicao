@@ -391,3 +391,10 @@ Receita do clipe "No deserto, Ele venceu" (`projetos/clipe-no-deserto/`), usar e
    num canto livre (aqui: embaixo à esquerda, sobre as pedras).
 7. Conferir quadros nos momentos de **zoom máximo** para ver se título/sticker/legenda não encostam em rostos.
 8. -14 LUFS; arquivo acima de 400 MB → cópia CRF 20 para enviar.
+
+## 18. Tags e hashtags no máximo (pedido do usuário, 27/11/2026)
+- **Tags:** até **500 caracteres** (tag com espaço conta +2 pelas aspas). Encher até ~495 com `projetos/clipe-no-deserto/tags.py`
+  (função `caber`): nome da música nas 2 ordens, canal, gênero, frases marcantes da letra, tema bíblico, ano.
+- **Hashtags:** **exatamente 15** na descrição (16+ = o YouTube ignora todas). As 3 primeiras aparecem acima do título.
+  Shorts: começar por `#Shorts`.
+- Retenção: gancho na 1ª linha da descrição, comentário fixado com pergunta, Short com "Vídeo relacionado" = o longo.

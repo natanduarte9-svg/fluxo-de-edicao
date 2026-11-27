@@ -89,28 +89,37 @@ E hoje eu sigo os passos Seus.
 
 Música e imagens criadas com IA (FIRE & GRACE).
 
-#NoDesertoEleVenceu #LouvorGospel #MúsicaGospel #Gospel #Jesus #Louvor #FireAndGrace
+#NoDesertoEleVenceu #LouvorGospel #MúsicaGospel #Gospel #Jesus #Louvor #FireAndGrace #LouvorComLetra #Adoração #MúsicaCristã #Gospel2026 #JesusVenceu #Fé #Worship #Deus
 
-### Tags
-no deserto ele venceu, ele venceu no deserto, louvor gospel, música gospel, gospel 2026, louvor com letra, música gospel com letra, jesus no deserto, tentação de jesus, mateus 4, louvor de vitória, louvor para fortalecer, música cristã, adoração, fire and grace
+### Tags (498 de 500 caracteres)
+no deserto ele venceu, ele venceu no deserto, fire and grace, louvor gospel, música gospel, louvor com letra, música gospel com letra, jesus no deserto, tentação de jesus, jesus venceu, louvor 2026, gospel 2026, música cristã, louvor de vitória, louvor para fortalecer a fé, hino de vitória, adoração, louvor e adoração, mateus 4, lucas 4, quarenta dias no deserto, nem só de pão vive o homem, jesus cristo, fé em deus, louvor emocionante, música evangélica, louvores, gospel
 
 ### Configurações
 Vídeo · Público · IA = SIM · Não é para crianças · Categoria Música · Miniatura: a imagem do usuário (com o título, `capa.png`).
+
+### Para reter e ser achado
+- **15 hashtags exatas** na descrição (mais de 15 = o YouTube ignora todas); as 3 primeiras aparecem acima do título.
+- Primeira linha da descrição = gancho com a palavra-chave ("No Deserto, Ele Venceu").
+- **Comentário fixado** logo após publicar: "Qual frase dessa música falou com você hoje? 🙏" (puxa comentários).
+- Cartão final/tela final no longo apontando para outro louvor do canal; Shorts com "Vídeo relacionado" = o longo.
 
 ---
 ## Short 1 — Refrão final (33 s) — hoje 27/11, 20h00
 **Título:** ELE VENCEU NO DESERTO! 🔥 E a morte não O fez parar!
 **Descrição:** O mesmo Cristo que venceu hoje me ensina a perseverar! 🙏 Assista o clipe completo: [link do longo]
-#Shorts #Gospel #Louvor #Jesus #FireAndGrace
+#Shorts #NoDesertoEleVenceu #Gospel #LouvorGospel #Jesus #Louvor #FireAndGrace #MúsicaGospel #GospelShorts #Fé #Adoração #JesusVenceu #MúsicaCristã #Deus #Worship
+**Tags (496 de 500 caracteres):** e a morte não o fez parar, com jesus eu vou ficar, o mesmo cristo que venceu, shorts, gospel shorts, louvor shorts, status gospel, música gospel, louvor gospel, no deserto ele venceu, ele venceu no deserto, fire and grace, jesus venceu, jesus no deserto, tentação de jesus, louvor com letra, louvor de vitória, louvor 2026, gospel 2026, música cristã, louvor emocionante, adoração, fé em deus, musica de deus, louvor para fortalecer a fé, worship, música evangélica, louvores
 
 ## Short 2 — Subida até o refrão (33 s) — 28/11, 20h00
 **Título:** Quantas vezes você foi provado e ninguém percebeu? 🙏
 **Descrição:** Ele venceu a fome e a tentação… e não trocou Sua promessa por nada. Clipe completo: [link do longo]
-#Shorts #Gospel #Louvor #Jesus #FireAndGrace
+#Shorts #NoDesertoEleVenceu #Gospel #LouvorGospel #Jesus #Louvor #FireAndGrace #MúsicaGospel #GospelShorts #Fé #Adoração #JesusVenceu #MúsicaCristã #Deus #Worship
+**Tags (496 de 500 caracteres):** quantas vezes nós também, provação, caminho fácil, venceu a fome e a tentação, shorts, gospel shorts, louvor shorts, status gospel, música gospel, louvor gospel, no deserto ele venceu, ele venceu no deserto, fire and grace, jesus venceu, jesus no deserto, tentação de jesus, louvor com letra, louvor de vitória, louvor 2026, gospel 2026, música cristã, louvor emocionante, adoração, fé em deus, musica de deus, louvor para fortalecer a fé, worship, música evangélica, louvores
 
 ## Short 3 — Ponte (34,5 s) — 29/11, 20h00
 **Título:** Nem todo aplauso é aprovação dos céus 🔥
 **Descrição:** Nem todo desejo é caminho, nem toda porta vem de Deus. Não pela força dos meus braços, mas pela graça! Clipe completo: [link do longo]
-#Shorts #Gospel #Louvor #Jesus #FireAndGrace
+#Shorts #NoDesertoEleVenceu #Gospel #LouvorGospel #Jesus #Louvor #FireAndGrace #MúsicaGospel #GospelShorts #Fé #Adoração #JesusVenceu #MúsicaCristã #Deus #Worship
+**Tags (496 de 500 caracteres):** nem todo desejo é caminho, nem toda porta vem de deus, nem todo aplauso é aprovação dos céus, pela graça, shorts, gospel shorts, louvor shorts, status gospel, música gospel, louvor gospel, no deserto ele venceu, ele venceu no deserto, fire and grace, jesus venceu, jesus no deserto, tentação de jesus, louvor com letra, louvor de vitória, louvor 2026, gospel 2026, música cristã, louvor emocionante, adoração, fé em deus, musica de deus, louvor para fortalecer a fé, worship
 
 **Todos os Shorts:** Público · IA = SIM · Não é para crianças · **Vídeo relacionado = o longo** (o usuário escolhe no Studio depois que o longo estiver agendado/publicado).
