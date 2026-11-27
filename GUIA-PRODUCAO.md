@@ -363,3 +363,12 @@ Vídeos verticais de anúncio/Reels mandados pelo Drive (gravação de tela). Ap
 - **Jogatina Fácil:** série "X coisas que você não sabia no GTA 6" no estilo Painel (azul-marinho + amarelo), com contador N/X, chips que pulam, controle com o botão e pergunta no fim. A narração do Suno continua.
 - **FIRE & GRACE:** legenda em pílula com a palavra-chave dourada; entrada com desfoque → foco; contador ou lista de etapas quando o tema pedir ("7 vezes que Deus respondeu com fogo"); pergunta no fim ("Qual história você quer na próxima?").
 - **Todos:** uma única cor de destaque por vídeo; algo muda na tela a cada 2-4 s; pergunta no fim para comentar.
+
+## 17. Título animado de abertura (pedido do usuário, 27/11/2026)
+Referência: modelo do CapCut "Back to HOME" (usar só a **animação do título**, nunca o cenário).
+`ferramentas/titulo_animado.py` (classe `Titulo`): cursiva branca escrita letra por letra (Kaushan Script)
+→ palavra GRANDE amarela (Montserrat Black) com cada letra pulando e o espaçamento fechando
+→ linha pequena espaçada (Montserrat SemiBold) → saída com fade e subida; clarões de luz quente
+(filme queimado) na entrada de cada parte e na saída, **fracos** (0,42: forte deixa a tela toda amarela).
+Clipe "No deserto": "No deserto," + "ELE VENCEU" + "FIRE & GRACE" de 1,2 s a 11,4 s (antes da voz), no
+terço de baixo, sem cobrir rostos; o 1º sticker passou para 13 s para não brigar com o título.

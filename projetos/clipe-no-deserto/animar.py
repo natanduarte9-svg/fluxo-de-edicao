@@ -7,13 +7,17 @@ Por cima (ffmpeg): karaokê (karaoke.ass) e o sticker do canal (Inscreva-se/Like
 Áudio: a música do Suno, -14 LUFS em dois passes."""
 import sys, os, json, subprocess, math
 import numpy as np, cv2
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "ferramentas"))
+from titulo_animado import Titulo, sobrepor
 
 P = sys.argv[1]; FPS = 30; OW, OH = 1920, 1080
 DUR = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f"{P}/musica.mp3"]))
 T0, T1 = (float(sys.argv[2]), float(sys.argv[3])) if len(sys.argv) > 3 else (0.0, DUR)
 OUT = f"{P}/clipe.mp4" if len(sys.argv) <= 3 else f"{P}/previa_{int(T0)}.mp4"
 REFROES = [(83.3, 111.0), (168.5, 196.2), (227.7, 254.3)]
-STICKERS = [2.0, DUR / 2 - 4, DUR - 10.0]           # começo, meio, fim
+STICKERS = [13.0, DUR / 2 - 4, DUR - 10.0]          # começo (depois do título), meio, fim
+# título animado na introdução (antes da voz, que entra em 12,7 s)
+TIT = Titulo(OW, OH, cursiva="No deserto,", forte="ELE VENCEU", linha="FIRE & GRACE", t0=1.2, t_saida=10.4, cy=0.70)
 # sticker do canal (feito pelo usuário no CapCut, fundo verde recortado: sticker_fg/, 8,2 s);
 # sem ele, usa o sticker genérico (ferramentas/sticker-inscreva.py, 10 s)
 ST_DIR, ST_ESC, ST_XY = (("sticker_fg", 0.55, (16, 150)) if os.path.isdir(f"{P}/sticker_fg") else ("sticker", 0.66, (36, 150)))
@@ -113,6 +117,10 @@ def quadro(t):
     g = VIG * ((1 + pul) * fade)
     fr = (fr.astype(np.float32) * g[..., None])
     fr = np.clip(fr, 0, 255).astype(np.uint8)
+    lz = TIT.clarao(t)
+    if lz is not None: fr = cv2.add(fr, lz)
+    tl = TIT.camada(t)
+    if tl is not None: fr = sobrepor(fr, tl)
     fr = cv2.addWeighted(fr, 1.0, GRAO[int(t * FPS) % 6], 0.05, -0.05 * 127)
     return fr
 
