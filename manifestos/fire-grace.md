@@ -25,7 +25,7 @@
 
 ### Só nos Shorts (sempre 9:16)
 - **Encerramento animado** (ver "Encerramento oficial"), sem o som dele.
-- ★ **Sticker do canal (27/11/2026):** o próprio usuário fez no CapCut um sticker com o **logo do leão FIRE & GRACE** + joinha + SUBSCRIBE + sino + "Fire&Grace" (8,2 s, fundo verde): `ferramentas/sticker-fire-grace/`. Recortar com `python ferramentas/sticker-fire-grace/recortar_verde.py ferramentas/sticker-fire-grace/sticker-fire-grace-verde.mp4 <pasta>`. Usado no clipe "No deserto, Ele venceu" (escala 0,55, canto superior esquerdo). Antes dele:
+- ★ **Sticker do canal (27/11/2026):** o próprio usuário fez no CapCut um sticker com o **logo do leão FIRE & GRACE** + joinha + SUBSCRIBE + sino + "Fire&Grace" (8,2 s, fundo verde): `ferramentas/sticker-fire-grace/`. Recortar com `python ferramentas/sticker-fire-grace/recortar_verde.py ferramentas/sticker-fire-grace/sticker-fire-grace-verde.mp4 <pasta>` e **depois** `python ferramentas/sticker-fire-grace/corrigir_nome.py <pasta> <pasta_final>` (o modelo do CapCut corta o nome para "IRE & GRAC"; o usuário pediu o nome inteiro "FIRE & GRACE"). Usado no clipe "No deserto, Ele venceu" (escala 0,55, canto superior esquerdo). Antes dele:
 - **Sticker "Inscreva-se + deixe o like + ative o sininho"**, **no mesmo estilo do GTA** (`ferramentas/sticker-inscreva.py`: joinha, botão de inscrição e sino), **com até 10 s na tela** (usar `python ferramentas/sticker-inscreva.py <pasta> 10`).
 
 ### Respostas de 22/11/2026
