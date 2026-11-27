@@ -363,3 +363,38 @@ Vídeos verticais de anúncio/Reels mandados pelo Drive (gravação de tela). Ap
 - **Jogatina Fácil:** série "X coisas que você não sabia no GTA 6" no estilo Painel (azul-marinho + amarelo), com contador N/X, chips que pulam, controle com o botão e pergunta no fim. A narração do Suno continua.
 - **FIRE & GRACE:** legenda em pílula com a palavra-chave dourada; entrada com desfoque → foco; contador ou lista de etapas quando o tema pedir ("7 vezes que Deus respondeu com fogo"); pergunta no fim ("Qual história você quer na próxima?").
 - **Todos:** uma única cor de destaque por vídeo; algo muda na tela a cada 2-4 s; pergunta no fim para comentar.
+
+## 17. Título animado de abertura (pedido do usuário, 27/11/2026)
+Referência: modelo do CapCut "Back to HOME" (usar só a **animação do título**, nunca o cenário).
+`ferramentas/titulo_animado.py` (classe `Titulo`): cursiva branca escrita letra por letra (Kaushan Script)
+→ palavra GRANDE amarela (Montserrat Black) com cada letra pulando e o espaçamento fechando
+→ linha pequena espaçada (Montserrat SemiBold) → saída com fade e subida; clarões de luz quente
+(filme queimado) na entrada de cada parte e na saída, **fracos** (0,42: forte deixa a tela toda amarela).
+Clipe "No deserto": "No deserto," + "ELE VENCEU" + "FIRE & GRACE" de 1,2 s a 11,4 s (antes da voz), no
+terço de baixo, sem cobrir rostos; o 1º sticker passou para 13 s para não brigar com o título.
+- **Modo "sobe e fixa"** (pedido em 27/11): `Titulo(..., fixar=dict(t=7.2, dur=1.4, escala=0.62, y=0.105))` — o título
+  aparece no meio, depois **sobe, diminui e fica fixo no alto** até o fim (a linha pequena some na subida; clarão
+  suave quando ele "gruda"). Para isso a imagem precisa vir **sem** o título pintado (apagar por IA de imagem, só a
+  faixa de cima; apagar por código deixa mancha).
+
+### 17.1 Modelo aprovado de videoclipe com imagem estática (27/11/2026 — "ficou muito bom, excelente trabalho")
+Receita do clipe "No deserto, Ele venceu" (`projetos/clipe-no-deserto/`), usar em todo clipe do Suno:
+1. **Imagem SEM título** (pedir ao usuário a versão limpa; apagar título por código deixa mancha).
+2. **Câmera de cinema lenta** sobre a imagem (push-in nos versos, abre nos refrões), **âncora vertical no topo**
+   (zoom cresce para baixo, para os personagens não subirem para o título fixo).
+3. **Abertura sem título** → aos ~1 s o **título animado** no meio (cursiva escrita letra por letra + palavra
+   amarela pulando + linha pequena) → aos ~7 s ele **sobe, diminui e fica fixo no céu** até o fim, num canto
+   sem rostos (aqui: céu à esquerda, `x=0.2, y=0.105, escala=0.55`).
+4. Sol que respira, raios, poeira dourada, pulso de luz na batida só no refrão, clarões suaves (0,42).
+5. **Karaokê** com a letra oficial (tempos da transcrição Scribe; conferir palavra por palavra), um verso por linha.
+6. **Sticker do canal** (logo do leão, nome FIRE & GRACE inteiro) 3 vezes: depois do título, no meio e no fim,
+   num canto livre (aqui: embaixo à esquerda, sobre as pedras).
+7. Conferir quadros nos momentos de **zoom máximo** para ver se título/sticker/legenda não encostam em rostos.
+8. -14 LUFS; arquivo acima de 400 MB → cópia CRF 20 para enviar.
+
+## 18. Tags e hashtags no máximo (pedido do usuário, 27/11/2026)
+- **Tags:** até **500 caracteres** (tag com espaço conta +2 pelas aspas). Encher até ~495 com `projetos/clipe-no-deserto/tags.py`
+  (função `caber`): nome da música nas 2 ordens, canal, gênero, frases marcantes da letra, tema bíblico, ano.
+- **Hashtags:** **exatamente 15** na descrição (16+ = o YouTube ignora todas). As 3 primeiras aparecem acima do título.
+  Shorts: começar por `#Shorts`.
+- Retenção: gancho na 1ª linha da descrição, comentário fixado com pergunta, Short com "Vídeo relacionado" = o longo.

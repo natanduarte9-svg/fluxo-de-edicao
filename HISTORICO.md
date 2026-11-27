@@ -152,7 +152,8 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - [ ] Testar o react-three-rapier, o react-postprocessing e o video-shotcraft num projeto real.
 - [x] Ambiente da nuvem **fluxo-de-edicao** criado com o script de instalação e o Google Drive liberado (aprovado pelo notebook em 21/11). Confirmar na próxima sessão nova que o script rodou sozinho.
 - [x] Levar tudo para o `main` (PR #1, mesclado em 21/11).
-- [ ] Clipe "NO DESERTO, ELE VENCEU": aprovação do usuário → 3 Shorts e publicação.
+- [x] Clipe "NO DESERTO, ELE VENCEU": agendado 27–29/11 (ver registro de 27/11).
+- [ ] Conferir a publicação do clipe e dos Shorts (miniatura, vídeo relacionado, visibilidade).
 
 ## 27/11/2026: clipe "NO DESERTO, ELE VENCEU" (FIRE & GRACE)
 - Música do Natan no Suno (plano pago, monetizável), 4min42. Imagem estática 16:9 dele com o título na arte. Projeto: `projetos/clipe-no-deserto/`.
@@ -162,3 +163,20 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - **Sticker** Inscreva-se/Like 3x de 10 s (começo, meio, fim), no céu à esquerda. -14 LUFS.
 - Vídeo de 410 MB passou do limite de envio (400 MB) → cópia CRF 20 para mandar.
 - Próximo: o usuário aprova → 3 Shorts 9:16 de até 35 s (refrão, verso 2, ponte) e publicação pelo manifesto (título com **VENCEU**, a tag do Suno diz "VENDEU").
+- **27/11 (tarde):** o usuário mandou o **sticker do canal** (CapCut, fundo verde, logo do leão) → recortado e com o nome
+  "FIRE & GRACE" reescrito inteiro (`ferramentas/sticker-fire-grace/`). Mandou um modelo do CapCut ("Back to HOME") para
+  aprender **só a animação do título** → `ferramentas/titulo_animado.py`. Mandou a **imagem sem título** → título agora
+  aparece no meio, sobe e fica fixo no céu. Prévia aprovada: **"Ficou muito bom, excelente trabalho"**. Clipe completo:
+  aguardando o usuário liberar a geração.
+- 3 vídeos de referência (Reels) analisados → técnicas guardadas como **opção** (guia seção 16), não viram padrão.
+- ★ **27/11, 19h16 — "NO DESERTO, ELE VENCEU" agendado no Metricool (aprovado: "Pode sim"):**
+  | Quando | Post Metricool | Vídeo |
+  |---|---|---|
+  | 27/11 19h40 | 444926552 | Clipe 16:9 4:42 (qualidade máxima, 552 MB), categoria Música, IA = sim |
+  | 27/11 20h00 | 444927337 | Short 1 refrão final (33 s) |
+  | 28/11 20h00 | 444927491 | Short 2 subida até o refrão (33 s) |
+  | 29/11 20h00 | 444927681 | Short 3 ponte (34,5 s) |
+  Arquivos pelo `vidiq_video_upload` (localFile, grátis). Tags 500 caracteres + 15 hashtags em cada. Shorts com o
+  encerramento oficial (logo agora com o nome inteiro). **Pendente com o usuário:** miniatura do longo (`capa.png`) no Studio,
+  "Vídeo relacionado" dos Shorts = o longo, comentário fixado, conferir a Visibilidade depois das 20h.
+

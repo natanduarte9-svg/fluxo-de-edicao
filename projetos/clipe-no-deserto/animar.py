@@ -3,21 +3,29 @@ Uso: python animar.py <pasta> [inicio_s fim_s]   (trecho opcional = prévia ráp
 Camadas: câmera de cinema lenta (push-in nos versos, abre nos refrões, nunca corta o título),
 sol que "respira", raios de luz animados, poeira dourada em 2 profundidades (com bokeh),
 pulso de luz na batida só nos refrões, vinheta, grão de filme, fade de entrada/saída.
-Por cima (ffmpeg): karaokê (karaoke.ass) e o sticker Inscreva-se/Like 3 vezes (10 s cada).
+Por cima (ffmpeg): karaokê (karaoke.ass) e o sticker do canal (Inscreva-se/Like) 3 vezes.
 Áudio: a música do Suno, -14 LUFS em dois passes."""
 import sys, os, json, subprocess, math
 import numpy as np, cv2
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "ferramentas"))
+from titulo_animado import Titulo, sobrepor
 
 P = sys.argv[1]; FPS = 30; OW, OH = 1920, 1080
 DUR = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f"{P}/musica.mp3"]))
 T0, T1 = (float(sys.argv[2]), float(sys.argv[3])) if len(sys.argv) > 3 else (0.0, DUR)
 OUT = f"{P}/clipe.mp4" if len(sys.argv) <= 3 else f"{P}/previa_{int(T0)}.mp4"
 REFROES = [(83.3, 111.0), (168.5, 196.2), (227.7, 254.3)]
-STICKERS = [2.0, DUR / 2 - 5, DUR - 10.6]           # começo, meio, fim (10 s cada)
+STICKERS = [13.0, DUR / 2 - 4, DUR - 10.0]          # começo (depois do título), meio, fim
+# título animado na introdução (antes da voz, que entra em 12,7 s)
+TIT = Titulo(OW, OH, cursiva="No deserto,", forte="ELE VENCEU", linha="FIRE & GRACE", t0=1.2, cy=0.70,
+             fixar=dict(t=7.2, dur=1.4, escala=0.55, y=0.105, x=0.2))   # aparece no meio, sobe e fica fixo no alto
+# sticker do canal (feito pelo usuário no CapCut, fundo verde recortado: sticker_fg/, 8,2 s);
+# sem ele, usa o sticker genérico (ferramentas/sticker-inscreva.py, 10 s)
+ST_DIR, ST_ESC, ST_XY = (("sticker_fg", 0.47, (16, 470)) if os.path.isdir(f"{P}/sticker_fg") else ("sticker", 0.66, (36, 150)))
 BEATS = np.load(f"{P}/batidas.npy")
 
 # ---------- base: imagem em resolução maior para a câmera andar sem perder nitidez ----------
-src = cv2.imread(f"{P}/capa.png")
+src = cv2.imread(f"{P}/capa_sem_titulo.png" if os.path.exists(f"{P}/capa_sem_titulo.png") else f"{P}/capa.png")   # imagem sem o título pintado
 BW, BH = 2112, 1188
 base = cv2.resize(src, (BW, BH), interpolation=cv2.INTER_LANCZOS4)
 sx, sy = BW / src.shape[1], BH / src.shape[0]
@@ -47,10 +55,11 @@ GRAO = [cv2.GaussianBlur(rng.randint(0, 255, (OH, OW), np.uint8), (0, 0), 0.6) f
 GRAO = [cv2.merge([g, g, g]) for g in GRAO]
 
 # ---------- câmera: (tempo, zoom, âncora x, âncora y) com transição suave ----------
-K = [(0, 1.00, .50, .00), (12.7, 1.05, .32, .15), (40, 1.10, .42, .20), (69, 1.07, .72, .18),
-     (83.3, 1.02, .50, .00), (111, 1.05, .50, .08), (114, 1.05, .78, .15), (141, 1.10, .66, .20),
-     (155, 1.08, .36, .20), (168.5, 1.02, .50, .00), (196.2, 1.05, .42, .10), (199.5, 1.06, .18, .15),
-     (227.7, 1.00, .50, .00), (254.3, 1.04, .48, .06), (258, 1.07, .40, .18), (DUR, 1.11, .42, .20)]
+# âncora y = 0: o zoom cresce para baixo, os personagens não sobem para o título fixo no alto
+K = [(0, 1.00, .50, .00), (12.7, 1.05, .32, .00), (40, 1.10, .42, .00), (69, 1.07, .72, .00),
+     (83.3, 1.02, .50, .00), (111, 1.05, .50, .00), (114, 1.05, .78, .00), (141, 1.10, .66, .00),
+     (155, 1.08, .36, .00), (168.5, 1.02, .50, .00), (196.2, 1.05, .42, .00), (199.5, 1.06, .18, .00),
+     (227.7, 1.00, .50, .00), (254.3, 1.04, .48, .00), (258, 1.07, .40, .00), (DUR, 1.11, .42, .00)]
 def ease(x): x = min(1, max(0, x)); return x * x * x * (x * (6 * x - 15) + 10)
 def cam(t):
     for i in range(len(K) - 1):
@@ -110,6 +119,10 @@ def quadro(t):
     g = VIG * ((1 + pul) * fade)
     fr = (fr.astype(np.float32) * g[..., None])
     fr = np.clip(fr, 0, 255).astype(np.uint8)
+    lz = TIT.clarao(t)
+    if lz is not None: fr = cv2.add(fr, lz)
+    tl = TIT.camada(t)
+    if tl is not None: fr = sobrepor(fr, tl)
     fr = cv2.addWeighted(fr, 1.0, GRAO[int(t * FPS) % 6], 0.05, -0.05 * 127)
     return fr
 
@@ -129,12 +142,12 @@ if __name__ == "__main__":
     fc = f"[0:v]setpts=PTS+{T0}/TB,ass={P}/karaoke.ass:fontsdir={P}/fontes,setpts=PTS-{T0}/TB[v0]"
     cur = "v0"
     for j, ts in enumerate(STICKERS):
-        inp += ["-framerate", "30", "-i", f"{P}/sticker/s%03d.png"]
-        fc += (f";[{j + 2}:v]scale=iw*0.66:-1,setpts=PTS+{ts - T0}/TB[s{j}]"
-               f";[{cur}][s{j}]overlay=36:150:eof_action=pass[o{j}]"); cur = f"o{j}"
+        inp += ["-framerate", "30", "-i", f"{P}/{ST_DIR}/s%03d.png"]
+        fc += (f";[{j + 2}:v]scale=iw*{ST_ESC}:-1,setpts=PTS+{ts - T0}/TB[s{j}]"
+               f";[{cur}][s{j}]overlay={ST_XY[0]}:{ST_XY[1]}:eof_action=pass[o{j}]"); cur = f"o{j}"
     fc += f";[{cur}]format=yuv420p[v]"
     ff = subprocess.Popen(["ffmpeg", "-v", "error", "-y", *inp, "-filter_complex", fc, "-map", "[v]", "-map", "1:a", "-af", af,
-                           "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-tune", "film", "-r", str(FPS),
+                           "-c:v", "libx264", "-preset", os.environ.get("PRESET", "medium"), "-crf", os.environ.get("CRF", "17"), "-tune", "film", "-r", str(FPS),
                            "-c:a", "aac", "-b:a", "256k", "-movflags", "+faststart", "-t", str(D), OUT], stdin=subprocess.PIPE)
     n = int(round(D * FPS))
     for i in range(n):
