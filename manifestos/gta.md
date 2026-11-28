@@ -169,3 +169,6 @@ Canal brasileiro de GTA 6, monetizado. Short analisado: "8 coisas que você PREC
 mas adotar: lista regressiva, Shorts de 1:30–2:30, número gigante + som de impacto, contador fixo, legenda karaokê da
 narração, gancho com promessa do #1, "comenta o número". Monetização (YPP): 1.000 inscritos + 10 mi de views de Shorts
 em 90 dias (ou 4.000 h de longos). Gameplay própria + narração e edição = conteúdo original (evita "conteúdo reutilizado").
+- ★ **Limite do usuário (28/11/2026): Shorts de no máximo 40 s.** Adaptar a referência: gancho 3 s com promessa,
+  **mini-lista de 3 itens** (~10 s cada, número gigante + impacto), karaokê da narração, cortes de 2–4 s,
+  "comenta o número" no fim (~4 s). Ação: cutscene/assalto/fuga/tiroteio com o mesmo gancho e o mesmo fim.
