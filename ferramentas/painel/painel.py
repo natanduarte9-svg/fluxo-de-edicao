@@ -77,6 +77,13 @@ ETQ = [(a, b, etiqueta(*x)) for a, b, x in CFG["etiquetas"]]
 FALAS = json.load(open("falas.json")).get(NFAL, [])
 CAPS = [(a, b, Image.open(f"tmp/cap_{NFAL}_{j}.png").convert("RGBA")) for j, (a, b, _) in enumerate(FALAS)]
 STK = sorted(glob.glob("sticker/s*.png")); T_STK = CFG.get("sticker", 1.0)
+# (listas) número gigante "#3" que salta no meio da janela do jogo (técnica do canal Desbugando)
+def numero(n):
+    lay = Image.new("RGBA", (W, H)); d = ImageDraw.Draw(lay); f = F(300, "Black"); txt = f"#{n}"
+    tw = d.textlength(txt, font=f); x, y = FX + (FW - tw) / 2, FY + FH / 2 - 190
+    d.text((x, y), txt, font=f, fill=ORANGE, stroke_width=10, stroke_fill=(5, 12, 24))
+    return shadow(lay, 16, 230)
+NUMS = [(t, numero(n)) for t, n in CFG.get("numeros", [])]
 def fade(lay, a):
     if a >= 1: return lay
     r, g_, b, al = lay.split(); return Image.merge("RGBA", (r, g_, b, al.point(lambda v: int(v * a))))
@@ -105,6 +112,14 @@ while True:
     if ta > 0: img.alpha_composite(fade(TIT.transform(TIT.size, Image.AFFINE, (1, 0, 0, 0, 1, -int((1 - sm(t / 0.35)) * 30))), ta))
     for a, b, lay in ETQ:
         if a - 0.01 <= t < b + 0.25: img.alpha_composite(fade(lay, sm((t - a) / 0.2) * (1 - sm((t - b) / 0.25))))
+    for tn, lay in NUMS:
+        u = (t - tn) / 0.9
+        if 0 <= u < 1:
+            sc = 1.6 - 0.6 * sm(u / 0.25) if u < 0.25 else 1.0          # entra grande e assenta
+            al = sm(u / 0.12) * (1 - sm((u - 0.75) / 0.25))
+            cx, cy = FX + FW / 2, FY + FH / 2
+            m = lay.transform(lay.size, Image.AFFINE, (1 / sc, 0, cx - cx / sc, 0, 1 / sc, cy - cy / sc), resample=Image.BILINEAR)
+            img.alpha_composite(fade(m, al))
     for a, b, lay in CAPS:
         if a <= t < b: img.alpha_composite(lay, (0, FY + FH + 40 - 20))
     j = int((t - T_STK) * FPS)

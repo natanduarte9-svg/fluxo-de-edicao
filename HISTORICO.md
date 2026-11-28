@@ -181,3 +181,13 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
   "Vídeo relacionado" dos Shorts = o longo, comentário fixado, conferir a Visibilidade depois das 20h.
 - ✅ **Publicados 27/11:** clipe longo https://www.youtube.com/watch?v=_LwvZMhdWgc (19h40) e Short 1 https://www.youtube.com/shorts/q3eh6noTDOM (20h; ficou alguns minutos em "publicando" no Metricool — normal, é o envio ao YouTube). Usuário conferiu.
 
+
+## 28/11/2026: 5 Shorts de GTA com as técnicas do canal Desbugando
+- Analisado o canal **Desbugando** (monetizado; 709 mil views no melhor Short) → manifesto GTA. Limite do usuário: **até 40 s**.
+- Gameplay de 2h52 analisada (som + movimento + detecção de cutscene). 5 Shorts: 2 mini-listas ("3 coisas…", com número gigante
+  e som de impacto) + 3 de ação (assalto com cutscene, fuga, tiroteio). Projeto: `projetos/gta-assalto-listas/`.
+- Narração do Suno: o modo **Discurso** sempre vem com música → voltamos ao modo Música a cappella (funcionou).
+- Gastos grátis: vidIQ 21 créditos (sobram ~131), ElevenLabs 1.127 créditos (sobram ~3.700).
+- Pendente: aprovação do usuário → títulos, descrição, tags e agendamento (vidIQ, 20h, um por dia, máx. 3 envios/dia).
+- ★ **28/11: 5 Shorts de GTA aprovados e agendados** (01–05/12, 20h). Shorts 1–3 enviados; 4 e 5 vão em 29/11 de manhã (limite
+  de 3 envios/dia do vidIQ). Pendente com o usuário: marcar "conteúdo alterado/sintético = Sim" no Studio em cada um.

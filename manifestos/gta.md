@@ -143,3 +143,32 @@ Feito em **studio.youtube.com** (versão de computador, no navegador do celular)
 - Thumbnail/capa: estilo preferido.
 - Título e descrição para o YouTube: tom e hashtags que o usuário usa.
 - Vídeos longos: se terão música, narração, intro/outro.
+
+## ★ Referência de canal que monetiza: "Desbugando" (analisado em 28/11/2026, pedido do usuário)
+Canal brasileiro de GTA 6, monetizado. Short analisado: "8 coisas que você PRECISA testar no GTA 6!" (YwEdACaFmYE,
+21,6 mil views em ~12 h, 5,6% de engajamento). Mais vistos do canal (todos de novembro/2026):
+| Short | Views | Duração |
+|---|---|---|
+| O GTA 6 está REALISTA demais! 🤯🔥 | 709 mil | 2:13 |
+| 🤯 10 COISAS MAIS INSANAS QUE VOCÊ VAI ENCONTRAR NO GTA 6! | 334 mil | 2:43 |
+| 👀 Seja sincero: quantos desses 10 detalhes você já conhecia? | 108 mil | 2:24 |
+| 👀 7 DETALHES ABSURDOS QUE VOCÊ NÃO VIU NO GTA 6! | 13,7 mil | 1:49 |
+**O que ele faz (aprender a técnica, não copiar conteúdo):**
+- **Shorts LONGOS: 1:47 a 2:43** (o YouTube aceita Shorts até 3 min). Mais tempo assistido = mais receita e mais horas.
+- **Formato lista com contagem regressiva** ("8 coisas…", "10 detalhes…"), de #8 até #1; cada item 9–16 s; o #1 é o mais longo.
+- **Gancho com promessa guardada para o fim** (0–9 s): "Separei 8, e a número 1 a Rockstar esperou mais de 20 anos pra trazer de volta."
+- **Narração contínua**, animada, sem respiro (voz de IA no caso dele), explicando o que aparece.
+- **Legenda karaokê** no centro/terço de baixo: branca com contorno, **palavra falada em rosa/degradê**.
+- **Interface fixa no topo:** card à esquerda com o nome do item (palavra-chave colorida) + contador à direita ("#7 COISAS").
+- **Transição de item:** número GIGANTE no centro (degradê neon) + **som de impacto** (thud/whoosh) — "reseta" a atenção.
+- Trilha trap/hip-hop baixa por baixo da voz; **corte a cada 2–4 s**; círculos/setas e zoom no HUD para mostrar detalhes.
+- **Fim:** "Qual você vai fazer primeiro? **Comenta o número** e segue para mais GTA 6" (pergunta fácil = muitos comentários).
+- **Títulos:** emoji + palavra em CAIXA ALTA ("PRECISA", "REALISTA", "INSANAS") + curiosidade; hashtags no título
+  (#GTA6 #gtavi #curiosidadesgta #shorts + nome do canal). Posta 1 por dia, de manhã (~10h–12h de Brasília).
+**Como aplicar no Jogatina Fácil:** manter a nossa identidade (Painel azul-marinho/amarelo, narração do Suno, sticker),
+mas adotar: lista regressiva, Shorts de 1:30–2:30, número gigante + som de impacto, contador fixo, legenda karaokê da
+narração, gancho com promessa do #1, "comenta o número". Monetização (YPP): 1.000 inscritos + 10 mi de views de Shorts
+em 90 dias (ou 4.000 h de longos). Gameplay própria + narração e edição = conteúdo original (evita "conteúdo reutilizado").
+- ★ **Limite do usuário (28/11/2026): Shorts de no máximo 40 s.** Adaptar a referência: gancho 3 s com promessa,
+  **mini-lista de 3 itens** (~10 s cada, número gigante + impacto), karaokê da narração, cortes de 2–4 s,
+  "comenta o número" no fim (~4 s). Ação: cutscene/assalto/fuga/tiroteio com o mesmo gancho e o mesmo fim.

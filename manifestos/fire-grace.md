@@ -173,3 +173,13 @@ Short 9:16, 2160×3840, 60 fps, 46,2 s, −13,8 LUFS. Folha de quadros a cada 0,
 Imagem estática **sem título** + câmera de cinema + título animado que aparece no meio, **sobe e fica fixo** no céu
 + karaokê com a letra oficial + sticker do canal (leão) 3 vezes. Receita completa: `GUIA-PRODUCAO.md` seção 17.1.
 
+
+## ★ Diagnóstico com o YouTube Studio (28/11/2026, últimos 28 dias: 31/10–27/11)
+Total: 39,9 h assistidas, **85 inscritos**, 14.715 impressões, CTR 2,7%.
+- **Quem traz inscrito são os Shorts de 33–47 s:** A meia-noite (0:47) 18 · Ele morreu por amor (0:45) 13 · Deus ainda responde (0:35) 12
+  e (0:36) 9 · Elias (1:27) 8 · A meia-noite (0:38) 7 · Basta uma palavra (0:33) 6 · **Ele venceu no deserto (0:34) 5 em 1 dia**.
+- **Vídeos longos quase não trazem inscritos** (0–2 cada). "Basta uma palavra" (4:45) teve 7.220 impressões e só 1 inscrito.
+- **Paulo e Silas (1:38): 1 inscrito** → Short longo demais.
+- O gráfico mostra a queda **entre 9 e 20/11** (antes dos vídeos novos); os picos de 21–23/11 vieram dos vídeos novos.
+- CTR das miniaturas dos longos ~2–3% (bom é 4–6%) → miniatura com rosto grande + 2–3 palavras.
+**Regras:** Shorts de 30–47 s (mini documentário também); nunca repetir a mesma música em outro Short; avaliar depois de 7 dias.
