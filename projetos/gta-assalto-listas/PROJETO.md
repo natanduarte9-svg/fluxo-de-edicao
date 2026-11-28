@@ -31,3 +31,6 @@ Canal JOGATINA FACIL, público, categoria Jogos (20), 20h Brasília. Tags ~28 (�
 | 04/12 | A FUGA PERFEITA NO GTA 6! 🚗💨 #GTA6 #shorts | 4ddf7fbb-56f5-4a05-ad4c-978f6f2dec87 | 8afb59cd |
 | 05/12 | TIROTEIO NO ESCURO! 💥 GTA 6 #shorts | ad1d7069-64cb-4054-9a86-46b2d437cf10 | 896a280f |
 Limite grátis: 3 envios ao YouTube por dia → publicar 3 hoje e 2 amanhã. O usuário marca "conteúdo alterado/IA = sim" no Studio.
+- ✅ Aprovado ("Pode sim", 28/11). Enviados (privados até a hora): 01/12 https://www.youtube.com/watch?v=d7xxHfEfo-A ·
+  02/12 https://www.youtube.com/watch?v=AifyuwPu_ZA · 03/12 https://www.youtube.com/watch?v=Yv6BbWt_n0A.
+  Shorts 4 e 5: lembrete agendado para 29/11 06h30 (Brasília), quando o limite do vidIQ renova (trig_018ZxBjgBKKJPsCsAQLpZGeg).
