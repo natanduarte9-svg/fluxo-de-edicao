@@ -154,6 +154,7 @@ Diário do que foi feito, decidido e aprendido, para nada se perder entre uma se
 - [x] Levar tudo para o `main` (PR #1, mesclado em 21/11).
 - [x] Clipe "NO DESERTO, ELE VENCEU": agendado 27–29/11 (ver registro de 27/11).
 - [ ] Conferir a publicação do clipe e dos Shorts (miniatura, vídeo relacionado, visibilidade).
+- [ ] **Fim de dezembro/2026:** reavaliar mini documentários × louvores (inscritos por Short) — decidir se vale um canal próprio.
 
 ## 27/11/2026: clipe "NO DESERTO, ELE VENCEU" (FIRE & GRACE)
 - Música do Natan no Suno (plano pago, monetizável), 4min42. Imagem estática 16:9 dele com o título na arte. Projeto: `projetos/clipe-no-deserto/`.

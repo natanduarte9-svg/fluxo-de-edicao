@@ -183,3 +183,13 @@ Total: 39,9 h assistidas, **85 inscritos**, 14.715 impressões, CTR 2,7%.
 - O gráfico mostra a queda **entre 9 e 20/11** (antes dos vídeos novos); os picos de 21–23/11 vieram dos vídeos novos.
 - CTR das miniaturas dos longos ~2–3% (bom é 4–6%) → miniatura com rosto grande + 2–3 palavras.
 **Regras:** Shorts de 30–47 s (mini documentário também); nunca repetir a mesma música em outro Short; avaliar depois de 7 dias.
+
+## ★ Mini documentários: ficam no FIRE & GRACE (decisão de 28/11/2026)
+O usuário perguntou se devia abrir um canal só para mini documentários. Decisão: **não por enquanto**.
+- Elias teve o maior tempo assistido do mês (9,2 h, 23%), 725 views e 8 inscritos → o público gostou.
+- Paulo e Silas foi mal pela duração (1:38), não pelo tema.
+- Mesmo público (conteúdo cristão); nos Shorts cada vídeo é testado sozinho; canal novo começa do zero e divide o caminho
+  até os 1.000 inscritos (e o vidIQ grátis só aceita 1 canal).
+**Regras:** mini documentário com 30–47 s; playlist "MINI DOCUMENTÁRIO"; **1 mini documentário a cada 3–4 louvores**.
+**Reavaliar no fim de dezembro/2026** (4 semanas): separar só se, já curtos, trouxerem bem menos inscritos que os louvores,
+ou se o usuário quiser documentários longos (5–15 min) com frequência.
