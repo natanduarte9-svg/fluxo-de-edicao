@@ -20,3 +20,14 @@ Estilo e Excluir: os mesmos do modelo aprovado (guia, seção 15), um pouco mais
 - `montar.py spec.json <n>`: cola os trechos, encaixa as frases, jogo −13 dB na fala, impacto (thump + whoosh) nos números,
   legenda palavra por palavra; `painel.py` ganhou o **número gigante "#3/#2/#1"** que salta no meio da janela.
 - Resultado: 31 s, 28,6 s, 38 s, 38 s, 40 s; todos −14 LUFS.
+
+## Publicação — rascunhos no vidIQ (28/11/2026, aguardando o "sim")
+Canal JOGATINA FACIL, público, categoria Jogos (20), 20h Brasília. Tags ~28 (≈420 caracteres), 15 hashtags (#Shorts primeiro).
+| Dia | Short | postId | revision |
+|---|---|---|---|
+| 01/12 | 3 COISAS que você PRECISA fazer no GTA 6! ✈️🔥 #GTA6 #shorts | ca1db9c9-46b3-48f0-baa1-62ecb2c5c28a | f7a26a66 |
+| 02/12 | 3 COISAS ESCONDIDAS no GTA 6 que quase ninguém viu 👀 #GTA6 #shorts | 031f0ac7-62a0-4a8d-95ae-543076fd9772 | 9fd12dc4 |
+| 03/12 | A LUCIA VAI ASSALTAR A LANCHONETE! 🔫 GTA 6 #shorts | 1e434e43-1d48-420c-9bd3-b565afa7693a | e0f650fa |
+| 04/12 | A FUGA PERFEITA NO GTA 6! 🚗💨 #GTA6 #shorts | 4ddf7fbb-56f5-4a05-ad4c-978f6f2dec87 | 8afb59cd |
+| 05/12 | TIROTEIO NO ESCURO! 💥 GTA 6 #shorts | ad1d7069-64cb-4054-9a86-46b2d437cf10 | 896a280f |
+Limite grátis: 3 envios ao YouTube por dia → publicar 3 hoje e 2 amanhã. O usuário marca "conteúdo alterado/IA = sim" no Studio.
