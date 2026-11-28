@@ -12,3 +12,11 @@ cutscene (faixas pretas) + mapa 1 quadro/min. Técnicas do canal Desbugando adap
 
 ## Narração (Suno, plano pago) — textos enviados ao usuário em 28/11/2026
 Estilo e Excluir: os mesmos do modelo aprovado (guia, seção 15), um pouco mais animado.
+
+## Montagem (28/11/2026)
+- Narrações do Suno (modo Música, a cappella — o modo "Discurso" sempre põe música de fundo) mandadas no chat.
+- Tempos das palavras: as 5 juntas num só arquivo → áudio pelo vidIQ (extract_audio, 1 crédito) → ElevenLabs Scribe (1.127 créditos).
+  O Scribe não aceita vídeo: mandar só o áudio.
+- `montar.py spec.json <n>`: cola os trechos, encaixa as frases, jogo −13 dB na fala, impacto (thump + whoosh) nos números,
+  legenda palavra por palavra; `painel.py` ganhou o **número gigante "#3/#2/#1"** que salta no meio da janela.
+- Resultado: 31 s, 28,6 s, 38 s, 38 s, 40 s; todos −14 LUFS.
